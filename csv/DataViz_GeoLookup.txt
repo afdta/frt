@@ -1,0 +1,451 @@
+"Geo_Type","Geo_Div","Geo_ID","Geo_Description","Geo_ID_Val"
+"Domestic","100","10420","Akron",10420
+"Domestic","100","10580","Albany-Schenectady-Troy",10580
+"Domestic","100","10740","Albuquerque",10740
+"Domestic","100","10900","Allentown-Bethlehem-Easton",10900
+"Domestic","100","12060","Atlanta-Sandy Springs-Marietta",12060
+"Domestic","100","12260","Augusta-Richmond County",12260
+"Domestic","100","12420","Austin-Round Rock",12420
+"Domestic","100","12540","Bakersfield",12540
+"Domestic","100","12580","Baltimore-Towson",12580
+"Domestic","100","12940","Baton Rouge",12940
+"Domestic","100","13820","Birmingham-Hoover",13820
+"Domestic","100","14260","Boise City-Nampa",14260
+"Domestic","100","14460","Boston-Cambridge-Quincy",14460
+"Domestic","100","14860","Bridgeport-Stamford-Norwalk",14860
+"Domestic","100","15380","Buffalo-Niagara Falls",15380
+"Domestic","100","15980","Cape Coral-Fort Myers",15980
+"Domestic","100","16700","Charleston-North Charleston",16700
+"Domestic","100","16740","Charlotte-Gastonia-Concord",16740
+"Domestic","100","16860","Chattanooga",16860
+"Domestic","100","16980","Chicago-Naperville-Joliet",16980
+"Domestic","100","17140","Cincinnati-Middletown",17140
+"Domestic","100","17460","Cleveland-Elyria-Mentor",17460
+"Domestic","100","17820","Colorado Springs",17820
+"Domestic","100","17900","Columbia",17900
+"Domestic","100","18140","Columbus",18140
+"Domestic","100","19100","Dallas-Fort Worth-Arlington",19100
+"Domestic","100","19380","Dayton",19380
+"Domestic","100","19740","Denver-Aurora",19740
+"Domestic","100","19780","Des Moines",19780
+"Domestic","100","19820","Detroit-Warren-Livonia",19820
+"Domestic","100","21340","El Paso",21340
+"Domestic","100","23420","Fresno",23420
+"Domestic","100","24340","Grand Rapids-Wyoming",24340
+"Domestic","100","24660","Greensboro-High Point",24660
+"Domestic","100","24860","Greenville",24860
+"Domestic","100","25420","Harrisburg-Carlisle",25420
+"Domestic","100","25540","Hartford-West Hartford-East Hartford",25540
+"Domestic","100","26180","Honolulu",26180
+"Domestic","100","26420","Houston-Baytown-Sugar Land",26420
+"Domestic","100","26900","Indianapolis",26900
+"Domestic","100","27140","Jackson",27140
+"Domestic","100","27260","Jacksonville",27260
+"Domestic","100","28140","Kansas City",28140
+"Domestic","100","28940","Knoxville",28940
+"Domestic","100","29460","Lakeland",29460
+"Domestic","100","29540","Lancaster",29540
+"Domestic","100","29820","Las Vegas-Paradise",29820
+"Domestic","100","30780","Little Rock-North Little Rock",30780
+"Domestic","100","31100","Los Angeles-Long Beach-Santa Ana",31100
+"Domestic","100","31140","Louisville",31140
+"Domestic","100","31540","Madison",31540
+"Domestic","100","32580","McAllen-Edinburg-Pharr",32580
+"Domestic","100","32820","Memphis",32820
+"Domestic","100","33100","Miami-Fort Lauderdale-Miami Beach",33100
+"Domestic","100","33340","Milwaukee-Waukesha-West Allis",33340
+"Domestic","100","33460","Minneapolis-St. Paul-Bloomington",33460
+"Domestic","100","33700","Modesto",33700
+"Domestic","100","34980","Nashville-Davidson--Murfreesboro",34980
+"Domestic","100","35300","New Haven-Milford",35300
+"Domestic","100","35380","New Orleans-Metairie-Kenner",35380
+"Domestic","100","35620","New York-Northern New Jersey-Long Island",35620
+"Domestic","100","36260","Ogden-Clearfield",36260
+"Domestic","100","36420","Oklahoma City",36420
+"Domestic","100","36540","Omaha-Council Bluffs",36540
+"Domestic","100","36740","Orlando",36740
+"Domestic","100","37100","Oxnard-Thousand Oaks-Ventura",37100
+"Domestic","100","37340","Palm Bay-Melbourne-Titusville",37340
+"Domestic","100","37980","Philadelphia-Camden-Wilmington",37980
+"Domestic","100","38060","Phoenix-Mesa-Scottsdale",38060
+"Domestic","100","38300","Pittsburgh",38300
+"Domestic","100","38900","Portland-Vancouver-Beaverton",38900
+"Domestic","100","39100","Poughkeepsie-Newburgh-Middletown",39100
+"Domestic","100","39300","Providence-New Bedford-Fall River",39300
+"Domestic","100","39340","Provo-Orem",39340
+"Domestic","100","39580","Raleigh-Cary",39580
+"Domestic","100","40060","Richmond",40060
+"Domestic","100","40140","Riverside-San Bernardino-Ontario",40140
+"Domestic","100","40380","Rochester",40380
+"Domestic","100","40900","Sacramento--Arden-Arcade--Roseville",40900
+"Domestic","100","41180","St. Louis",41180
+"Domestic","100","41620","Salt Lake City",41620
+"Domestic","100","41700","San Antonio",41700
+"Domestic","100","41740","San Diego-Carlsbad-San Marcos",41740
+"Domestic","100","41860","San Francisco-Oakland-Fremont",41860
+"Domestic","100","41940","San Jose-Sunnyvale-Santa Clara",41940
+"Domestic","100","42260","Sarasota-Bradenton-Venice",42260
+"Domestic","100","42540","Scranton--Wilkes-Barre",42540
+"Domestic","100","42660","Seattle-Tacoma-Bellevue",42660
+"Domestic","100","44140","Springfield",44140
+"Domestic","100","44700","Stockton",44700
+"Domestic","100","45060","Syracuse",45060
+"Domestic","100","45300","Tampa-St. Petersburg-Clearwater",45300
+"Domestic","100","45780","Toledo",45780
+"Domestic","100","46060","Tucson",46060
+"Domestic","100","46140","Tulsa",46140
+"Domestic","100","47260","Virginia Beach-Norfolk-Newport News",47260
+"Domestic","100","47900","Washington-Arlington-Alexandria",47900
+"Domestic","100","48620","Wichita",48620
+"Domestic","100","49340","Worcester",49340
+"Domestic","100","49660","Youngstown-Warren-Boardman",49660
+"Domestic","Other","10180","Abilene",10180
+"Domestic","Other","10500","Albany",10500
+"Domestic","Other","10780","Alexandria",10780
+"Domestic","Other","11020","Altoona",11020
+"Domestic","Other","11100","Amarillo",11100
+"Domestic","Other","11180","Ames",11180
+"Domestic","Other","11260","Anchorage",11260
+"Domestic","Other","11300","Anderson",11300
+"Domestic","Other","11340","Anderson",11340
+"Domestic","Other","11460","Ann Arbor",11460
+"Domestic","Other","11500","Anniston-Oxford",11500
+"Domestic","Other","11540","Appleton",11540
+"Domestic","Other","11700","Asheville",11700
+"Domestic","Other","12020","Athens-Clarke County",12020
+"Domestic","Other","12100","Atlantic City",12100
+"Domestic","Other","12220","Auburn-Opelika",12220
+"Domestic","Other","12620","Bangor",12620
+"Domestic","Other","12700","Barnstable Town",12700
+"Domestic","Other","12980","Battle Creek",12980
+"Domestic","Other","13020","Bay City",13020
+"Domestic","Other","13140","Beaumont-Port Arthur",13140
+"Domestic","Other","13380","Bellingham",13380
+"Domestic","Other","13460","Bend",13460
+"Domestic","Other","13740","Billings",13740
+"Domestic","Other","13780","Binghamton",13780
+"Domestic","Other","13900","Bismarck",13900
+"Domestic","Other","13980","Blacksburg-Christiansburg-Radford",13980
+"Domestic","Other","14020","Bloomington",14020
+"Domestic","Other","14060","Bloomington-Normal",14060
+"Domestic","Other","14500","Boulder",14500
+"Domestic","Other","14540","Bowling Green",14540
+"Domestic","Other","14740","Bremerton-Silverdale",14740
+"Domestic","Other","15180","Brownsville-Harlingen",15180
+"Domestic","Other","15260","Brunswick",15260
+"Domestic","Other","15500","Burlington",15500
+"Domestic","Other","15540","Burlington-South Burlington",15540
+"Domestic","Other","15940","Canton-Massillon",15940
+"Domestic","Other","16180","Carson City",16180
+"Domestic","Other","16220","Casper",16220
+"Domestic","Other","16300","Cedar Rapids",16300
+"Domestic","Other","16580","Champaign-Urbana",16580
+"Domestic","Other","16620","Charleston",16620
+"Domestic","Other","16820","Charlottesville",16820
+"Domestic","Other","16940","Cheyenne",16940
+"Domestic","Other","17020","Chico",17020
+"Domestic","Other","17300","Clarksville",17300
+"Domestic","Other","17420","Cleveland",17420
+"Domestic","Other","17660","Coeur d'Alene",17660
+"Domestic","Other","17780","College Station-Bryan",17780
+"Domestic","Other","17860","Columbia",17860
+"Domestic","Other","17980","Columbus",17980
+"Domestic","Other","18020","Columbus",18020
+"Domestic","Other","18580","Corpus Christi",18580
+"Domestic","Other","18700","Corvallis",18700
+"Domestic","Other","19060","Cumberland",19060
+"Domestic","Other","19140","Dalton",19140
+"Domestic","Other","19180","Danville",19180
+"Domestic","Other","19260","Danville",19260
+"Domestic","Other","19340","Davenport-Moline-Rock Island",19340
+"Domestic","Other","19460","Decatur",19460
+"Domestic","Other","19500","Decatur",19500
+"Domestic","Other","19660","Deltona-Daytona Beach-Ormond Beach",19660
+"Domestic","Other","20020","Dothan",20020
+"Domestic","Other","20100","Dover",20100
+"Domestic","Other","20220","Dubuque",20220
+"Domestic","Other","20260","Duluth",20260
+"Domestic","Other","20500","Durham",20500
+"Domestic","Other","20740","Eau Claire",20740
+"Domestic","Other","20940","El Centro",20940
+"Domestic","Other","21060","Elizabethtown",21060
+"Domestic","Other","21140","Elkhart-Goshen",21140
+"Domestic","Other","21300","Elmira",21300
+"Domestic","Other","21500","Erie",21500
+"Domestic","Other","21660","Eugene-Springfield",21660
+"Domestic","Other","21780","Evansville",21780
+"Domestic","Other","21820","Fairbanks",21820
+"Domestic","Other","22020","Fargo",22020
+"Domestic","Other","22140","Farmington",22140
+"Domestic","Other","22180","Fayetteville",22180
+"Domestic","Other","22220","Fayetteville-Springdale-Rogers",22220
+"Domestic","Other","22380","Flagstaff",22380
+"Domestic","Other","22420","Flint",22420
+"Domestic","Other","22500","Florence",22500
+"Domestic","Other","22520","Florence-Muscle Shoals",22520
+"Domestic","Other","22540","Fond du Lac",22540
+"Domestic","Other","22660","Fort Collins-Loveland",22660
+"Domestic","Other","22900","Fort Smith",22900
+"Domestic","Other","23020","Fort Walton Beach-Crestview-Destin",23020
+"Domestic","Other","23060","Fort Wayne",23060
+"Domestic","Other","23460","Gadsden",23460
+"Domestic","Other","23540","Gainesville",23540
+"Domestic","Other","23580","Gainesville",23580
+"Domestic","Other","24020","Glens Falls",24020
+"Domestic","Other","24140","Goldsboro",24140
+"Domestic","Other","24220","Grand Forks",24220
+"Domestic","Other","24300","Grand Junction",24300
+"Domestic","Other","24500","Great Falls",24500
+"Domestic","Other","24540","Greeley",24540
+"Domestic","Other","24580","Green Bay",24580
+"Domestic","Other","24780","Greenville",24780
+"Domestic","Other","25060","Gulfport-Biloxi",25060
+"Domestic","Other","25180","Hagerstown-Martinsburg",25180
+"Domestic","Other","25260","Hanford-Corcoran",25260
+"Domestic","Other","25500","Harrisonburg",25500
+"Domestic","Other","25620","Hattiesburg",25620
+"Domestic","Other","25860","Hickory-Lenoir-Morganton",25860
+"Domestic","Other","25980","Hinesville-Fort Stewart",25980
+"Domestic","Other","26100","Holland-Grand Haven",26100
+"Domestic","Other","26300","Hot Springs",26300
+"Domestic","Other","26380","Houma-Bayou Cane-Thibodaux",26380
+"Domestic","Other","26580","Huntington-Ashland",26580
+"Domestic","Other","26620","Huntsville",26620
+"Domestic","Other","26820","Idaho Falls",26820
+"Domestic","Other","26980","Iowa City",26980
+"Domestic","Other","27060","Ithaca",27060
+"Domestic","Other","27100","Jackson",27100
+"Domestic","Other","27180","Jackson",27180
+"Domestic","Other","27340","Jacksonville",27340
+"Domestic","Other","27500","Janesville",27500
+"Domestic","Other","27620","Jefferson City",27620
+"Domestic","Other","27740","Johnson City",27740
+"Domestic","Other","27780","Johnstown",27780
+"Domestic","Other","27860","Jonesboro",27860
+"Domestic","Other","27900","Joplin",27900
+"Domestic","Other","28020","Kalamazoo-Portage",28020
+"Domestic","Other","28100","Kankakee-Bradley",28100
+"Domestic","Other","28420","Kennewick-Richland-Pasco",28420
+"Domestic","Other","28660","Killeen-Temple-Fort Hood",28660
+"Domestic","Other","28700","Kingsport-Bristol-Bristol",28700
+"Domestic","Other","28740","Kingston",28740
+"Domestic","Other","29020","Kokomo",29020
+"Domestic","Other","29100","La Crosse",29100
+"Domestic","Other","29140","Lafayette",29140
+"Domestic","Other","29180","Lafayette",29180
+"Domestic","Other","29340","Lake Charles",29340
+"Domestic","Other","29620","Lansing-East Lansing",29620
+"Domestic","Other","29700","Laredo",29700
+"Domestic","Other","29740","Las Cruces",29740
+"Domestic","Other","29940","Lawrence",29940
+"Domestic","Other","30020","Lawton",30020
+"Domestic","Other","30140","Lebanon",30140
+"Domestic","Other","30300","Lewiston",30300
+"Domestic","Other","30340","Lewiston-Auburn",30340
+"Domestic","Other","30460","Lexington-Fayette",30460
+"Domestic","Other","30620","Lima",30620
+"Domestic","Other","30700","Lincoln",30700
+"Domestic","Other","30860","Logan",30860
+"Domestic","Other","30980","Longview",30980
+"Domestic","Other","31020","Longview",31020
+"Domestic","Other","31180","Lubbock",31180
+"Domestic","Other","31340","Lynchburg",31340
+"Domestic","Other","31420","Macon",31420
+"Domestic","Other","31460","Madera",31460
+"Domestic","Other","31700","Manchester-Nashua",31700
+"Domestic","Other","31900","Mansfield",31900
+"Domestic","Other","32780","Medford",32780
+"Domestic","Other","32900","Merced",32900
+"Domestic","Other","33140","Michigan City-La Porte",33140
+"Domestic","Other","33260","Midland",33260
+"Domestic","Other","33540","Missoula",33540
+"Domestic","Other","33660","Mobile",33660
+"Domestic","Other","33740","Monroe",33740
+"Domestic","Other","33780","Monroe",33780
+"Domestic","Other","33860","Montgomery",33860
+"Domestic","Other","34060","Morgantown",34060
+"Domestic","Other","34100","Morristown",34100
+"Domestic","Other","34580","Mount Vernon-Anacortes",34580
+"Domestic","Other","34620","Muncie",34620
+"Domestic","Other","34740","Muskegon-Norton Shores",34740
+"Domestic","Other","34820","Myrtle Beach-Conway-North Myrtle Beach",34820
+"Domestic","Other","34900","Napa",34900
+"Domestic","Other","34940","Naples-Marco Island",34940
+"Domestic","Other","35660","Niles-Benton Harbor",35660
+"Domestic","Other","35980","Norwich-New London",35980
+"Domestic","Other","36100","Ocala",36100
+"Domestic","Other","36140","Ocean City",36140
+"Domestic","Other","36220","Odessa",36220
+"Domestic","Other","36500","Olympia",36500
+"Domestic","Other","36780","Oshkosh-Neenah",36780
+"Domestic","Other","36980","Owensboro",36980
+"Domestic","Other","37460","Panama City-Lynn Haven",37460
+"Domestic","Other","37620","Parkersburg-Marietta",37620
+"Domestic","Other","37700","Pascagoula",37700
+"Domestic","Other","37860","Pensacola-Ferry Pass-Brent",37860
+"Domestic","Other","37900","Peoria",37900
+"Domestic","Other","38220","Pine Bluff",38220
+"Domestic","Other","38340","Pittsfield",38340
+"Domestic","Other","38540","Pocatello",38540
+"Domestic","Other","38860","Portland-South Portland-Biddeford",38860
+"Domestic","Other","38940","Port St. Lucie-Fort Pierce",38940
+"Domestic","Other","39140","Prescott",39140
+"Domestic","Other","39380","Pueblo",39380
+"Domestic","Other","39460","Punta Gorda",39460
+"Domestic","Other","39540","Racine",39540
+"Domestic","Other","39660","Rapid City",39660
+"Domestic","Other","39740","Reading",39740
+"Domestic","Other","39820","Redding",39820
+"Domestic","Other","39900","Reno-Sparks",39900
+"Domestic","Other","40220","Roanoke",40220
+"Domestic","Other","40340","Rochester",40340
+"Domestic","Other","40420","Rockford",40420
+"Domestic","Other","40580","Rocky Mount",40580
+"Domestic","Other","40660","Rome",40660
+"Domestic","Other","40980","Saginaw-Saginaw Township North",40980
+"Domestic","Other","41060","St. Cloud",41060
+"Domestic","Other","41100","St. George",41100
+"Domestic","Other","41140","St. Joseph",41140
+"Domestic","Other","41420","Salem",41420
+"Domestic","Other","41500","Salinas",41500
+"Domestic","Other","41540","Salisbury",41540
+"Domestic","Other","41660","San Angelo",41660
+"Domestic","Other","41780","Sandusky",41780
+"Domestic","Other","42020","San Luis Obispo-Paso Robles",42020
+"Domestic","Other","42060","Santa Barbara-Santa Maria-Goleta",42060
+"Domestic","Other","42100","Santa Cruz-Watsonville",42100
+"Domestic","Other","42140","Santa Fe",42140
+"Domestic","Other","42220","Santa Rosa-Petaluma",42220
+"Domestic","Other","42340","Savannah",42340
+"Domestic","Other","43100","Sheboygan",43100
+"Domestic","Other","43300","Sherman-Denison",43300
+"Domestic","Other","43340","Shreveport-Bossier City",43340
+"Domestic","Other","43580","Sioux City",43580
+"Domestic","Other","43620","Sioux Falls",43620
+"Domestic","Other","43780","South Bend-Mishawaka",43780
+"Domestic","Other","43900","Spartanburg",43900
+"Domestic","Other","44060","Spokane",44060
+"Domestic","Other","44100","Springfield",44100
+"Domestic","Other","44180","Springfield",44180
+"Domestic","Other","44220","Springfield",44220
+"Domestic","Other","44300","State College",44300
+"Domestic","Other","44940","Sumter",44940
+"Domestic","Other","45220","Tallahassee",45220
+"Domestic","Other","45460","Terre Haute",45460
+"Domestic","Other","45500","Texarkana",45500
+"Domestic","Other","45820","Topeka",45820
+"Domestic","Other","45940","Trenton-Ewing",45940
+"Domestic","Other","46220","Tuscaloosa",46220
+"Domestic","Other","46340","Tyler",46340
+"Domestic","Other","46540","Utica-Rome",46540
+"Domestic","Other","46660","Valdosta",46660
+"Domestic","Other","46700","Vallejo-Fairfield",46700
+"Domestic","Other","46940","Vero Beach",46940
+"Domestic","Other","47020","Victoria",47020
+"Domestic","Other","47220","Vineland-Millville-Bridgeton",47220
+"Domestic","Other","47300","Visalia-Porterville",47300
+"Domestic","Other","47380","Waco",47380
+"Domestic","Other","47580","Warner Robins",47580
+"Domestic","Other","47940","Waterloo-Cedar Falls",47940
+"Domestic","Other","48140","Wausau",48140
+"Domestic","Other","48260","Weirton-Steubenville",48260
+"Domestic","Other","48300","Wenatchee",48300
+"Domestic","Other","48540","Wheeling",48540
+"Domestic","Other","48660","Wichita Falls",48660
+"Domestic","Other","48700","Williamsport",48700
+"Domestic","Other","48900","Wilmington",48900
+"Domestic","Other","49020","Winchester",49020
+"Domestic","Other","49180","Winston-Salem",49180
+"Domestic","Other","49420","Yakima",49420
+"Domestic","Other","49620","York-Hanover",49620
+"Domestic","Other","49700","Yuba City",49700
+"Domestic","Other","49740","Yuma",49740
+"Domestic","Rest","90001","Rest of Alabama",90001
+"Domestic","Rest","90002","Rest of Alaska",90002
+"Domestic","Rest","90004","Rest of Arizona",90004
+"Domestic","Rest","90005","Rest of Arkansas",90005
+"Domestic","Rest","90006","Rest of California",90006
+"Domestic","Rest","90008","Rest of Colorado",90008
+"Domestic","Rest","90009","Rest of Connecticut",90009
+"Domestic","Rest","90010","Rest of Delaware",90010
+"Domestic","Rest","90012","Rest of Florida",90012
+"Domestic","Rest","90013","Rest of Georgia",90013
+"Domestic","Rest","90015","Rest of Hawaii",90015
+"Domestic","Rest","90016","Rest of Idaho",90016
+"Domestic","Rest","90017","Rest of Illinois",90017
+"Domestic","Rest","90018","Rest of Indiana",90018
+"Domestic","Rest","90019","Rest of Iowa",90019
+"Domestic","Rest","90020","Rest of Kansas",90020
+"Domestic","Rest","90021","Rest of Kentucky",90021
+"Domestic","Rest","90022","Rest of Louisiana",90022
+"Domestic","Rest","90023","Rest of Maine",90023
+"Domestic","Rest","90024","Rest of Maryland",90024
+"Domestic","Rest","90025","Rest of Massachusetts",90025
+"Domestic","Rest","90026","Rest of Michigan",90026
+"Domestic","Rest","90027","Rest of Minnesota",90027
+"Domestic","Rest","90028","Rest of Mississippi",90028
+"Domestic","Rest","90029","Rest of Missouri",90029
+"Domestic","Rest","90030","Rest of Montana",90030
+"Domestic","Rest","90031","Rest of Nebraska",90031
+"Domestic","Rest","90032","Rest of Nevada",90032
+"Domestic","Rest","90033","Rest of New Hampshire",90033
+"Domestic","Rest","90035","Rest of New Mexico",90035
+"Domestic","Rest","90036","Rest of New York",90036
+"Domestic","Rest","90037","Rest of North Carolina",90037
+"Domestic","Rest","90038","Rest of North Dakota",90038
+"Domestic","Rest","90039","Rest of Ohio",90039
+"Domestic","Rest","90040","Rest of Oklahoma",90040
+"Domestic","Rest","90041","Rest of Oregon",90041
+"Domestic","Rest","90042","Rest of Pennsylvania",90042
+"Domestic","Rest","90045","Rest of South Carolina",90045
+"Domestic","Rest","90046","Rest of South Dakota",90046
+"Domestic","Rest","90047","Rest of Tennessee",90047
+"Domestic","Rest","90048","Rest of Texas",90048
+"Domestic","Rest","90049","Rest of Utah",90049
+"Domestic","Rest","90050","Rest of Vermont",90050
+"Domestic","Rest","90051","Rest of Virginia",90051
+"Domestic","Rest","90053","Rest of Washington",90053
+"Domestic","Rest","90054","Rest of West Virginia",90054
+"Domestic","Rest","90055","Rest of Wisconsin",90055
+"Domestic","Rest","90056","Rest of Wyoming",90056
+"Global","RestOfGroup","005rem","Remainder of South America",5
+"Global","CountryGroup","011","Western Africa",11
+"Global","RestOfGroup","013rem","Remainder of Central America",13
+"Global","CountryGroup","014","Eastern Africa",14
+"Global","CountryGroup","015","Northern Africa",15
+"Global","CountryGroup","017","Middle Africa",17
+"Global","RestOfGroup","018rem","Remainder of Southern Africa",18
+"Global","RestOfGroup","021rem","Remainder of Northern America",21
+"Global","CountryGroup","029","Caribbean",29
+"Global","RestOfGroup","030rem","Remainder of Eastern Asia",30
+"Global","Country","032","Argentina",32
+"Global","RestOfGroup","034rem","Remainder of Southern Asia",34
+"Global","RestOfGroup","035rem","Remainder of South-Eastern Asia",35
+"Global","RestOfGroup","039rem","Remainder of Southern Europe",39
+"Global","CountryGroup","053","Australia and New Zealand",53
+"Global","CountryGroup","054","Melanesia",54
+"Global","CountryGroup","057","Micronesia",57
+"Global","CountryGroup","061","Polynesia",61
+"Global","Country","076","Brazil",76
+"Global","Country","124","Canada",124
+"Global","CountryGroup","143","Central Asia",143
+"Global","RestOfGroup","145rem","Remainder of Western Asia",145
+"Global","CountryGroup","151","Eastern Europe",151
+"Global","Country","152","Chile",152
+"Global","RestOfGroup","154rem","Remainder of Northern Europe",154
+"Global","RestOfGroup","155rem","Remainder of Western Europe",155
+"Global","Country","156","China",156
+"Global","Country","170","Colombia",170
+"Global","Country","250","France",250
+"Global","Country","276","Germany",276
+"Global","Country","356","India",356
+"Global","Country","392","Japan",392
+"Global","Country","410","Republic of Korea",410
+"Global","Country","484","Mexico",484
+"Global","Country","528","Netherlands",528
+"Global","Country","702","Singapore",702
+"Global","Country","710","South Africa",710
+"Global","Country","724","Spain",724
+"Global","Country","792","Turkey",792
+"Global","Country","826","United Kingdom of Great Britain and Northern Ireland",826
+"Global","Unknown","unk","Unknown",0

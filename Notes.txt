@@ -1,0 +1,20 @@
+Chord diagram may not be the right fit in this case:
+1. Data don't represent a complete system. Foreign markets don't trade with each other in the data, nor
+   do domestic markets.
+2. If we're just talking about viewing data for a single metro area, then why not just do bar charts?
+3. This still may be valuable if we opt to indicate directed relationships, e.g. exports and imports on same diagram.
+
+
+Chord diagram basics
+1. Rows in the matrix represent groups. The groups provide source data. Groups have index values.
+2. Subindex values indicate the column within a row or group.
+3. The (i,j) value represents the source value that flows with the (j,i) target value. (Think matrix transposition.)
+4. Relationships can be directed. The source value might be 10 while the target value might be 100. 
+   (e.g. country A might export 10 units to country B, but country B might export 100 units to country A).
+
+Exceptions to above "basics":
+To determine the source and target objects for a chord, D3 examines all cells in the upper triangle of the (square) matrix and compares
+them to corresponding cells in the lower triangle. If the value of [i,j] is less than [j,i] then [j,i] is considered the source value. Otherwise [i,j] is the source and [j,i] the target. Also note that because only the upper triangle is looped through to create chords, if [i,j]==[j,i] then [i,j] will always be the source. It makes sense to only examine the upper triangle because there is no reason to compare values twice (e.g. [i,j]==[j,i] then [j,i]==[i,j]) to determine source and target nodes.
+
+Other thoughts
+Sankey diagram? Might be useful to view a given market's commodities -> mode -> market. Or just commodities -> market in this case.

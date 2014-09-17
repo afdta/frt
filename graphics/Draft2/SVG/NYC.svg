@@ -1,0 +1,3554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1070"
+   height="985"
+   class="mainSVG"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="NYC.svg"
+   inkscape:export-filename="/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/graphics/Draft2/NYC.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
+  <metadata
+     id="metadata1402">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1400" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1411"
+     inkscape:window-height="874"
+     id="namedview1398"
+     showgrid="false"
+     inkscape:zoom="0.67428572"
+     inkscape:cx="520.80887"
+     inkscape:cy="443.69348"
+     inkscape:window-x="59"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2"
+     fit-margin-top="20"
+     fit-margin-left="10"
+     fit-margin-bottom="20"
+     fit-margin-right="15" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer#1"
+     transform="translate(-15.421643,-18.48994)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3680"
+       width="1196.822"
+       height="1024.7881"
+       x="-13.347458"
+       y="-8.6440601"
+       transform="translate(15.421643,18.48994)" />
+    <g
+       transform="translate(43.491772,37.9898)"
+       id="g5635">
+      <text
+         sodipodi:linespacing="125%"
+         id="text1318"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed, Bold'"
+         y="15"
+         x="0">Value of Trade Between U.S. and International Markets</text>
+      <text
+         sodipodi:linespacing="125%"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+         id="text1320"
+         y="34"
+         x="0">Showing the value of trade between the New York Metro area and all Other Markets, 2010</text>
+    </g>
+    <g
+       transform="translate(877.79685,242.58303)"
+       id="g5596">
+      <text
+         sodipodi:linespacing="125%"
+         x="5"
+         y="86"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+         id="text1324">Broad Geographic Regions</text>
+      <g
+         transform="translate(0,100)"
+         id="g1326">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#1f77b4"
+           id="rect1328" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1330">Domestic - West South Central</text>
+      </g>
+      <g
+         transform="translate(0,122)"
+         id="g1332">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#aec7e8"
+           id="rect1334" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1336">Domestic - East South Central</text>
+      </g>
+      <g
+         transform="translate(0,144)"
+         id="g1338">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#ff7f0e"
+           id="rect1340" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1342">Domestic - South Atlantic</text>
+      </g>
+      <g
+         transform="translate(0,166)"
+         id="g1344">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#2ca02c"
+           id="rect1346" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1348">Domestic - Northeast</text>
+      </g>
+      <g
+         transform="translate(0,188)"
+         id="g1350">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#98df8a"
+           id="rect1352" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1354">Domestic - East North Central</text>
+      </g>
+      <g
+         transform="translate(0,210)"
+         id="g1356">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#d62728"
+           id="rect1358" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1360">Domestic - West North Central</text>
+      </g>
+      <g
+         transform="translate(0,232)"
+         id="g1362">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#ff9896"
+           id="rect1364" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1366">Domestic - Mountain</text>
+      </g>
+      <g
+         transform="translate(0,254)"
+         id="g1368">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#9467bd"
+           id="rect1370" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1372">Domestic - Pacific</text>
+      </g>
+      <g
+         transform="translate(0,276)"
+         id="g1374">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#c5b0d5"
+           id="rect1376" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1378">Global - Asia</text>
+      </g>
+      <g
+         transform="translate(0,298)"
+         id="g1380">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#8c564b"
+           id="rect1382" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1384">Global - Europe</text>
+      </g>
+      <g
+         transform="translate(0,320)"
+         id="g1386">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#c49c94"
+           id="rect1388" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1390">Global - Africa</text>
+      </g>
+      <g
+         transform="translate(0,342)"
+         id="g1392">
+        <rect
+           x="5"
+           y="0"
+           width="12"
+           height="12"
+           style="fill:#e377c2"
+           id="rect1394" />
+        <text
+           sodipodi:linespacing="125%"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+           x="20"
+           y="11"
+           id="text1396">Global - Americas</text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer"
+     transform="translate(-15.421643,-18.48994)"
+     style="display:inline">
+    <g
+       transform="translate(-6.742267,16.468355)"
+       id="g5779">
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g8">
+        <path
+           inkscape:connector-curvature="0"
+           id="path10"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 0,-294 a 294,294 0 0 1 1.5683109,0.004 l -0.074681,13.9998 A 280,280 0 0 0 0,-280 z" />
+        <g
+           id="g12"
+           transform="matrix(0.0026672,-0.99999644,0.99999644,0.0026672,0.78415825,-293.99895)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text14"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of Florida</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g16">
+        <path
+           inkscape:connector-curvature="0"
+           id="path18"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 4.5081417,-293.96543 a 294,294 0 0 1 3.7219066,0.0807 l -0.3919071,13.99451 a 280,280 0 0 0 -3.5446729,-0.0768 z" />
+        <g
+           id="g20"
+           transform="matrix(0.02166402,-0.99976531,0.99976531,0.02166402,6.3692226,-293.931)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text22"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Tampa-St. Petersburg-Clearwater</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g24">
+        <path
+           inkscape:connector-curvature="0"
+           id="path26"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 11.168436,-293.78779 a 294,294 0 0 1 9.153847,0.491 l -0.967727,13.96652 a 280,280 0 0 0 -8.717951,-0.46763 z" />
+        <g
+           id="g28"
+           transform="matrix(0.05356215,-0.99856452,0.99856452,0.05356215,15.747273,-293.57797)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text30"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Miami-Fort Lauderdale-Miami Beach</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g32">
+        <path
+           inkscape:connector-curvature="0"
+           id="path34"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 23.254186,-293.0789 a 294,294 0 0 1 3.000578,0.25355 l -1.250227,13.94406 a 280,280 0 0 0 -2.857693,-0.24147 z" />
+        <g
+           id="g36"
+           transform="matrix(0.0842,-0.99644887,0.99644887,0.0842,24.7548,-292.95597)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text38"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Orlando</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g40">
+        <path
+           inkscape:connector-curvature="0"
+           id="path42"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 29.181656,-292.54817 a 294,294 0 0 1 2.007164,0.20717 l -1.485182,13.921 a 280,280 0 0 0 -1.911585,-0.1973 z" />
+        <g
+           id="g44"
+           transform="matrix(0.10267148,-0.99471532,0.99471532,0.10267148,30.185416,-292.4463)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text46"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Jacksonville</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g48">
+        <path
+           inkscape:connector-curvature="0"
+           id="path50"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 34.110622,-292.0145 a 294,294 0 0 1 2.143163,0.25833 l -1.72637,13.89315 a 280,280 0 0 0 -2.041108,-0.24602 z" />
+        <g
+           id="g52"
+           transform="matrix(0.11966817,-0.99281395,0.99281395,0.11966817,35.182441,-291.8873)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text54"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of Georgia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g56">
+        <path
+           inkscape:connector-curvature="0"
+           id="path58"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 39.169486,-291.37905 a 294,294 0 0 1 7.592652,1.12175 l -2.226768,13.82177 a 280,280 0 0 0 -7.231098,-1.06833 z" />
+        <g
+           id="g60"
+           transform="matrix(0.14615467,-0.98926175,0.98926175,0.14615467,42.969473,-290.84295)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text62"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Atlanta-Sandy Springs-Marietta</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g64">
+        <path
+           inkscape:connector-curvature="0"
+           id="path66"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 49.662325,-289.77518 a 294,294 0 0 1 1.300955,0.22597 l -2.426823,13.78806 a 280,280 0 0 0 -1.239005,-0.21521 z" />
+        <g
+           id="g68"
+           transform="matrix(0.17113241,-0.98524804,0.98524804,0.17113241,50.312929,-289.66292)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text70"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of South Carolina</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g72">
+        <path
+           inkscape:connector-curvature="0"
+           id="path74"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 53.856176,-289.02511 a 294,294 0 0 1 1.443425,0.2727 l -2.633315,13.75011 a 280,280 0 0 0 -1.37469,-0.25971 z" />
+        <g
+           id="g76"
+           transform="matrix(0.18563965,-0.98261789,0.98261789,0.18563965,54.578058,-288.88966)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text78"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Greenville</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g80">
+        <path
+           inkscape:connector-curvature="0"
+           id="path82"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 58.184312,-288.18499 a 294,294 0 0 1 4.136721,0.8662 l -2.967668,13.68184 a 280,280 0 0 0 -3.939735,-0.82494 z" />
+        <g
+           id="g84"
+           transform="matrix(0.20494636,-0.97877321,0.97877321,0.20494636,60.254229,-287.75932)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text86"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of North Carolina</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g88">
+        <path
+           inkscape:connector-curvature="0"
+           id="path90"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 65.191057,-286.68123 a 294,294 0 0 1 3.975904,0.93321 l -3.293664,13.60705 a 280,280 0 0 0 -3.786576,-0.88877 z" />
+        <g
+           id="g92"
+           transform="matrix(0.22850554,-0.97354261,0.97354261,0.22850554,67.18063,-286.22153)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text94"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Charlotte-Gastonia-Concord</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g96">
+        <path
+           inkscape:connector-curvature="0"
+           id="path98"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 72.020936,-285.04208 a 294,294 0 0 1 2.410803,0.62001 l -3.544369,13.5439 a 280,280 0 0 0 -2.296003,-0.59047 z" />
+        <g
+           id="g100"
+           transform="matrix(0.24907141,-0.96848512,0.96848512,0.24907141,73.226993,-284.73463)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text102"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Greensboro-High Point</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g104">
+        <path
+           inkscape:connector-curvature="0"
+           id="path106"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 77.272191,-283.66355 a 294,294 0 0 1 1.184904,0.32544 l -3.736053,13.49229 a 280,280 0 0 0 -1.12848,-0.30994 z" />
+        <g
+           id="g108"
+           transform="matrix(0.2648463,-0.96429064,0.96429064,0.2648463,77.864813,-283.50145)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text110"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Durham</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g112">
+        <path
+           inkscape:connector-curvature="0"
+           id="path114"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 81.286506,-282.53938 a 294,294 0 0 1 1.246259,0.36152 l -3.930132,13.43704 a 280,280 0 0 0 -1.186913,-0.34431 z" />
+        <g
+           id="g116"
+           transform="matrix(0.27860488,-0.96040581,0.96040581,0.27860488,81.909835,-282.35931)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text118"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Raleigh-Cary</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g120">
+        <path
+           inkscape:connector-curvature="0"
+           id="path122"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 85.35037,-281.33843 a 294,294 0 0 1 2.079391,0.63924 l -4.163322,13.36663 a 280,280 0 0 0 -1.980373,-0.60881 z" />
+        <g
+           id="g124"
+           transform="matrix(0.29384577,-0.95585285,0.95585285,0.29384577,86.390656,-281.02074)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text126"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Virginia Beach-Norfolk-Newport News</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g128">
+        <path
+           inkscape:connector-curvature="0"
+           id="path130"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 90.232334,-279.81088 a 294,294 0 0 1 3.16637,1.04094 l -4.447558,13.27475 a 280,280 0 0 0 -3.015589,-0.99136 z" />
+        <g
+           id="g132"
+           transform="matrix(0.3123027,-0.94998264,0.94998264,0.3123027,91.816994,-279.2949)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text134"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Richmond</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g136">
+        <path
+           inkscape:connector-curvature="0"
+           id="path138"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 96.181687,-277.82203 a 294,294 0 0 1 2.271301,0.79674 l -4.688238,13.19168 a 280,280 0 0 0 -2.163143,-0.7588 z" />
+        <g
+           id="g140"
+           transform="matrix(0.33101413,-0.9436258,0.9436258,0.33101413,97.318153,-277.42598)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text142"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of Virginia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g144">
+        <path
+           inkscape:connector-curvature="0"
+           id="path146"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 101.21827,-276.02692 a 294,294 0 0 1 2.73546,1.01852 l -4.95018,13.09563 a 280,280 0 0 0 -2.605196,-0.97001 z" />
+        <g
+           id="g148"
+           transform="matrix(0.34893627,-0.93714646,0.93714646,0.34893627,102.58726,-275.52106)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text150"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Hagerstown-Martinsburg</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g152">
+        <path
+           inkscape:connector-curvature="0"
+           id="path154"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 106.69857,-273.95513 a 294,294 0 0 1 8.88012,3.6265 l -5.50375,12.8728 a 280,280 0 0 0 -8.45726,-3.45382 z" />
+        <g
+           id="g156"
+           transform="matrix(0.37807286,-0.92577584,0.92577584,0.37807286,111.15342,-272.1781)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text158"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Washington-Arlington-Alexandria</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g160">
+        <path
+           inkscape:connector-curvature="0"
+           id="path162"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 118.27615,-269.15934 a 294,294 0 0 1 13.88431,6.53868 l -6.29335,12.50574 a 280,280 0 0 0 -13.22316,-6.22731 z" />
+        <g
+           id="g164"
+           transform="matrix(0.42605775,-0.90469597,0.90469597,0.42605775,125.26098,-265.98061)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text166"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Baltimore-Towson</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g168">
+        <path
+           inkscape:connector-curvature="0"
+           id="path170"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 134.78002,-261.28595 a 294,294 0 0 1 1.81382,0.94363 l -6.50447,12.39726 a 280,280 0 0 0 -1.72745,-0.8987 z" />
+        <g
+           id="g172"
+           transform="matrix(0.46152296,-0.88712827,0.88712827,0.46152296,135.68775,-260.81571)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text174"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of Maryland</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g176">
+        <path
+           inkscape:connector-curvature="0"
+           id="path178"
+           style="fill:#ff7f0e;stroke:#ffffff;stroke-width:0px"
+           d="m 139.19039,-258.96339 a 294,294 0 0 1 1.75954,0.95347 l -6.7119,12.28619 a 280,280 0 0 0 -1.67575,-0.90807 z" />
+        <g
+           id="g180"
+           transform="matrix(0.47643188,-0.87921139,0.87921139,0.47643188,140.07097,-258.48815)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text182"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Salisbury</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g184">
+        <path
+           inkscape:connector-curvature="0"
+           id="path186"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 143.52294,-256.58754 a 294,294 0 0 1 1.89983,1.07195 l -6.9249,12.1674 a 280,280 0 0 0 -1.80936,-1.0209 z" />
+        <g
+           id="g188"
+           transform="matrix(0.49140764,-0.87092969,0.87092969,0.49140764,144.47385,-256.05333)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text190"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Vineland-Millville-Bridgeton</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g192">
+        <path
+           inkscape:connector-curvature="0"
+           id="path194"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 147.97061,-254.04862 a 294,294 0 0 1 1.22454,0.7172 l -7.10453,12.0634 a 280,280 0 0 0 -1.16623,-0.68304 z" />
+        <g
+           id="g196"
+           transform="matrix(0.50538542,-0.86289372,0.86289372,0.50538542,148.58331,-253.69076)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text198"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Atlantic City</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g200">
+        <path
+           inkscape:connector-curvature="0"
+           id="path202"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 151.72096,-251.82682 a 294,294 0 0 1 45.50121,33.79147 l -9.39153,10.38263 a 280,280 0 0 0 -43.33448,-32.18235 z" />
+        <g
+           id="g204"
+           transform="matrix(0.59621683,-0.80282345,0.80282345,0.59621683,175.28775,-236.0301)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text206"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Philadelphia-Camden-Wilmington</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g208">
+        <path
+           inkscape:connector-curvature="0"
+           id="path210"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 199.39263,-216.05226 a 294,294 0 0 1 2.69832,2.52182 l -9.62338,10.16812 a 280,280 0 0 0 -2.56983,-2.40174 z" />
+        <g
+           id="g212"
+           transform="matrix(0.68280867,-0.73059724,0.73059724,0.68280867,200.74575,-214.79559)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text214"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Reading</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g216">
+        <path
+           inkscape:connector-curvature="0"
+           id="path218"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 204.21611,-211.49889 a 294,294 0 0 1 4.00847,3.94522 l -9.91546,9.88351 a 280,280 0 0 0 -3.81759,-3.75735 z" />
+        <g
+           id="g220"
+           transform="matrix(0.70146184,-0.71270702,0.71270702,0.70146184,206.22978,-209.53586)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text222"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Lancaster</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g224">
+        <path
+           inkscape:connector-curvature="0"
+           id="path226"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 210.28967,-205.46108 a 294,294 0 0 1 1.62918,1.68081 l -10.09137,9.70382 a 280,280 0 0 0 -1.5516,-1.60077 z" />
+        <g
+           id="g228"
+           transform="matrix(0.7180474,-0.69599421,0.69599421,0.7180474,211.10593,-204.6223)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text230"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">York-Hanover</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g232">
+        <path
+           inkscape:connector-curvature="0"
+           id="path234"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 213.94603,-201.65093 a 294,294 0 0 1 1.88271,2.01637 l -10.27756,9.50641 a 280,280 0 0 0 -1.79306,-1.92036 z" />
+        <g
+           id="g236"
+           transform="matrix(0.73091751,-0.68246582,0.68246582,0.73091751,214.88975,-200.64495)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text238"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Harrisburg-Carlisle</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g240">
+        <path
+           inkscape:connector-curvature="0"
+           id="path242"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 217.81426,-197.46632 a 294,294 0 0 1 5.24628,5.9461 l -10.62193,9.12001 a 280,280 0 0 0 -4.99646,-5.66296 z" />
+        <g
+           id="g244"
+           transform="matrix(0.74985526,-0.66160191,0.66160191,0.74985526,220.45745,-194.51096)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text246"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Rest of Pennsylvania</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g248">
+        <path
+           inkscape:connector-curvature="0"
+           id="path250"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 224.96456,-189.28008 a 294,294 0 0 1 2.55974,3.08477 l -10.83449,8.86644 a 280,280 0 0 0 -2.43785,-2.93787 z" />
+        <g
+           id="g252"
+           transform="matrix(0.76955675,-0.63857843,0.63857843,0.76955675,226.24968,-187.74206)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text254"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Scranton--Wilkes-Barre</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g256">
+        <path
+           inkscape:connector-curvature="0"
+           id="path258"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 229.37484,-183.9108 a 294,294 0 0 1 6.16278,7.96186 l -11.21607,8.37853 a 280,280 0 0 0 -5.86932,-7.58273 z" />
+        <g
+           id="g260"
+           transform="matrix(0.7907834,-0.61209608,0.61209608,0.7907834,232.49032,-179.95625)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text262"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Allentown-Bethlehem-Easton</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g264">
+        <path
+           inkscape:connector-curvature="0"
+           id="path266"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 237.28531,-173.5848 a 294,294 0 0 1 3.15966,4.40378 l -11.44976,8.05624 a 280,280 0 0 0 -3.0092,-4.19408 z" />
+        <g
+           id="g268"
+           transform="matrix(0.81250098,-0.58295983,0.58295983,0.81250098,238.87529,-171.39019)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text270"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">Trenton-Ewing</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g272">
+        <path
+           inkscape:connector-curvature="0"
+           id="path274"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m 242.12473,-166.76815 a 294,294 0 0 1 -332.552886,446.5158 l 4.306103,-13.32132 A 280,280 0 0 0 230.59498,-158.82681 z" />
+        <g
+           id="g276"
+           transform="matrix(0.80200773,0.59731365,-0.59731365,0.80200773,235.79027,175.61021)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text278"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             dy="0"
+             x="8">New York-Northern New Jersey-Long Island</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g280">
+        <path
+           inkscape:connector-curvature="0"
+           id="path282"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -93.221064,278.8294 a 294,294 0 0 1 -7.501706,-2.62128 l 4.796326,-13.15277 a 280,280 0 0 0 7.144478,2.49646 z" />
+        <g
+           id="g284"
+           transform="matrix(-0.32986657,0.94402757,-0.94402757,-0.32986657,-96.980772,277.5441)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text286"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Poughkeepsie-Newburgh-Middletown</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g288">
+        <path
+           inkscape:connector-curvature="0"
+           id="path290"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -103.47977,275.1871 a 294,294 0 0 1 -1.65749,-0.62899 l 5.00653,-13.0742 a 280,280 0 0 0 1.578573,0.59904 z" />
+        <g
+           id="g292"
+           transform="matrix(-0.35479248,0.93494508,-0.93494508,-0.35479248,-104.30899,274.87385)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text294"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Kingston</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g296">
+        <path
+           inkscape:connector-curvature="0"
+           id="path298"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -107.87754,273.49303 a 294,294 0 0 1 -7.62736,-3.13287 l 5.50023,-12.87429 a 280,280 0 0 0 7.26415,2.98368 z" />
+        <g
+           id="g300"
+           transform="matrix(-0.37993947,0.92501135,-0.92501135,-0.37993947,-111.7022,271.95334)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text302"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Bridgeport-Stamford-Norwalk</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g304">
+        <path
+           inkscape:connector-curvature="0"
+           id="path306"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -118.20268,269.19162 a 294,294 0 0 1 -5.94879,-2.69131 l 5.91198,-12.69049 a 280,280 0 0 0 5.66551,2.56315 z" />
+        <g
+           id="g308"
+           transform="matrix(-0.41219233,0.91109686,-0.91109686,-0.41219233,-121.18455,267.86248)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text310"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">New Haven-Milford</text>
+        </g>
+      </g>
+      <g
+         transform="translate(521.07241,508.48831)"
+         id="g312">
+        <path
+           inkscape:connector-curvature="0"
+           id="path314"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -126.81022,265.24549 a 294,294 0 0 1 -1.78518,-0.86088 l 6.12359,-12.58974 a 280,280 0 0 0 1.70017,0.81988 z" />
+        <g
+           id="g316"
+           transform="matrix(-0.43436576,0.90073658,-0.90073658,-0.43436576,-127.70353,264.81655)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text318"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Connecticut</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g320">
+        <path
+           inkscape:connector-curvature="0"
+           id="path322"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -131.23277,263.08546 a 294,294 0 0 1 -2.6234,-1.32503 l 6.3741,-12.46478 a 280,280 0 0 0 2.49848,1.26193 z" />
+        <g
+           id="g324"
+           transform="matrix(-0.45083717,0.89260621,-0.89260621,-0.45083717,-132.54613,262.42623)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text326"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Springfield</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g328">
+        <path
+           inkscape:connector-curvature="0"
+           id="path330"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -136.46704,260.40881 a 294,294 0 0 1 -9.11819,-4.98575 l 6.93263,-12.163 a 280,280 0 0 0 8.68399,4.74833 z" />
+        <g
+           id="g332"
+           transform="matrix(-0.47975567,0.87740213,-0.87740213,-0.47975567,-141.04817,257.95623)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text334"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Hartford-West Hartford-East Hartford</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g336">
+        <path
+           inkscape:connector-curvature="0"
+           id="path338"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -148.13214,253.95446 a 294,294 0 0 1 -6.39923,-3.84238 l 7.35863,-11.9101 a 280,280 0 0 0 6.09451,3.65941 z" />
+        <g
+           id="g340"
+           transform="matrix(-0.51477535,0.85732511,-0.85732511,-0.51477535,-151.34395,252.05358)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text342"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Providence-New Bedford-Fall River</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g344">
+        <path
+           inkscape:connector-curvature="0"
+           id="path346"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -157.02473,248.55429 a 294,294 0 0 1 -2.67564,-1.71063 l 7.60478,-11.75446 a 280,280 0 0 0 2.54823,1.62917 z" />
+        <g
+           id="g348"
+           transform="matrix(-0.53865597,0.84252581,-0.84252581,-0.53865597,-158.36486,247.70259)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text350"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Worcester</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g352">
+        <path
+           inkscape:connector-curvature="0"
+           id="path354"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -162.16078,245.23434 a 294,294 0 0 1 -11.86186,-8.26995 l 8.28679,-11.28402 a 280,280 0 0 0 11.29702,7.87615 z" />
+        <g
+           id="g356"
+           transform="matrix(-0.57191347,0.82031396,-0.82031396,-0.57191347,-168.14256,241.1723)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text358"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Boston-Cambridge-Quincy</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g360">
+        <path
+           inkscape:connector-curvature="0"
+           id="path362"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -176.38354,235.21234 a 294,294 0 0 1 -1.04656,-0.78845 l 8.44905,-11.16304 a 280,280 0 0 0 0.99672,0.7509 z" />
+        <g
+           id="g364"
+           transform="matrix(-0.60172538,0.79870306,-0.79870306,-0.60172538,-176.90726,234.8187)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text366"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Manchester-Nashua</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g368">
+        <path
+           inkscape:connector-curvature="0"
+           id="path370"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -179.76543,232.6379 a 294,294 0 0 1 -1.26215,-0.98079 l 8.62036,-11.03129 a 280,280 0 0 0 1.20205,0.93408 z" />
+        <g
+           id="g372"
+           transform="matrix(-0.61359581,0.78962028,-0.78962028,-0.61359581,-180.39717,232.14836)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text374"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Portland-South Portland-Biddeford</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g376">
+        <path
+           inkscape:connector-curvature="0"
+           id="path378"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -183.33506,229.83528 a 294,294 0 0 1 -1.0187,-0.8163 l 8.77875,-10.90567 a 280,280 0 0 0 0.97019,0.77743 z" />
+        <g
+           id="g380"
+           transform="matrix(-0.62532266,0.78036631,-0.78036631,-0.62532266,-183.84486,229.42769)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text382"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of New Hampshire</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g384">
+        <path
+           inkscape:connector-curvature="0"
+           id="path386"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -186.63469,227.16402 a 294,294 0 0 1 -6.37793,-5.39358 l 9.19107,-10.5605 a 280,280 0 0 0 6.07422,5.13674 z" />
+        <g
+           id="g388"
+           transform="matrix(-0.64572386,0.76357102,-0.76357102,-0.64572386,-189.84281,224.48988)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text390"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Albany-Schenectady-Troy</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g392">
+        <path
+           inkscape:connector-curvature="0"
+           id="path394"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -195.22064,219.82926 a 294,294 0 0 1 -6.7095,-6.14674 l 9.61572,-10.17536 a 280,280 0 0 0 6.39,5.85404 z" />
+        <g
+           id="g396"
+           transform="matrix(-0.67550739,0.73735322,-0.73735322,-0.67550739,-198.59917,216.78185)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text398"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of New York</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g400">
+        <path
+           inkscape:connector-curvature="0"
+           id="path402"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -204.05683,211.65257 a 294,294 0 0 1 -1.00076,-0.96943 l 9.76465,-10.03253 a 280,280 0 0 0 0.9531,0.92326 z" />
+        <g
+           id="g404"
+           transform="matrix(-0.69577478,0.71826002,-0.71826002,-0.69577478,-204.55778,211.16845)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text406"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Utica-Rome</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g408">
+        <path
+           inkscape:connector-curvature="0"
+           id="path410"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -207.15413,208.62207 a 294,294 0 0 1 -2.802,-2.82017 l 9.99791,-9.80009 a 280,280 0 0 0 2.66857,2.68587 z" />
+        <g
+           id="g412"
+           transform="matrix(-0.7093874,0.70481878,-0.70481878,-0.7093874,-208.5599,207.21672)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text414"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Syracuse</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g416">
+        <path
+           inkscape:connector-curvature="0"
+           id="path418"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -212.00362,203.69209 a 294,294 0 0 1 -1.16422,-1.21871 l 10.15085,-9.64159 a 280,280 0 0 0 1.10878,1.16067 z" />
+        <g
+           id="g420"
+           transform="matrix(-0.72308368,0.69076044,-0.69076044,-0.72308368,-212.5866,203.08357)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text422"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Binghamton</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g424">
+        <path
+           inkscape:connector-curvature="0"
+           id="path426"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -215.18188,200.33162 a 294,294 0 0 1 -2.92011,-3.18315 l 10.38581,-9.38802 a 280,280 0 0 0 2.78105,3.03157 z" />
+        <g
+           id="g428"
+           transform="matrix(-0.73689723,0.67600479,-0.67600479,-0.73689723,-216.64778,198.74541)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text430"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rochester</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g432">
+        <path
+           inkscape:connector-curvature="0"
+           id="path434"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -220.06254,194.95763 a 294,294 0 0 1 -3.28452,-3.77162 l 10.63557,-9.1041 a 280,280 0 0 0 3.12812,3.59203 z" />
+        <g
+           id="g436"
+           transform="matrix(-0.75412524,0.65673063,-0.65673063,-0.75412524,-221.71282,193.0788)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text438"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Buffalo-Niagara Falls</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g440">
+        <path
+           inkscape:connector-curvature="0"
+           id="path442"
+           style="fill:#2ca02c;stroke:#ffffff;stroke-width:0px"
+           d="m -225.24772,188.94302 a 294,294 0 0 1 -2.80668,-3.39737 l 10.85973,-8.8355 a 280,280 0 0 0 2.67303,3.23558 z" />
+        <g
+           id="g444"
+           transform="matrix(-0.77094363,0.63690338,-0.63690338,-0.77094363,-226.65743,187.24959)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text446"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Pittsburgh</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g448">
+        <path
+           inkscape:connector-curvature="0"
+           id="path450"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -229.89843,183.25587 a 294,294 0 0 1 -1.13762,-1.43634 l 11.00171,-8.65807 a 280,280 0 0 0 1.08346,1.36794 z" />
+        <g
+           id="g452"
+           transform="matrix(-0.78390598,0.62087955,-0.62087955,-0.78390598,-230.46836,182.53859)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text454"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Akron</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g456">
+        <path
+           inkscape:connector-curvature="0"
+           id="path458"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -232.84267,179.50012 a 294,294 0 0 1 -3.1574,-4.17196 l 11.2381,-8.34896 a 280,280 0 0 0 3.00705,3.9733 z" />
+        <g
+           id="g460"
+           transform="matrix(-0.79738316,0.60347335,-0.60347335,-0.79738316,-234.43065,177.42117)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text462"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Cleveland-Elyria-Mentor</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g464">
+        <path
+           inkscape:connector-curvature="0"
+           id="path466"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -237.74153,172.95944 a 294,294 0 0 1 -3.96518,-5.586 l 11.50985,-7.97017 a 280,280 0 0 0 3.77636,5.32 z" />
+        <g
+           id="g468"
+           transform="matrix(-0.81544349,0.57883669,-0.57883669,-0.81544349,-239.74039,170.17799)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text470"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Columbus</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g472">
+        <path
+           inkscape:connector-curvature="0"
+           id="path474"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -243.36833,164.94804 a 294,294 0 0 1 -2.70362,-4.06113 l 11.71771,-7.66129 a 280,280 0 0 0 2.57488,3.86775 z" />
+        <g
+           id="g476"
+           transform="matrix(-0.83241008,0.55416014,-0.55416014,-0.83241008,-244.72856,162.92308)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text478"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Ohio</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g480">
+        <path
+           inkscape:connector-curvature="0"
+           id="path482"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -247.66849,158.41818 a 294,294 0 0 1 -2.32476,-3.69464 l 11.90444,-7.36779 a 280,280 0 0 0 2.21406,3.51871 z" />
+        <g
+           id="g484"
+           transform="matrix(-0.84638683,0.53256862,-0.53256862,-0.84638683,-248.83773,156.57517)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text486"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Cincinnati-Middletown</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g488">
+        <path
+           inkscape:connector-curvature="0"
+           id="path490"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -251.52796,152.21591 a 294,294 0 0 1 -2.29978,-3.86673 l 12.08703,-7.06425 a 280,280 0 0 0 2.19027,3.6826 z" />
+        <g
+           id="g492"
+           transform="matrix(-0.85947364,0.51118008,-0.51118008,-0.85947364,-252.68525,150.28694)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text494"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Detroit-Warren-Livonia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g496">
+        <path
+           inkscape:connector-curvature="0"
+           id="path498"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -255.29852,145.80352 a 294,294 0 0 1 -0.81609,-1.43834 l 12.19593,-6.87453 a 280,280 0 0 0 0.77724,1.36985 z" />
+        <g
+           id="g500"
+           transform="matrix(-0.86975365,0.49348615,-0.49348615,-0.86975365,-255.70757,145.08493)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text502"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Michigan</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g504">
+        <path
+           inkscape:connector-curvature="0"
+           id="path506"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -257.54543,141.79686 a 294,294 0 0 1 -0.69705,-1.27347 l 12.29726,-6.69159 a 280,280 0 0 0 0.66386,1.21283 z" />
+        <g
+           id="g508"
+           transform="matrix(-0.87719299,0.48013795,-0.48013795,-0.87719299,-257.89474,141.16056)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text510"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Grand Rapids-Wyoming</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g512">
+        <path
+           inkscape:connector-curvature="0"
+           id="path514"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -259.63477,137.93398 a 294,294 0 0 1 -0.69607,-1.31826 l 12.39671,-6.50551 a 280,280 0 0 0 0.66292,1.25549 z" />
+        <g
+           id="g516"
+           transform="matrix(-0.8842981,0.46692276,-0.46692276,-0.8842981,-259.98364,137.27529)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text518"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Kalamazoo-Portage</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g520">
+        <path
+           inkscape:connector-curvature="0"
+           id="path522"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -261.68396,134.00562 a 294,294 0 0 1 -1.57994,-3.13118 l 12.53637,-6.23212 a 280,280 0 0 0 1.50471,2.98208 z" />
+        <g
+           id="g524"
+           transform="matrix(-0.89278435,0.4504843,-0.4504843,-0.89278435,-262.4786,132.44238)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text526"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Indianapolis</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g528">
+        <path
+           inkscape:connector-curvature="0"
+           id="path530"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -264.55946,128.2353 a 294,294 0 0 1 -0.96797,-2.0165 l 12.64417,-6.01042 a 280,280 0 0 0 0.92187,1.92048 z" />
+        <g
+           id="g532"
+           transform="matrix(-0.90151484,0.43274819,-0.43274819,-0.90151484,-265.04536,127.22797)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text534"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Indiana</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g536">
+        <path
+           inkscape:connector-curvature="0"
+           id="path538"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -266.77632,123.55726 a 294,294 0 0 1 -0.73542,-1.60044 l 12.73865,-5.80746 a 280,280 0 0 0 0.70041,1.52422 z" />
+        <g
+           id="g540"
+           transform="matrix(-0.90865724,0.41754283,-0.41754283,-0.90865724,-267.14523,122.75759)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text542"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Illinois</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g544">
+        <path
+           inkscape:connector-curvature="0"
+           id="path546"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -268.71792,119.27565 a 294,294 0 0 1 -7.45042,-18.44387 l 13.15087,-4.801509 a 280,280 0 0 0 7.09565,17.565589 z" />
+        <g
+           id="g548"
+           transform="matrix(-0.92720803,0.37454676,-0.37454676,-0.92720803,-272.59916,110.11675)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text550"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Chicago-Naperville-Joliet</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g552">
+        <path
+           inkscape:connector-curvature="0"
+           id="path554"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -277.16283,98.065105 a 294,294 0 0 1 -0.76923,-2.201828 l 13.23486,-4.564918 a 280,280 0 0 0 0.7326,2.096979 z" />
+        <g
+           id="g556"
+           transform="matrix(-0.94404636,0.32981277,-0.32981277,-0.94404636,-277.54963,96.964954)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text558"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Milwaukee-Waukesha-West Allis</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g560">
+        <path
+           inkscape:connector-curvature="0"
+           id="path562"
+           style="fill:#98df8a;stroke:#ffffff;stroke-width:0px"
+           d="m -278.87678,93.07921 a 294,294 0 0 1 -0.69223,-2.100261 l 13.31281,-4.332331 a 280,280 0 0 0 0.65926,2.000248 z" />
+        <g
+           id="g564"
+           transform="matrix(-0.94974446,0.31302629,-0.31302629,-0.94974446,-279.22487,92.02973)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text566"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Wisconsin</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g568">
+        <path
+           inkscape:connector-curvature="0"
+           id="path570"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -280.46481,88.178756 a 294,294 0 0 1 -0.47395,-1.521902 l 13.37803,-4.126517 a 280,280 0 0 0 0.45139,1.449431 z" />
+        <g
+           id="g572"
+           transform="matrix(-0.95477148,0.29734057,-0.29734057,-0.95477148,-280.70282,87.418127)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text574"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Minnesota</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g576">
+        <path
+           inkscape:connector-curvature="0"
+           id="path578"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -281.79127,83.843181 a 294,294 0 0 1 -1.31446,-4.551672 l 13.48122,-3.775786 a 280,280 0 0 0 1.25187,4.334925 z" />
+        <g
+           id="g580"
+           transform="matrix(-0.96074038,0.27744895,-0.27744895,-0.96074038,-282.45767,81.569992)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text582"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Minneapolis-St. Paul-Bloomington</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g584">
+        <path
+           inkscape:connector-curvature="0"
+           id="path586"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -283.88448,76.456534 a 294,294 0 0 1 -0.53475,-2.013913 l 13.54378,-3.544887 a 280,280 0 0 0 0.50928,1.918013 z" />
+        <g
+           id="g588"
+           transform="matrix(-0.96650897,0.25663283,-0.25663283,-0.96650897,-284.15364,75.450051)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text590"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Iowa</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g592">
+        <path
+           inkscape:connector-curvature="0"
+           id="path594"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -285.14942,71.594754 a 294,294 0 0 1 -0.32576,-1.310173 l 13.59406,-3.346885 a 280,280 0 0 0 0.31024,1.247784 z" />
+        <g
+           id="g596"
+           transform="matrix(-0.97045255,0.24129202,-0.24129202,-0.97045255,-285.31305,70.939855)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text598"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Missouri</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g600">
+        <path
+           inkscape:connector-curvature="0"
+           id="path602"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -286.16374,67.426363 a 294,294 0 0 1 -1.74744,-7.901967 l 13.71006,-2.834495 a 280,280 0 0 0 1.66423,7.525683 z" />
+        <g
+           id="g604"
+           transform="matrix(-0.97641037,0.2159231,-0.2159231,-0.97641037,-287.06465,63.481392)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text606"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">St. Louis</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g608">
+        <path
+           inkscape:connector-curvature="0"
+           id="path610"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -288.49202,56.642356 a 294,294 0 0 1 -0.56248,-2.944171 l 13.7645,-2.557056 a 280,280 0 0 0 0.5357,2.803972 z" />
+        <g
+           id="g612"
+           transform="matrix(-0.98223473,0.18765642,-0.18765642,-0.98223473,-288.77701,55.170988)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text614"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Kansas City</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g616">
+        <path
+           inkscape:connector-curvature="0"
+           id="path618"
+           style="fill:#d62728;stroke:#ffffff;stroke-width:0px"
+           d="m -289.57702,50.805004 a 294,294 0 0 1 -0.23769,-1.373877 l 13.8007,-2.353863 a 280,280 0 0 0 0.22637,1.308454 z" />
+        <g
+           id="g620"
+           transform="matrix(-0.98536285,0.17047009,-0.17047009,-0.98536285,-289.69668,50.118206)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text622"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Kansas</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g624">
+        <path
+           inkscape:connector-curvature="0"
+           id="path626"
+           style="fill:#ff9896;stroke:#ffffff;stroke-width:0px"
+           d="m -290.29452,46.530557 a 294,294 0 0 1 -0.26582,-1.689867 l 13.8362,-2.135271 a 280,280 0 0 0 0.25317,1.609397 z" />
+        <g
+           id="g628"
+           transform="matrix(-0.98785258,0.15539393,-0.15539393,-0.98785258,-290.42866,45.685817)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text630"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Salt Lake City</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g632">
+        <path
+           inkscape:connector-curvature="0"
+           id="path634"
+           style="fill:#ff9896;stroke:#ffffff;stroke-width:0px"
+           d="m -290.99421,41.932893 a 294,294 0 0 1 -0.17114,-1.20524 l 13.86502,-1.939412 a 280,280 0 0 0 0.16298,1.147848 z" />
+        <g
+           id="g636"
+           transform="matrix(-0.9900694,0.14057946,-0.14057946,-0.9900694,-291.0804,41.330361)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text638"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Wyoming</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g640">
+        <path
+           inkscape:connector-curvature="0"
+           id="path642"
+           style="fill:#ff9896;stroke:#ffffff;stroke-width:0px"
+           d="m -291.55806,37.814011 a 294,294 0 0 1 -0.36572,-2.935542 l 13.90113,-1.660879 a 280,280 0 0 0 0.34831,2.795754 z" />
+        <g
+           id="g644"
+           transform="matrix(-0.9923286,0.12362823,-0.12362823,-0.9923286,-291.74461,36.3467)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text646"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Denver-Aurora</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g648">
+        <path
+           inkscape:connector-curvature="0"
+           id="path650"
+           style="fill:#ff9896;stroke:#ffffff;stroke-width:0px"
+           d="m -292.25796,31.957536 a 294,294 0 0 1 -0.36551,-3.540934 l 13.93445,-1.353171 a 280,280 0 0 0 0.3481,3.372318 z" />
+        <g
+           id="g652"
+           transform="matrix(-0.99471454,0.10267899,-0.10267899,-0.99471454,-292.44608,30.187622)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text654"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Phoenix-Mesa-Scottsdale</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g656">
+        <path
+           inkscape:connector-curvature="0"
+           id="path658"
+           style="fill:#ff9896;stroke:#ffffff;stroke-width:0px"
+           d="m -292.893,25.488996 a 294,294 0 0 1 -0.18378,-2.208138 l 13.95603,-1.108612 a 280,280 0 0 0 0.17503,2.102988 z" />
+        <g
+           id="g660"
+           transform="matrix(-0.99655433,0.08294252,-0.08294252,-0.99655433,-292.98697,24.3851)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text662"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Las Vegas-Paradise</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g664">
+        <path
+           inkscape:connector-curvature="0"
+           id="path666"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -293.29494,20.348975 a 294,294 0 0 1 -0.201,-3.140522 l 13.97599,-0.81945 a 280,280 0 0 0 0.19144,2.990973 z" />
+        <g
+           id="g668"
+           transform="matrix(-0.99795797,0.06387409,-0.06387409,-0.99795797,-293.39964,18.778983)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text670"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">San Diego-Carlsbad-San Marcos</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g672">
+        <path
+           inkscape:connector-curvature="0"
+           id="path674"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -293.65335,14.272682 a 294,294 0 0 1 -0.18615,-4.5594907 l 13.99235,-0.462533 a 280,280 0 0 0 0.17729,4.3423727 z" />
+        <g
+           id="g676"
+           transform="matrix(-0.9991676,0.04079353,-0.04079353,-0.9991676,-293.75527,11.993298)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text678"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Riverside-San Bernardino-Ontario</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g680">
+        <path
+           inkscape:connector-curvature="0"
+           id="path682"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -293.92194,6.7743595 a 294,294 0 0 1 0.47158,-24.7433375 l 13.97382,0.855666 a 280,280 0 0 0 -0.44912,23.565083 z" />
+        <g
+           id="g684"
+           transform="matrix(-0.99981843,-0.01905535,0.01905535,-0.99981843,-293.94662,-5.6022734)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text686"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Los Angeles-Long Beach-Santa Ana</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g688">
+        <path
+           inkscape:connector-curvature="0"
+           id="path690"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -293.256,-20.902534 a 294,294 0 0 1 0.11955,-1.614586 l 13.95888,1.072244 a 280,280 0 0 0 -0.11386,1.5377 z" />
+        <g
+           id="g692"
+           transform="matrix(-0.99726986,-0.07384323,0.07384323,-0.99726986,-293.19734,-21.709909)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text694"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Oxnard-Thousand Oaks-Ventura</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g696">
+        <path
+           inkscape:connector-curvature="0"
+           id="path698"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -292.89663,-25.44731 a 294,294 0 0 1 0.27719,-3.010814 l 13.93426,1.355149 a 280,280 0 0 0 -0.26399,2.867442 z" />
+        <g
+           id="g700"
+           transform="matrix(-0.99578879,-0.09167712,0.09167712,-0.99578879,-292.7619,-26.953073)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text702"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">San Jose-Sunnyvale-Santa Clara</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g704">
+        <path
+           inkscape:connector-curvature="0"
+           id="path706"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -292.32023,-31.382846 a 294,294 0 0 1 0.3988,-3.515297 l 13.90102,1.661816 a 280,280 0 0 0 -0.37981,3.347902 z" />
+        <g
+           id="g708"
+           transform="matrix(-0.99362625,-0.11272481,0.11272481,-0.99362625,-292.12612,-33.141095)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text710"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">San Francisco-Oakland-Fremont</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g712">
+        <path
+           inkscape:connector-curvature="0"
+           id="path714"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -291.55786,-37.815564 a 294,294 0 0 1 0.16327,-1.23818 l 13.87594,1.859702 a 280,280 0 0 0 -0.1555,1.179219 z" />
+        <g
+           id="g716"
+           transform="matrix(-0.99141795,-0.13073041,0.13073041,-0.99141795,-291.47688,-38.434741)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text718"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Sacramento--Arden-Arcade--Roseville</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g720">
+        <path
+           inkscape:connector-curvature="0"
+           id="path722"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -290.98949,-41.965689 a 294,294 0 0 1 0.27177,-1.84304 l 13.8437,2.08613 a 280,280 0 0 0 -0.25882,1.755276 z" />
+        <g
+           id="g724"
+           transform="matrix(-0.98930294,-0.14587559,0.14587559,-0.98930294,-290.85506,-42.887424)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text726"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Portland-Vancouver-Beaverton</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g728">
+        <path
+           inkscape:connector-curvature="0"
+           id="path730"
+           style="fill:#9467bd;stroke:#ffffff;stroke-width:0px"
+           d="m -290.26511,-46.713668 a 294,294 0 0 1 0.58395,-3.494159 l 13.79434,2.390849 a 280,280 0 0 0 -0.55614,3.327771 z" />
+        <g
+           id="g732"
+           transform="matrix(-0.98632108,-0.16483547,0.16483547,-0.98632108,-289.9784,-48.461627)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text734"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Seattle-Tacoma-Bellevue</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g736">
+        <path
+           inkscape:connector-curvature="0"
+           id="path738"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -289.16461,-53.10208 a 294,294 0 0 1 0.24684,-1.326967 l 13.75799,2.59186 a 280,280 0 0 0 -0.23508,1.263777 z" />
+        <g
+           id="g740"
+           transform="matrix(-0.98313588,-0.18287655,0.18287655,-0.98313588,-289.04195,-53.765705)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text742"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Australia and New Zealand</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g744">
+        <path
+           inkscape:connector-curvature="0"
+           id="path746"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -288.35904,-57.315455 a 294,294 0 0 1 1.56638,-7.383639 l 13.6568,3.080909 a 280,280 0 0 0 -1.4918,7.032037 z" />
+        <g
+           id="g748"
+           transform="matrix(-0.97822975,-0.20752484,0.20752484,-0.97822975,-287.59955,-61.012301)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text750"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Japan</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g752">
+        <path
+           inkscape:connector-curvature="0"
+           id="path754"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -286.13134,-67.563738 a 294,294 0 0 1 0.75044,-3.10269 l 13.58957,3.365068 a 280,280 0 0 0 -0.7147,2.954943 z" />
+        <g
+           id="g756"
+           transform="matrix(-0.9719739,-0.23508878,0.23508878,-0.9719739,-285.76033,-69.116102)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text758"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Republic of Korea</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g760">
+        <path
+           inkscape:connector-curvature="0"
+           id="path762"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -284.65997,-73.516656 a 294,294 0 0 1 7.0392,-23.244431 l 13.22004,4.607671 a 280,280 0 0 0 -6.70401,22.137553 z" />
+        <g
+           id="g764"
+           transform="matrix(-0.95707653,-0.28983534,0.28983534,-0.95707653,-281.3805,-85.21159)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text766"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">China</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g768">
+        <path
+           inkscape:connector-curvature="0"
+           id="path770"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -276.63929,-99.53241 a 294,294 0 0 1 1.49301,-4.05585 l 13.10221,4.932776 a 280,280 0 0 0 -1.42192,3.862712 z" />
+        <g
+           id="g772"
+           transform="matrix(-0.93843618,-0.34545265,0.34545265,-0.93843618,-275.90024,-101.56308)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text774"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of South-Eastern Asia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g776">
+        <path
+           inkscape:connector-curvature="0"
+           id="path778"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -274.09665,-106.3345 a 294,294 0 0 1 1.3205,-3.34309 l 12.98934,5.22274 a 280,280 0 0 0 -1.25762,3.1839 z" />
+        <g
+           id="g780"
+           transform="matrix(-0.93007316,-0.36737436,0.36737436,-0.93007316,-273.44151,-108.00806)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text782"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">India</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g784">
+        <path
+           inkscape:connector-curvature="0"
+           id="path786"
+           style="fill:#c5b0d5;stroke:#ffffff;stroke-width:0px"
+           d="m -271.66575,-112.39982 a 294,294 0 0 1 2.16605,-5.09874 l 12.83332,5.59517 a 280,280 0 0 0 -2.06291,4.85594 z" />
+        <g
+           id="g788"
+           transform="matrix(-0.92039025,-0.39100101,0.39100101,-0.92039025,-270.59473,-114.9543)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text790"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of Western Asia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g792">
+        <path
+           inkscape:connector-curvature="0"
+           id="path794"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -268.31126,-120.18764 a 294,294 0 0 1 0.97982,-2.16391 l 12.73007,5.82627 a 280,280 0 0 0 -0.93316,2.06086 z" />
+        <g
+           id="g796"
+           transform="matrix(-0.9109644,-0.41248498,0.41248498,-0.9109644,-267.82353,-121.27058)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text798"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Eastern Europe</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g800">
+        <path
+           inkscape:connector-curvature="0"
+           id="path802"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -266.09458,-125.0187 a 294,294 0 0 1 2.0137,-4.19929 l 12.57528,6.15323 a 280,280 0 0 0 -1.91781,3.99933 z" />
+        <g
+           id="g804"
+           transform="matrix(-0.90168722,-0.4323889,0.4323889,-0.90168722,-265.09604,-127.12234)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text806"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of Northern Europe</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g808">
+        <path
+           inkscape:connector-curvature="0"
+           id="path810"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -262.77551,-131.8523 a 294,294 0 0 1 2.82399,-5.4838 l 12.37864,6.53981 a 280,280 0 0 0 -2.68952,5.22267 z" />
+        <g
+           id="g812"
+           transform="matrix(-0.88904048,-0.4578286,0.4578286,-0.88904048,-261.3779,-134.60161)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text814"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">United Kingdom of Great Britain and Northern Ireland</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g816">
+        <path
+           inkscape:connector-curvature="0"
+           id="path818"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -258.56519,-139.92871 a 294,294 0 0 1 1.2314,-2.25188 l 12.25399,6.77051 a 280,280 0 0 0 -1.17276,2.14464 z" />
+        <g
+           id="g820"
+           transform="matrix(-0.87738758,-0.47978229,0.47978229,-0.87738758,-257.95195,-141.05599)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text822"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Netherlands</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g824">
+        <path
+           inkscape:connector-curvature="0"
+           id="path826"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -255.89914,-144.74677 a 294,294 0 0 1 3.06773,-5.29416 l 12.0396,7.14481 a 280,280 0 0 0 -2.92166,5.04205 z" />
+        <g
+           id="g828"
+           transform="matrix(-0.86523485,-0.50136678,0.50136678,-0.86523485,-254.37905,-147.40183)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text830"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Germany</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g832">
+        <path
+           inkscape:connector-curvature="0"
+           id="path834"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -251.31838,-152.5617 a 294,294 0 0 1 3.45662,-5.55392 l 11.80295,7.52931 a 280,280 0 0 0 -3.29203,5.28945 z" />
+        <g
+           id="g836"
+           transform="matrix(-0.84899835,-0.52839549,0.52839549,-0.84899835,-249.60552,-155.34828)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text838"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of Western Europe</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g840">
+        <path
+           inkscape:connector-curvature="0"
+           id="path842"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -246.26823,-160.58629 a 294,294 0 0 1 1.89765,-2.87325 l 11.63669,7.78379 a 280,280 0 0 0 -1.80728,2.73642 z" />
+        <g
+           id="g844"
+           transform="matrix(-0.83443406,-0.5511078,0.5511078,-0.83443406,-245.32361,-162.02569)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text846"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">France</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g848">
+        <path
+           inkscape:connector-curvature="0"
+           id="path850"
+           style="fill:#8c564b;stroke:#ffffff;stroke-width:0px"
+           d="m -242.72379,-165.89503 a 294,294 0 0 1 1.90254,-2.74994 l 11.46768,8.03071 a 280,280 0 0 0 -1.81195,2.619 z" />
+        <g
+           id="g852"
+           transform="matrix(-0.82236881,-0.56895477,0.56895477,-0.82236881,-241.77643,-167.2727)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text854"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of Southern Europe</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g856">
+        <path
+           inkscape:connector-curvature="0"
+           id="path858"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -239.12279,-171.04471 a 294,294 0 0 1 12.03084,-15.67767 l 10.8139,8.89154 a 280,280 0 0 0 -11.45794,14.93112 z" />
+        <g
+           id="g860"
+           transform="matrix(-0.79333038,-0.60879135,0.60879135,-0.79333038,-233.23913,-178.98466)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text862"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Canada</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g864">
+        <path
+           inkscape:connector-curvature="0"
+           id="path866"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -225.2134,-188.98393 a 294,294 0 0 1 2.35291,-2.76904 l 10.6124,9.13109 a 280,280 0 0 0 -2.24086,2.63719 z" />
+        <g
+           id="g868"
+           transform="matrix(-0.76204498,-0.64752409,0.64752409,-0.76204498,-224.04122,-190.37208)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text870"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Brazil</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g872">
+        <path
+           inkscape:connector-curvature="0"
+           id="path874"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -220.93185,-193.97195 a 294,294 0 0 1 1.70993,-1.93045 l 10.43914,9.32868 a 280,280 0 0 0 -1.62851,1.83853 z" />
+        <g
+           id="g876"
+           transform="matrix(-0.74856803,-0.66305799,0.66305799,-0.74856803,-220.079,-194.93905)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text878"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of South America</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g880">
+        <path
+           inkscape:connector-curvature="0"
+           id="path882"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -217.25196,-198.08479 a 294,294 0 0 1 0.84896,-0.92712 l 10.3049,9.47676 a 280,280 0 0 0 -0.80853,0.88297 z" />
+        <g
+           id="g884"
+           transform="matrix(-0.73751014,-0.67533606,0.67533606,-0.73751014,-216.82798,-198.5488)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text886"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Colombia</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g888">
+        <path
+           inkscape:connector-curvature="0"
+           id="path890"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -214.4021,-201.16595 a 294,294 0 0 1 1.63191,-1.72527 l 10.13191,9.66149 a 280,280 0 0 0 -1.55419,1.64311 z" />
+        <g
+           id="g892"
+           transform="matrix(-0.72648941,-0.68717766,0.68717766,-0.72648941,-213.58789,-202.03023)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text894"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Caribbean</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g896">
+        <path
+           inkscape:connector-curvature="0"
+           id="path898"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -210.73068,-205.00874 a 294,294 0 0 1 1.61408,-1.64616 l 9.95793,9.84071 a 280,280 0 0 0 -1.53721,1.56777 z" />
+        <g
+           id="g900"
+           transform="matrix(-0.71403147,-0.7001136,0.7001136,-0.71403147,-209.92525,-205.8334)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text902"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Remainder of Central America</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g904">
+        <path
+           inkscape:connector-curvature="0"
+           id="path906"
+           style="fill:#e377c2;stroke:#ffffff;stroke-width:0px"
+           d="m -207.03963,-208.73569 a 294,294 0 0 1 8.24039,-7.8627 l 9.46663,10.31421 a 280,280 0 0 0 -7.84799,7.48828 z" />
+        <g
+           id="g908"
+           transform="matrix(-0.69033169,-0.72349303,0.72349303,-0.69033169,-202.95752,-212.70695)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text910"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Mexico</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g912">
+        <path
+           inkscape:connector-curvature="0"
+           id="path914"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -196.62335,-218.57552 a 294,294 0 0 1 1.13402,-1.01483 l 9.30901,10.45669 a 280,280 0 0 0 -1.08002,0.9665 z" />
+        <g
+           id="g916"
+           transform="matrix(-0.66686054,-0.74518254,0.74518254,-0.66686054,-196.057,-219.08367)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text918"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Arkansas</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g920">
+        <path
+           inkscape:connector-curvature="0"
+           id="path922"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -193.28369,-221.53423 a 294,294 0 0 1 8.048,-6.77201 l 8.82075,10.87173 a 280,280 0 0 0 -7.66477,6.44953 z" />
+        <g
+           id="g924"
+           transform="matrix(-0.64384347,-0.76515723,0.76515723,-0.64384347,-189.28998,-224.95623)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text926"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Dallas-Fort Worth-Arlington</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g928">
+        <path
+           inkscape:connector-curvature="0"
+           id="path930"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -182.94341,-230.14715 a 294,294 0 0 1 2.99338,-2.34798 l 8.56905,11.0712 a 280,280 0 0 0 -2.85083,2.23617 z" />
+        <g
+           id="g932"
+           transform="matrix(-0.61717863,-0.78682307,0.78682307,-0.61717863,-181.45052,-231.32598)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text934"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Texas</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g936">
+        <path
+           inkscape:connector-curvature="0"
+           id="path938"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -177.61612,-234.28298 a 294,294 0 0 1 1.1472,-0.86532 l 8.40328,11.19754 a 280,280 0 0 0 -1.09257,0.82412 z" />
+        <g
+           id="g940"
+           transform="matrix(-0.60218724,-0.79835489,0.79835489,-0.60218724,-177.04305,-234.71634)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text942"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">San Antonio</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g944">
+        <path
+           inkscape:connector-curvature="0"
+           id="path946"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -174.10865,-236.9012 a 294,294 0 0 1 7.27227,-5.17652 l 7.94459,11.52751 a 280,280 0 0 0 -6.92597,4.93002 z" />
+        <g
+           id="g948"
+           transform="matrix(-0.57990531,-0.81468388,0.81468388,-0.57990531,-170.49216,-239.51706)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text950"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Houston-Baytown-Sugar Land</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g952">
+        <path
+           inkscape:connector-curvature="0"
+           id="path954"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -164.4073,-243.73395 a 294,294 0 0 1 1.11846,-0.75072 l 7.77566,11.64212 a 280,280 0 0 0 -1.0652,0.71498 z" />
+        <g
+           id="g956"
+           transform="matrix(-0.55730782,-0.83030596,0.83030596,-0.55730782,-163.8485,-244.10995)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text958"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Beaumont-Port Arthur</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g960">
+        <path
+           inkscape:connector-curvature="0"
+           id="path962"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -160.83587,-246.10531 a 294,294 0 0 1 1.17498,-0.76389 l 7.6029,11.75568 a 280,280 0 0 0 -1.11903,0.72751 z" />
+        <g
+           id="g964"
+           transform="matrix(-0.54506406,-0.8383944,0.8383944,-0.54506406,-160.24883,-246.48795)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text966"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Louisiana</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g968">
+        <path
+           inkscape:connector-curvature="0"
+           id="path970"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -157.18426,-248.45344 a 294,294 0 0 1 3.18919,-1.98921 l 7.3331,11.92584 a 280,280 0 0 0 -3.03732,1.89449 z" />
+        <g
+           id="g972"
+           transform="matrix(-0.52922735,-0.84848006,0.84848006,-0.52922735,-155.59284,-249.45314)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text974"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Baton Rouge</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g976">
+        <path
+           inkscape:connector-curvature="0"
+           id="path978"
+           style="fill:#1f77b4;stroke:#ffffff;stroke-width:0px"
+           d="m -151.48298,-251.97005 a 294,294 0 0 1 1.08825,-0.65106 l 7.16165,12.02958 a 280,280 0 0 0 -1.03643,0.62006 z" />
+        <g
+           id="g980"
+           transform="matrix(-0.51339867,-0.85815023,0.85815023,-0.51339867,-150.93921,-252.29617)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text982"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">New Orleans-Metairie-Kenner</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g984">
+        <path
+           inkscape:connector-curvature="0"
+           id="path986"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -147.86104,-254.1124 a 294,294 0 0 1 1.25466,-0.72592 l 6.98125,12.13516 a 280,280 0 0 0 -1.19491,0.69135 z" />
+        <g
+           id="g988"
+           transform="matrix(-0.50079646,-0.86556508,0.86556508,-0.50079646,-147.23416,-254.47613)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text990"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Mississippi</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g992">
+        <path
+           inkscape:connector-curvature="0"
+           id="path994"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -144.05071,-256.29162 a 294,294 0 0 1 3.26904,-1.81015 l 6.70389,12.29056 a 280,280 0 0 0 -3.11338,1.72396 z" />
+        <g
+           id="g996"
+           transform="matrix(-0.48441859,-0.87483634,0.87483634,-0.48441859,-142.41907,-257.20189)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text998"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Memphis</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1000">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1002"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -138.19365,-259.49666 a 294,294 0 0 1 2.41552,-1.27201 l 6.46562,12.41756 a 280,280 0 0 0 -2.30049,1.21144 z" />
+        <g
+           id="g1004"
+           transform="matrix(-0.46594343,-0.88481451,0.88481451,-0.46594343,-136.98737,-260.13547)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1006"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Nashville-Davidson--Murfreesboro</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1008">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1010"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -133.1637,-262.11339 a 294,294 0 0 1 2.52381,-1.26698 l 6.22095,12.54192 a 280,280 0 0 0 -2.40363,1.20665 z" />
+        <g
+           id="g1012"
+           transform="matrix(-0.44865074,-0.89370718,0.89370718,-0.44865074,-131.90332,-262.74991)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1014"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Louisville</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1016">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1018"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -127.9996,-264.67358 a 294,294 0 0 1 1.16845,-0.5619 l 6.03958,12.63026 a 280,280 0 0 0 -1.11281,0.53515 z" />
+        <g
+           id="g1020"
+           transform="matrix(-0.43338668,-0.90120807,0.90120807,-0.43338668,-127.41569,-264.95517)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1022"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Lexington-Fayette</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1024">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1026"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -124.1725,-266.49051 a 294,294 0 0 1 2.69547,-1.23945 l 5.78462,12.74905 a 280,280 0 0 0 -2.56711,1.18043 z" />
+        <g
+           id="g1028"
+           transform="matrix(-0.41777663,-0.90854977,0.90854977,-0.41777663,-122.82633,-267.11363)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1030"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Kentucky</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1032">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1034"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -118.7937,-268.93132 a 294,294 0 0 1 1.66721,-0.73029 l 5.57745,12.84103 a 280,280 0 0 0 -1.58782,0.69551 z" />
+        <g
+           id="g1036"
+           transform="matrix(-0.40122674,-0.91597877,0.91597877,-0.40122674,-117.96066,-269.29776)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1038"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Tennessee</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1040">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1042"
+           style="fill:#aec7e8;stroke:#ffffff;stroke-width:0px"
+           d="m -114.42406,-270.81937 a 294,294 0 0 1 1.66307,-0.69667 l 5.36957,12.92934 a 280,280 0 0 0 -1.58388,0.66349 z" />
+        <g
+           id="g1044"
+           transform="matrix(-0.38637095,-0.92234348,0.92234348,-0.38637095,-113.59306,-271.16898)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1046"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Rest of Alabama</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         id="g1048">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1050"
+           style="fill:#c7c7c7;stroke:#ffffff;stroke-width:0px"
+           d="M -110.04023,-272.63006 A 294,294 0 0 1 -2.939951,-293.9853 l 0.1399977,13.9993 a 280,280 0 0 0 -102.0002667,20.33833 z" />
+        <g
+           id="g1052"
+           transform="matrix(-0.19554546,-0.98069464,0.98069464,-0.19554546,-57.490366,-288.32422)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text1054"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Ubuntu Condensed;-inkscape-font-specification:'Ubuntu Condensed,'"
+             transform="matrix(-1,0,0,-1,16,0)"
+             dy="0"
+             x="8">Aggregate of Other Flows</text>
+        </g>
+      </g>
+      <g
+         transform="translate(526.31579,526.31579)"
+         class="chord"
+         id="g1056">
+        <path
+           d="M 17.063778,279.47957 A 280,280 0 0 1 -86.122053,266.42633 Q 0,0 -104.80022,-259.64767 A 280,280 0 0 1 -2.7999533,-279.986 Q 0,0 17.063778,279.47957 z"
+           style="fill:#c7c7c7;fill-opacity:1;stroke-width:0px"
+           id="path1058"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 144.49616,-239.83507 a 280,280 0 0 1 43.33448,32.18235 Q 0,0 267.41906,-82.988219 a 280,280 0 0 1 10.95469,52.854294 Q 0,0 144.49616,-239.83507 z"
+           style="fill:#2ca02c;fill-opacity:1;stroke-width:0px"
+           id="path1060"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 203.03059,192.81748 a 280,280 0 0 1 -16.93558,16.3921 Q 0,0 -279.92566,6.451771 a 280,280 0 0 1 0.44912,-23.565083 Q 0,0 203.03059,192.81748 z"
+           style="fill:#9467bd;fill-opacity:1;stroke-width:0px"
+           id="path1062"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 166.18215,225.35193 a 280,280 0 0 1 -19.16713,12.94743 Q 0,0 -271.10474,-70.015863 a 280,280 0 0 1 6.70401,-22.137553 Q 0,0 166.18215,225.35193 z"
+           style="fill:#c5b0d5;fill-opacity:1;stroke-width:0px"
+           id="path1064"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 240.88901,142.73222 a 280,280 0 0 1 -10.203,15.96235 Q 0,0 -255.92182,113.59586 a 280,280 0 0 1 -7.09565,-17.565589 Q 0,0 240.88901,142.73222 z"
+           style="fill:#98df8a;fill-opacity:1;stroke-width:0px"
+           id="path1066"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 105.73438,259.26866 a 280,280 0 0 1 -17.656317,6.51745 Q 0,0 -227.73599,-162.89972 a 280,280 0 0 1 11.45794,-14.93112 Q 0,0 105.73438,259.26866 z"
+           style="fill:#e377c2;fill-opacity:1;stroke-width:0px"
+           id="path1068"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 112.64395,-256.34223 a 280,280 0 0 1 13.22316,6.22731 Q 0,0 260.11725,-103.62923 a 280,280 0 0 1 5.05325,13.714802 Q 0,0 112.64395,-256.34223 z"
+           style="fill:#ff7f0e;fill-opacity:1;stroke-width:0px"
+           id="path1070"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 274.07461,57.298418 a 280,280 0 0 1 -3.14883,13.406755 Q 0,0 -154.43883,233.55652 a 280,280 0 0 1 -11.29702,-7.87615 Q 0,0 274.07461,57.298418 z"
+           style="fill:#2ca02c;fill-opacity:1;stroke-width:0px"
+           id="path1072"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 77.022027,269.19808 a 280,280 0 0 1 -10.484735,2.78131 Q 0,0 -197.1806,-198.7959 a 280,280 0 0 1 7.84799,-7.48828 Q 0,0 77.022027,269.19808 z"
+           style="fill:#e377c2;fill-opacity:1;stroke-width:0px"
+           id="path1074"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 65.128588,272.32016 a 280,280 0 0 1 -9.782607,2.15538 Q 0,0 -184.07971,-210.98498 a 280,280 0 0 1 7.66477,-6.44953 Q 0,0 65.128588,272.32016 z"
+           style="fill:#1f77b4;fill-opacity:1;stroke-width:0px"
+           id="path1076"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 277.46921,37.56111 a 280,280 0 0 1 -1.50084,9.782935 Q 0,0 -129.96861,248.00839 a 280,280 0 0 1 -8.68399,-4.74833 Q 0,0 277.46921,37.56111 z"
+           style="fill:#2ca02c;fill-opacity:1;stroke-width:0px"
+           id="path1078"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 218.45223,-175.15314 a 280,280 0 0 1 5.86932,7.58273 Q 0,0 279.9537,-5.0915101 a 280,280 0 0 1 0.0102,9.5888714 Q 0,0 218.45223,-175.15314 z"
+           style="fill:#2ca02c;fill-opacity:1;stroke-width:0px"
+           id="path1080"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 101.61768,-260.90965 a 280,280 0 0 1 8.45726,3.45382 Q 0,0 256.59823,-112.05957 a 280,280 0 0 1 3.51902,8.43034 Q 0,0 101.61768,-260.90965 z"
+           style="fill:#ff7f0e;fill-opacity:0.99468898;stroke-width:0px"
+           id="path1082"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 10.636605,-279.7979 a 280,280 0 0 1 8.717951,0.46763 Q 0,0 233.41589,-154.65129 a 280,280 0 0 1 4.70802,7.35227 Q 0,0 10.636605,-279.7979 z"
+           style="fill:#ff7f0e;fill-opacity:0.95282102;stroke-width:0px"
+           id="path1084"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 267.65689,82.217949 a 280,280 0 0 1 -2.67258,8.243736 Q 0,0 -185.92442,209.3612 a 280,280 0 0 1 -6.39,-5.85404 Q 0,0 267.65689,82.217949 z"
+           style="fill:#2ca02c;fill-opacity:0.94616597;stroke-width:0px"
+           id="path1086"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 50.444155,275.41857 a 280,280 0 0 1 -8.384608,1.40447 Q 0,0 -165.81776,-225.62019 a 280,280 0 0 1 6.92597,-4.93002 Q 0,0 50.444155,275.41857 z"
+           style="fill:#1f77b4;fill-opacity:0.92913196;stroke-width:0px"
+           id="path1088"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 269.8845,74.581198 a 280,280 0 0 1 -2.22761,7.636751 Q 0,0 -177.74733,216.34668 a 280,280 0 0 1 -6.07422,-5.13674 Q 0,0 269.8845,74.581198 z"
+           style="fill:#2ca02c;fill-opacity:0.872624;stroke-width:0px"
+           id="path1090"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 279.36127,18.901904 a 280,280 0 0 1 -0.63996,7.82692 Q 0,0 -102.74052,260.46955 a 280,280 0 0 1 -7.26415,-2.98368 Q 0,0 279.36127,18.901904 z"
+           style="fill:#2ca02c;fill-opacity:0.86207802;stroke-width:0px"
+           id="path1092"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 222.69208,169.72989 a 280,280 0 0 1 -4.75604,6.06512 Q 0,0 -272.53689,64.215584 a 280,280 0 0 1 -1.66423,-7.525683 Q 0,0 222.69208,169.72989 z"
+           style="fill:#d62728;fill-opacity:0.84702699;stroke-width:0px"
+           id="path1094"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 279.8334,9.65765 a 280,280 0 0 1 -0.36323,7.55936 Q 0,0 -88.781966,265.55181 a 280,280 0 0 1 -7.144478,-2.49646 Q 0,0 279.8334,9.65765 z"
+           style="fill:#2ca02c;fill-opacity:0.83260899;stroke-width:0px"
+           id="path1096"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 207.44215,-188.06317 a 280,280 0 0 1 4.99646,5.66296 Q 0,0 279.51623,-16.452247 a 280,280 0 0 1 0.34204,7.5443093 Q 0,0 207.44215,-188.06317 z"
+           style="fill:#2ca02c;fill-opacity:0.830952;stroke-width:0px"
+           id="path1098"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 37.304272,-277.50386 a 280,280 0 0 1 7.231098,1.06833 Q 0,0 241.6536,-141.43386 a 280,280 0 0 1 3.60957,6.35619 Q 0,0 37.304272,-277.50386 z"
+           style="fill:#ff7f0e;fill-opacity:0.80587697;stroke-width:0px"
+           id="path1100"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 174.30194,219.132 a 280,280 0 0 1 -5.68282,4.40232 Q 0,0 -274.62766,-54.586148 a 280,280 0 0 1 1.4918,-7.032037 Q 0,0 174.30194,219.132 z"
+           style="fill:#c5b0d5;fill-opacity:0.793358;stroke-width:0px"
+           id="path1102"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 275.96837,47.344045 a 280,280 0 0 1 -1.29083,6.990569 Q 0,0 -141.07823,241.86139 a 280,280 0 0 1 -6.09451,-3.65941 Q 0,0 275.96837,47.344045 z"
+           style="fill:#2ca02c;fill-opacity:0.785107;stroke-width:0px"
+           id="path1104"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 255.24121,115.117 a 280,280 0 0 1 -2.75135,5.91552 Q 0,0 -226.4205,164.72327 a 280,280 0 0 1 -3.77636,-5.32 Q 0,0 255.24121,115.117 z"
+           style="fill:#98df8a;fill-opacity:0.72464199;stroke-width:0px"
+           id="path1106"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 117.37626,254.21018 a 280,280 0 0 1 -5.68509,2.54862 Q 0,0 -239.35084,-145.29686 a 280,280 0 0 1 3.29203,-5.28945 Q 0,0 117.37626,254.21018 z"
+           style="fill:#8c564b;fill-opacity:0.69425599;stroke-width:0px"
+           id="path1108"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 278.72131,26.728824 a 280,280 0 0 1 -0.6623,6.182969 Q 0,0 -112.57398,256.37297 a 280,280 0 0 1 -5.66551,-2.56315 Q 0,0 278.72131,26.728824 z"
+           style="fill:#2ca02c;fill-opacity:0.69302703;stroke-width:0px"
+           id="path1110"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 130.0645,247.95811 a 280,280 0 0 1 -5.23059,2.67408 Q 0,0 -250.2624,-125.57362 a 280,280 0 0 1 2.68952,-5.22267 Q 0,0 130.0645,247.95811 z"
+           style="fill:#8c564b;fill-opacity:0.65746999;stroke-width:0px"
+           id="path1112"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 122.64119,251.71241 a 280,280 0 0 1 -5.26493,2.49777 Q 0,0 -243.71347,-137.85407 a 280,280 0 0 1 2.92166,-5.04205 Q 0,0 122.64119,251.71241 z"
+           style="fill:#8c564b;fill-opacity:0.65259699;stroke-width:0px"
+           id="path1114"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 194.49153,-201.42751 a 280,280 0 0 1 3.81759,3.75735 Q 0,0 278.73033,-26.634614 a 280,280 0 0 1 0.4585,5.336805 Q 0,0 194.49153,-201.42751 z"
+           style="fill:#2ca02c;fill-opacity:0.60389901;stroke-width:0px"
+           id="path1116"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 140.5459,242.17112 a 280,280 0 0 1 -4.58791,2.60515 Q 0,0 -258.72929,-107.04745 a 280,280 0 0 1 2.06291,-4.85594 Q 0,0 140.5459,242.17112 z"
+           style="fill:#c5b0d5;fill-opacity:0.59557352;stroke-width:0px"
+           id="path1118"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 225.98601,-165.31886 a 280,280 0 0 1 3.0092,4.19408 Q 0,0 279.96388,4.4973613 A 280,280 0 0 1 279.8334,9.65765 Q 0,0 225.98601,-165.31886 z"
+           style="fill:#2ca02c;fill-opacity:0.58378296;stroke-width:0px"
+           id="path1120"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 257.24935,110.55664 a 280,280 0 0 1 -2.00814,4.56036 Q 0,0 -221.75492,170.9525 a 280,280 0 0 1 -3.00705,-3.9733 Q 0,0 257.24935,110.55664 z"
+           style="fill:#98df8a;fill-opacity:0.56526998;stroke-width:0px"
+           id="path1122"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 261.28723,100.64286 a 280,280 0 0 1 -1.74981,4.43011 Q 0,0 -209.58337,185.67394 a 280,280 0 0 1 -3.12812,-3.59203 Q 0,0 261.28723,100.64286 z"
+           style="fill:#2ca02c;fill-opacity:0.54254599;stroke-width:0px"
+           id="path1124"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 252.48986,121.03252 a 280,280 0 0 1 -2.04316,4.17312 Q 0,0 -231.77936,157.09337 a 280,280 0 0 1 -2.57488,-3.86775 Q 0,0 252.48986,121.03252 z"
+           style="fill:#98df8a;fill-opacity:0.53047599;stroke-width:0px"
+           id="path1126"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 227.32297,163.47559 a 280,280 0 0 1 -2.66377,3.64186 Q 0,0 -268.37264,79.850648 a 280,280 0 0 1 -1.25187,-4.334925 Q 0,0 227.32297,163.47559 z"
+           style="fill:#d62728;fill-opacity:0.51657996;stroke-width:0px"
+           id="path1128"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 133.97588,245.86676 a 280,280 0 0 1 -3.91138,2.09135 Q 0,0 -253.42341,-119.06543 a 280,280 0 0 1 1.91781,-3.99933 Q 0,0 133.97588,245.86676 z"
+           style="fill:#8c564b;fill-opacity:0.50865;stroke-width:0px"
+           id="path1130"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 205.99884,189.64303 a 280,280 0 0 1 -2.96825,3.17445 Q 0,0 -279.66986,13.593031 a 280,280 0 0 1 -0.17729,-4.3423727 Q 0,0 205.99884,189.64303 z"
+           style="fill:#9467bd;fill-opacity:0.49940604;stroke-width:0px"
+           id="path1132"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 248.56014,128.91027 a 280,280 0 0 1 -2.0017,3.7884 Q 0,0 -239.55044,144.96753 a 280,280 0 0 1 -2.19027,-3.6826 Q 0,0 248.56014,128.91027 z"
+           style="fill:#98df8a;fill-opacity:0.49307;stroke-width:0px"
+           id="path1134"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 259.53742,105.07297 a 280,280 0 0 1 -1.60405,3.87829 Q 0,0 -214.52164,179.94573 a 280,280 0 0 1 -2.67303,-3.23558 Q 0,0 259.53742,105.07297 z"
+           style="fill:#2ca02c;fill-opacity:0.48399;stroke-width:0px"
+           id="path1136"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 250.4467,125.20564 a 280,280 0 0 1 -1.88656,3.70463 Q 0,0 -235.87475,150.87446 a 280,280 0 0 1 -2.21406,-3.51871 Q 0,0 250.4467,125.20564 z"
+           style="fill:#98df8a;fill-opacity:0.47989699;stroke-width:0px"
+           id="path1138"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 147.01502,238.29936 a 280,280 0 0 1 -3.51889,2.13537 Q 0,0 -263.46599,-94.792772 a 280,280 0 0 1 1.42192,-3.862712 Q 0,0 147.01502,238.29936 z"
+           style="fill:#c5b0d5;fill-opacity:0.475635;stroke-width:0px"
+           id="path1140"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 262.7377,96.793082 a 280,280 0 0 1 -1.45047,3.849778 Q 0,0 -204.93513,190.79202 a 280,280 0 0 1 -2.78105,-3.03157 Q 0,0 262.7377,96.793082 z"
+           style="fill:#2ca02c;fill-opacity:0.47541205;stroke-width:0px"
+           id="path1142"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 55.41363,-274.46189 a 280,280 0 0 1 3.939735,0.82494 Q 0,0 246.53369,-132.74463 a 280,280 0 0 1 1.88277,3.5577 Q 0,0 55.41363,-274.46189 z"
+           style="fill:#ff7f0e;fill-opacity:0.46623098;stroke-width:0px"
+           id="path1144"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 62.086721,-273.02974 a 280,280 0 0 1 3.786576,0.88877 Q 0,0 248.41646,-129.18693 a 280,280 0 0 1 1.77052,3.46313 Q 0,0 62.086721,-273.02974 z"
+           style="fill:#ff7f0e;fill-opacity:0.452199;stroke-width:0px"
+           id="path1146"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 214.25196,-180.26674 a 280,280 0 0 1 2.43785,2.93787 Q 0,0 279.85827,-8.9079377 a 280,280 0 0 1 0.0954,3.8164276 Q 0,0 214.25196,-180.26674 z"
+           style="fill:#2ca02c;fill-opacity:0.44476803;stroke-width:0px"
+           id="path1148"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 264.55263,91.716457 a 280,280 0 0 1 -1.26436,3.568835 Q 0,0 -197.28965,198.68768 a 280,280 0 0 1 -2.66857,-2.68587 Q 0,0 264.55263,91.716457 z"
+           style="fill:#2ca02c;fill-opacity:0.44151701;stroke-width:0px"
+           id="path1150"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 55.345981,274.47554 a 280,280 0 0 1 -3.556289,0.69319 Q 0,0 -174.23181,-219.18776 a 280,280 0 0 1 2.85083,-2.23617 Q 0,0 55.345981,274.47554 z"
+           style="fill:#1f77b4;fill-opacity:0.42466502;stroke-width:0px"
+           id="path1152"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 39.469814,277.20414 a 280,280 0 0 1 -3.547128,0.48194 Q 0,0 -149.69929,-236.62232 a 280,280 0 0 1 3.03732,-1.89449 Q 0,0 39.469814,277.20414 z"
+           style="fill:#1f77b4;fill-opacity:0.42016703;stroke-width:0px"
+           id="path1154"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 33.354324,278.00628 a 280,280 0 0 1 -3.536094,0.40147 Q 0,0 -137.19116,-244.08725 a 280,280 0 0 1 3.11338,-1.72396 Q 0,0 33.354324,278.00628 z"
+           style="fill:#aec7e8;fill-opacity:0.41800501;stroke-width:0px"
+           id="path1156"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4.2934683,-279.96708 a 280,280 0 0 1 3.5446729,0.0768 Q 0,0 231.43894,-157.59446 a 280,280 0 0 1 1.97695,2.94317 Q 0,0 4.2934683,-279.96708 z"
+           style="fill:#ff7f0e;fill-opacity:0.41662903;stroke-width:0px"
+           id="path1158"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 189.89774,-205.76406 a 280,280 0 0 1 2.56983,2.40174 Q 0,0 278.37375,-30.133925 a 280,280 0 0 1 0.35658,3.499311 Q 0,0 189.89774,-205.76406 z"
+           style="fill:#2ca02c;fill-opacity:0.41372603;stroke-width:0px"
+           id="path1160"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 88.078063,265.78611 a 280,280 0 0 1 -3.291655,1.06828 Q 0,0 -214.48895,-179.98469 a 280,280 0 0 1 2.24086,-2.63719 Q 0,0 88.078063,265.78611 z"
+           style="fill:#e377c2;fill-opacity:0.407856;stroke-width:0px"
+           id="path1162"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 143.49613,240.43473 a 280,280 0 0 1 -2.95023,1.73639 Q 0,0 -261.04443,-101.27095 a 280,280 0 0 1 1.25762,-3.1839 Q 0,0 143.49613,240.43473 z"
+           style="fill:#c5b0d5;fill-opacity:0.40399002;stroke-width:0px"
+           id="path1164"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 211.65851,183.30487 a 280,280 0 0 1 -2.23493,2.54928 Q 0,0 -278.34092,30.435749 a 280,280 0 0 1 -0.3481,-3.372318 Q 0,0 211.65851,183.30487 z"
+           style="fill:#ff9896;fill-opacity:0.40057301;stroke-width:0px"
+           id="path1166"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 177.92416,216.20128 a 280,280 0 0 1 -2.61804,2.12821 Q 0,0 -276.44296,-44.489207 a 280,280 0 0 1 0.55614,-3.327771 Q 0,0 177.92416,216.20128 z"
+           style="fill:#9467bd;fill-opacity:0.39888599;stroke-width:0px"
+           id="path1168"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 182.7683,212.12201 a 280,280 0 0 1 -2.56575,2.18394 Q 0,0 -278.40022,-29.888425 a 280,280 0 0 1 0.37981,-3.347902 Q 0,0 182.7683,212.12201 z"
+           style="fill:#9467bd;fill-opacity:0.39841602;stroke-width:0px"
+           id="path1170"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 244.45385,136.53687 a 280,280 0 0 1 -1.64615,2.90639 Q 0,0 -249.22282,127.6244 a 280,280 0 0 1 -1.50471,-2.98208 Q 0,0 244.45385,136.53687 z"
+           style="fill:#98df8a;fill-opacity:0.39539903;stroke-width:0px"
+           id="path1172"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 111.69117,256.7588 a 280,280 0 0 1 -3.01478,1.2905 Q 0,0 -234.54117,-152.93933 a 280,280 0 0 1 1.80728,-2.73642 Q 0,0 111.69117,256.7588 z"
+           style="fill:#8c564b;fill-opacity:0.38910899;stroke-width:0px"
+           id="path1174"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 108.67639,258.0493 a 280,280 0 0 1 -2.94201,1.21936 Q 0,0 -231.16552,-157.99526 a 280,280 0 0 1 1.81195,-2.619 Q 0,0 108.67639,258.0493 z"
+           style="fill:#8c564b;fill-opacity:0.379318;stroke-width:0px"
+           id="path1176"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 85.935557,-266.48655 a 280,280 0 0 1 3.015589,0.99136 Q 0,0 253.18699,-119.56733 a 280,280 0 0 1 1.33925,2.87802 Q 0,0 85.935557,-266.48655 z"
+           style="fill:#ff7f0e;fill-opacity:0.37825;stroke-width:0px"
+           id="path1178"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 168.61912,223.53432 a 280,280 0 0 1 -2.43697,1.81761 Q 0,0 -272.50603,-64.346417 a 280,280 0 0 1 0.7147,-2.954943 Q 0,0 168.61912,223.53432 z"
+           style="fill:#c5b0d5;fill-opacity:0.36437103;stroke-width:0px"
+           id="path1180"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 274.67754,54.334614 a 280,280 0 0 1 -0.60293,2.963804 Q 0,0 -149.54736,236.71837 a 280,280 0 0 1 -2.54823,-1.62917 Q 0,0 274.67754,54.334614 z"
+           style="fill:#2ca02c;fill-opacity:0.36275401;stroke-width:0px"
+           id="path1182"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 208.01693,187.42721 a 280,280 0 0 1 -2.01809,2.21582 Q 0,0 -279.32851,19.379976 a 280,280 0 0 1 -0.19144,-2.990973 Q 0,0 208.01693,187.42721 z"
+           style="fill:#9467bd;fill-opacity:0.35991905;stroke-width:0px"
+           id="path1184"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 184.94011,210.2312 a 280,280 0 0 1 -2.17181,1.89081 Q 0,0 -278.94917,-24.235533 a 280,280 0 0 1 0.26399,-2.867442 Q 0,0 184.94011,210.2312 z"
+           style="fill:#9467bd;fill-opacity:0.34776605;stroke-width:0px"
+           id="path1186"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 22.146844,-279.12276 a 280,280 0 0 1 2.857693,0.24147 Q 0,0 238.12391,-147.29902 a 280,280 0 0 1 1.49619,2.44666 Q 0,0 22.146844,-279.12276 z"
+           style="fill:#ff7f0e;fill-opacity:0.34655702;stroke-width:0px"
+           id="path1188"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 217.93604,175.79501 a 280,280 0 0 1 -1.80359,2.21276 Q 0,0 -274.7543,53.945101 A 280,280 0 0 1 -275.29,51.141129 Q 0,0 217.93604,175.79501 z"
+           style="fill:#d62728;fill-opacity:0.345193;stroke-width:0px"
+           id="path1190"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 23.323532,279.0269 a 280,280 0 0 1 -2.816842,0.22115 Q 0,0 -118.25952,-253.80048 a 280,280 0 0 1 2.56711,-1.18043 Q 0,0 23.323532,279.0269 z"
+           style="fill:#aec7e8;fill-opacity:0.34217601;stroke-width:0px"
+           id="path1192"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 213.49219,181.1659 a 280,280 0 0 1 -1.83368,2.13897 Q 0,0 -277.67434,36.013344 a 280,280 0 0 1 -0.34831,-2.795754 Q 0,0 213.49219,181.1659 z"
+           style="fill:#ff9896;fill-opacity:0.34133403;stroke-width:0px"
+           id="path1194"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 277.83083,34.785487 a 280,280 0 0 1 -0.36162,2.775623 Q 0,0 -124.98359,250.55758 a 280,280 0 0 1 -2.49848,-1.26193 Q 0,0 277.83083,34.785487 z"
+           style="fill:#2ca02c;fill-opacity:0.33944301;stroke-width:0px"
+           id="path1196"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 96.398354,-262.88278 a 280,280 0 0 1 2.605196,0.97001 Q 0,0 255.47304,-114.6016 a 280,280 0 0 1 1.12519,2.54203 Q 0,0 96.398354,-262.88278 z"
+           style="fill:#ff7f0e;fill-opacity:0.337462;stroke-width:0px"
+           id="path1198"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 27.231782,278.67262 a 280,280 0 0 1 -2.677979,0.24871 Q 0,0 -126.82257,-249.6318 a 280,280 0 0 1 2.40363,-1.20665 Q 0,0 27.231782,278.67262 z"
+           style="fill:#aec7e8;fill-opacity:0.32811202;stroke-width:0px"
+           id="path1200"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 203.75812,-192.04851 a 280,280 0 0 1 1.79306,1.92036 Q 0,0 279.34955,-19.074278 a 280,280 0 0 1 0.16668,2.622031 Q 0,0 203.75812,-192.04851 z"
+           style="fill:#2ca02c;fill-opacity:0.32168202;stroke-width:0px"
+           id="path1202"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 29.81823,278.40775 a 280,280 0 0 1 -2.586448,0.26487 Q 0,0 -131.613,-247.13967 a 280,280 0 0 1 2.30049,-1.21144 Q 0,0 29.81823,278.40775 z"
+           style="fill:#aec7e8;fill-opacity:0.318854;stroke-width:0px"
+           id="path1204"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 84.786408,266.85439 a 280,280 0 0 1 -2.343988,0.73344 Q 0,0 -210.41129,-184.73519 a 280,280 0 0 1 1.62851,-1.83853 Q 0,0 84.786408,266.85439 z"
+           style="fill:#e377c2;fill-opacity:0.30397201;stroke-width:0px"
+           id="path1206"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 124.83391,250.63219 a 280,280 0 0 1 -2.19272,1.08022 Q 0,0 -246.25256,-133.26544 a 280,280 0 0 1 1.17276,-2.14464 Q 0,0 124.83391,250.63219 z"
+           style="fill:#8c564b;fill-opacity:0.30276202;stroke-width:0px"
+           id="path1208"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 68.591367,-271.46864 a 280,280 0 0 1 2.296003,0.59047 Q 0,0 250.18698,-125.7238 a 280,280 0 0 1 1.05551,2.12278 Q 0,0 68.591367,-271.46864 z"
+           style="fill:#ff7f0e;fill-opacity:0.29514699;stroke-width:0px"
+           id="path1210"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 91.601607,-264.59241 a 280,280 0 0 1 2.163143,0.7588 Q 0,0 254.52624,-116.68931 a 280,280 0 0 1 0.9468,2.08771 Q 0,0 91.601607,-264.59241 z"
+           style="fill:#ff7f0e;fill-opacity:0.28704601;stroke-width:0px"
+           id="path1212"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 135.95799,244.77627 a 280,280 0 0 1 -1.98211,1.09049 Q 0,0 -255.53453,-114.46442 a 280,280 0 0 1 0.93316,-2.06086 Q 0,0 135.95799,244.77627 z"
+           style="fill:#8c564b;fill-opacity:0.28393501;stroke-width:0px"
+           id="path1214"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 81.29751,267.93789 a 280,280 0 0 1 -2.166912,0.64794 Q 0,0 -204.19247,-191.58662 a 280,280 0 0 1 1.55419,-1.64311 Q 0,0 81.29751,267.93789 z"
+           style="fill:#e377c2;fill-opacity:0.28387499;stroke-width:0px"
+           id="path1216"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 200.27588,-195.67722 a 280,280 0 0 1 1.5516,1.60077 Q 0,0 279.18883,-21.297809 a 280,280 0 0 1 0.16072,2.223531 Q 0,0 200.27588,-195.67722 z"
+           style="fill:#2ca02c;fill-opacity:0.28052703;stroke-width:0px"
+           id="path1218"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 230.68601,158.69457 a 280,280 0 0 1 -1.26619,1.82505 Q 0,0 -263.9646,93.395338 a 280,280 0 0 1 -0.7326,-2.096979 Q 0,0 230.68601,158.69457 z"
+           style="fill:#98df8a;fill-opacity:0.27969301;stroke-width:0px"
+           id="path1220"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 79.130598,268.58583 a 280,280 0 0 1 -2.108571,0.61225 Q 0,0 -200.69588,-195.24642 a 280,280 0 0 1 1.53721,-1.56777 Q 0,0 79.130598,268.58583 z"
+           style="fill:#e377c2;fill-opacity:0.27704504;stroke-width:0px"
+           id="path1222"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 242.8077,139.44326 a 280,280 0 0 1 -1.06793,1.84327 Q 0,0 -251.96139,122.12886 a 280,280 0 0 1 -0.92187,-1.92048 Q 0,0 242.8077,139.44326 z"
+           style="fill:#98df8a;fill-opacity:0.27028402;stroke-width:0px"
+           id="path1224"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 209.42358,185.85415 a 280,280 0 0 1 -1.40665,1.57306 Q 0,0 -278.94572,24.275234 a 280,280 0 0 1 -0.17503,-2.102988 Q 0,0 209.42358,185.85415 z"
+           style="fill:#ff9896;fill-opacity:0.26821403;stroke-width:0px"
+           id="path1226"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 229.41982,160.51962 a 280,280 0 0 1 -1.21387,1.72108 Q 0,0 -265.59694,88.646866 a 280,280 0 0 1 -0.65926,-2.000248 Q 0,0 229.41982,160.51962 z"
+           style="fill:#98df8a;fill-opacity:0.26778301;stroke-width:0px"
+           id="path1228"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 136.68851,-244.36909 a 280,280 0 0 1 1.80936,1.0209 Q 0,0 266.38271,-86.256886 a 280,280 0 0 1 0.63266,1.97883 Q 0,0 136.68851,-244.36909 z"
+           style="fill:#2ca02c;fill-opacity:0.26482711;stroke-width:0px"
+           id="path1230"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 81.286066,-267.94137 a 280,280 0 0 1 1.980373,0.60881 Q 0,0 252.29534,-121.43748 a 280,280 0 0 1 0.89165,1.87015 Q 0,0 81.286066,-267.94137 z"
+           style="fill:#ff7f0e;fill-opacity:0.264241;stroke-width:0px"
+           id="path1232"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 32.486307,-278.10904 a 280,280 0 0 1 2.041108,0.24602 Q 0,0 240.60863,-143.20436 a 280,280 0 0 1 1.04497,1.7705 Q 0,0 32.486307,-278.10904 z"
+           style="fill:#ff7f0e;fill-opacity:0.26259101;stroke-width:0px"
+           id="path1234"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 224.6592,167.11745 a 280,280 0 0 1 -1.19006,1.58804 Q 0,0 -270.36617,72.815747 a 280,280 0 0 1 -0.50928,-1.918013 Q 0,0 224.6592,167.11745 z"
+           style="fill:#d62728;fill-opacity:0.25520708;stroke-width:0px"
+           id="path1236"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 128.36192,-248.84376 a 280,280 0 0 1 1.72745,0.8987 Q 0,0 265.1705,-89.914428 a 280,280 0 0 1 0.61889,1.846275 Q 0,0 128.36192,-248.84376 z"
+           style="fill:#ff7f0e;fill-opacity:0.25135701;stroke-width:0px"
+           id="path1238"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 27.792053,-278.6173 a 280,280 0 0 1 1.911585,0.1973 Q 0,0 239.6201,-144.85236 a 280,280 0 0 1 0.98853,1.648 Q 0,0 27.792053,-278.6173 z"
+           style="fill:#ff7f0e;fill-opacity:0.24872;stroke-width:0px"
+           id="path1240"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 132.56228,-246.6318 a 280,280 0 0 1 1.67575,0.90807 Q 0,0 265.78939,-88.068153 a 280,280 0 0 1 0.59332,1.811267 Q 0,0 132.56228,-246.6318 z"
+           style="fill:#ff7f0e;fill-opacity:0.24708898;stroke-width:0px"
+           id="path1242"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 278.05901,32.911793 a 280,280 0 0 1 -0.22818,1.873694 Q 0,0 -120.77164,252.61475 a 280,280 0 0 1 -1.70017,-0.81988 Q 0,0 278.05901,32.911793 z"
+           style="fill:#2ca02c;fill-opacity:0.24518301;stroke-width:0px"
+           id="path1244"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 179.29056,215.06951 a 280,280 0 0 1 -1.3664,1.13177 Q 0,0 -277.13284,-39.967323 a 280,280 0 0 1 0.25882,-1.755276 Q 0,0 179.29056,215.06951 z"
+           style="fill:#9467bd;fill-opacity:0.23346899;stroke-width:0px"
+           id="path1246"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 257.93337,108.95126 a 280,280 0 0 1 -0.68402,1.60538 Q 0,0 -218.95088,174.5294 a 280,280 0 0 1 -1.08346,-1.36794 Q 0,0 257.93337,108.95126 z"
+           style="fill:#98df8a;fill-opacity:0.23044703;stroke-width:0px"
+           id="path1248"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 20.50669,279.24805 a 280,280 0 0 1 -1.729195,0.12161 Q 0,0 -113.13686,-256.12507 a 280,280 0 0 1 1.58782,-0.69551 Q 0,0 20.50669,279.24805 z"
+           style="fill:#aec7e8;fill-opacity:0.22925098;stroke-width:0px"
+           id="path1250"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 18.777495,279.36966 a 280,280 0 0 1 -1.713717,0.10991 Q 0,0 -108.9753,-257.92321 a 280,280 0 0 1 1.58388,-0.66349 Q 0,0 18.777495,279.36966 z"
+           style="fill:#aec7e8;fill-opacity:0.22757299;stroke-width:0px"
+           id="path1252"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 279.47017,17.21701 a 280,280 0 0 1 -0.1089,1.684894 Q 0,0 -98.552157,262.08295 a 280,280 0 0 1 -1.578573,-0.59904 Q 0,0 279.47017,17.21701 z"
+           style="fill:#2ca02c;fill-opacity:0.22459202;stroke-width:0px"
+           id="path1254"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 241.73977,141.28653 a 280,280 0 0 1 -0.85076,1.44569 Q 0,0 -254.07268,117.67358 a 280,280 0 0 1 -0.70041,-1.52422 Q 0,0 241.73977,141.28653 z"
+           style="fill:#98df8a;fill-opacity:0.22345802;stroke-width:0px"
+           id="path1256"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 215.28582,179.03076 a 280,280 0 0 1 -1.04533,1.24961 Q 0,0 -276.47097,44.314816 a 280,280 0 0 1 -0.25317,-1.609397 Q 0,0 215.28582,179.03076 z"
+           style="fill:#ff9896;fill-opacity:0.21846798;stroke-width:0px"
+           id="path1258"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 263.28827,95.285292 a 280,280 0 0 1 -0.55057,1.50779 Q 0,0 -201.90821,193.99246 a 280,280 0 0 1 -1.10878,-1.16067 Q 0,0 263.28827,95.285292 z"
+           style="fill:#2ca02c;fill-opacity:0.21598403;stroke-width:0px"
+           id="path1260"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 246.55844,132.69867 a 280,280 0 0 1 -0.75032,1.38477 Q 0,0 -243.14144,138.8605 a 280,280 0 0 1 -0.77724,-1.36985 Q 0,0 246.55844,132.69867 z"
+           style="fill:#98df8a;fill-opacity:0.21286298;stroke-width:0px"
+           id="path1262"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 186.09501,209.20958 a 280,280 0 0 1 -1.1549,1.02162 Q 0,0 -279.29143,-19.907176 a 280,280 0 0 1 0.11386,-1.5377 Q 0,0 186.09501,209.20958 z"
+           style="fill:#9467bd;fill-opacity:0.20944304;stroke-width:0px"
+           id="path1264"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 270.60797,71.91195 A 280,280 0 0 1 270.213,73.382127 Q 0,0 -171.20517,221.5599 a 280,280 0 0 1 -1.20205,-0.93408 Q 0,0 270.60797,71.91195 z"
+           style="fill:#2ca02c;fill-opacity:0.20741601;stroke-width:0px"
+           id="path1266"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 228.20595,162.2407 a 280,280 0 0 1 -0.88298,1.23489 Q 0,0 -267.10934,83.979768 a 280,280 0 0 1 -0.45139,-1.449431 Q 0,0 228.20595,162.2407 z"
+           style="fill:#d62728;fill-opacity:0.20698003;stroke-width:0px"
+           id="path1268"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 0,-280 a 280,280 0 0 1 1.4936294,0.004 Q 0,0 230.59498,-158.82681 a 280,280 0 0 1 0.84396,1.23235 Q 0,0 0,-280 z"
+           style="fill:#ff7f0e;fill-opacity:0.20445102;stroke-width:0px"
+           id="path1270"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 66.537292,271.97939 a 280,280 0 0 1 -1.408704,0.34077 Q 0,0 -187.26034,-208.16716 a 280,280 0 0 1 1.08002,-0.9665 Q 0,0 66.537292,271.97939 z"
+           style="fill:#1f77b4;fill-opacity:0.19987003;stroke-width:0px"
+           id="path1272"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 245.14302,135.29559 a 280,280 0 0 1 -0.68917,1.24128 Q 0,0 -247.27121,131.3657 a 280,280 0 0 1 -0.66292,-1.25549 Q 0,0 245.14302,135.29559 z"
+           style="fill:#98df8a;fill-opacity:0.19681199;stroke-width:0px"
+           id="path1274"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 51.291596,-275.26201 a 280,280 0 0 1 1.37469,0.25971 Q 0,0 245.86737,-133.97477 a 280,280 0 0 1 0.66632,1.23014 Q 0,0 51.291596,-275.26201 z"
+           style="fill:#ff7f0e;fill-opacity:0.19466601;stroke-width:0px"
+           id="path1276"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 245.80812,134.08344 a 280,280 0 0 1 -0.6651,1.21215 Q 0,0 -245.28136,135.04463 a 280,280 0 0 1 -0.66386,-1.21283 Q 0,0 245.80812,134.08344 z"
+           style="fill:#98df8a;fill-opacity:0.19297204;stroke-width:0px"
+           id="path1278"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 34.724583,277.83845 a 280,280 0 0 1 -1.370259,0.16783 Q 0,0 -140.82004,-242.01181 a 280,280 0 0 1 1.19491,-0.69135 Q 0,0 34.724583,277.83845 z"
+           style="fill:#aec7e8;fill-opacity:0.19275202;stroke-width:0px"
+           id="path1280"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 51.789692,275.16873 a 280,280 0 0 1 -1.345537,0.24984 Q 0,0 -169.15821,-223.12664 a 280,280 0 0 1 1.09257,-0.82412 Q 0,0 51.789692,275.16873 z"
+           style="fill:#1f77b4;fill-opacity:0.19151498;stroke-width:0px"
+           id="path1282"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 140.92439,-241.95106 a 280,280 0 0 1 1.16623,0.68304 Q 0,0 267.01537,-84.278056 a 280,280 0 0 1 0.40369,1.289837 Q 0,0 140.92439,-241.95106 z"
+           style="fill:#2ca02c;fill-opacity:0.18975698;stroke-width:0px"
+           id="path1284"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 40.790762,277.01284 a 280,280 0 0 1 -1.320948,0.1913 Q 0,0 -153.17702,-234.38601 a 280,280 0 0 1 1.11903,-0.72751 Q 0,0 40.790762,277.01284 z"
+           style="fill:#1f77b4;fill-opacity:0.18801904;stroke-width:0px"
+           id="path1286"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 216.13245,178.00777 a 280,280 0 0 1 -0.84663,1.02299 Q 0,0 -275.78764,48.385718 a 280,280 0 0 1 -0.22637,-1.308454 Q 0,0 216.13245,178.00777 z"
+           style="fill:#d62728;fill-opacity:0.18731199;stroke-width:0px"
+           id="path1288"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 264.98431,90.461685 a 280,280 0 0 1 -0.43168,1.254772 Q 0,0 -194.33984,201.57387 a 280,280 0 0 1 -0.9531,-0.92326 Q 0,0 264.98431,90.461685 z"
+           style="fill:#2ca02c;fill-opacity:0.18721499;stroke-width:0px"
+           id="path1290"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 223.46914,168.70549 a 280,280 0 0 1 -0.77706,1.0244 Q 0,0 -271.57088,68.18548 a 280,280 0 0 1 -0.31024,-1.247784 Q 0,0 223.46914,168.70549 z"
+           style="fill:#d62728;fill-opacity:0.18295701;stroke-width:0px"
+           id="path1292"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 175.30612,218.32949 a 280,280 0 0 1 -1.00418,0.80251 Q 0,0 -275.39486,-50.57341 a 280,280 0 0 1 0.23508,-1.263777 Q 0,0 175.30612,218.32949 z"
+           style="fill:#c5b0d5;fill-opacity:0.18292404;stroke-width:0px"
+           id="path1294"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 42.059547,276.82304 a 280,280 0 0 1 -1.268785,0.1898 Q 0,0 -156.57838,-232.12757 a 280,280 0 0 1 1.0652,-0.71498 Q 0,0 42.059547,276.82304 z"
+           style="fill:#1f77b4;fill-opacity:0.18266003;stroke-width:0px"
+           id="path1296"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 47.297452,-275.97636 a 280,280 0 0 1 1.239005,0.21521 Q 0,0 245.26317,-135.07767 a 280,280 0 0 1 0.6042,1.1029 Q 0,0 47.297452,-275.97636 z"
+           style="fill:#ff7f0e;fill-opacity:0.18003899;stroke-width:0px"
+           id="path1298"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 270.92578,70.705173 a 280,280 0 0 1 -0.31781,1.206777 Q 0,0 -167.98433,224.01175 a 280,280 0 0 1 -0.99672,-0.7509 Q 0,0 270.92578,70.705173 z"
+           style="fill:#2ca02c;fill-opacity:0.17904298;stroke-width:0px"
+           id="path1300"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 270.213,73.382127 a 280,280 0 0 1 -0.3285,1.199071 Q 0,0 -174.60482,218.89074 a 280,280 0 0 1 -0.97019,-0.77743 Q 0,0 270.213,73.382127 z"
+           style="fill:#2ca02c;fill-opacity:0.17856003;stroke-width:0px"
+           id="path1302"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 77.41572,-269.08513 a 280,280 0 0 1 1.186913,0.34431 Q 0,0 251.75689,-122.54986 a 280,280 0 0 1 0.53845,1.11238 Q 0,0 77.41572,-269.08513 z"
+           style="fill:#ff7f0e;fill-opacity:0.17779397;stroke-width:0px"
+           id="path1304"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 24.553803,278.92133 a 280,280 0 0 1 -1.230271,0.10557 Q 0,0 -121.90438,-252.07007 a 280,280 0 0 1 1.11281,-0.53515 Q 0,0 24.553803,278.92133 z"
+           style="fill:#aec7e8;fill-opacity:0.17768501;stroke-width:0px"
+           id="path1306"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 35.922686,277.68608 a 280,280 0 0 1 -1.198103,0.15237 Q 0,0 -144.26951,-239.97147 a 280,280 0 0 1 1.03643,-0.62006 Q 0,0 35.922686,277.68608 z"
+           style="fill:#1f77b4;fill-opacity:0.174889;stroke-width:0px"
+           id="path1308"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 82.44242,267.58783 a 280,280 0 0 1 -1.14491,0.35006 Q 0,0 -206.90663,-188.65218 a 280,280 0 0 1 0.80853,-0.88297 Q 0,0 82.44242,267.58783 z"
+           style="fill:#e377c2;fill-opacity:0.17380102;stroke-width:0px"
+           id="path1310"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 180.20255,214.30595 a 280,280 0 0 1 -0.91199,0.76356 Q 0,0 -277.67415,-36.014823 a 280,280 0 0 1 0.1555,-1.179219 Q 0,0 180.20255,214.30595 z"
+           style="fill:#9467bd;fill-opacity:0.17299404;stroke-width:0px"
+           id="path1312"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 73.592562,-270.15576 a 280,280 0 0 1 1.12848,0.30994 Q 0,0 251.24249,-123.60102 a 280,280 0 0 1 0.5144,1.05116 Q 0,0 73.592562,-270.15576 z"
+           style="fill:#ff7f0e;fill-opacity:0.17101303;stroke-width:0px"
+           id="path1314"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 214.24049,180.28037 a 280,280 0 0 1 -0.7483,0.88553 Q 0,0 -277.13735,39.936089 a 280,280 0 0 1 -0.16298,-1.147848 Q 0,0 214.24049,180.28037 z"
+           style="fill:#ff9896;fill-opacity:0.16988501;stroke-width:0px"
+           id="path1316"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>

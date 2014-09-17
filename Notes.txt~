@@ -1,0 +1,11 @@
+Chord diagram may not be the right fit in this case:
+1. Data don't represent a complete system
+
+
+Chord diagram basics
+1. Rows in the matrix represent groups. The groups provide source data. Groups have index values.
+2. Subindex values indicate the column within a row (group).
+3. The (i,j) value represents the source value that flows with the (j,i) target value. (Think matrix transposition.)
+4. Relationships can be directed. The source value might be 10 while the target value might be 100. 
+   (e.g. country A might export 10 units to country B, but country B might export 100 units to country A).
+
