@@ -46,13 +46,13 @@ p{pointer-events:none;}
   </div>
 </div>
 
-<script src="d3v3dot4.js"></script>
+<script src="../d3v3dot4.js"></script>
 <script>
   
   var dat = [0,1,2,3,4];
 
   var svg = d3.select("#main");
-  svg.selectAll("div.box").data(dat).enter().append("div").attr("class","box").text(function(d,i){return d});
+  svg.selectAll("div.box").data(dat).enter().append("div").attr("class","box").text(function(d,i){return d}).style({"font-size":"11px"});
 
   var button = d3.select("#button")
   button.on("mousedown",function(){
@@ -60,26 +60,30 @@ p{pointer-events:none;}
     dat.shift();
 
     var update = svg.selectAll("div.box").data(dat,function(d,i){return d});
-    update.style("border-left","0px solid #0000ff").text(function(d,i){return d + ": update"});
+    update.style({"border-left":"0px solid #0000ff"}).text(function(d,i){return d + ": update"});
 
 
-    update.enter().append("div").attr("class","box").text(function(d,i){return d + ": enter"}).style("border-left","0px solid #00ff00");
+    update.enter().append("div").attr("class","box").text(function(d,i){return d + ": enter"}).style({"border-left":"0px solid #00ff00"}).style({"font-size":"11px"});
     update.exit()
     .style("border-left","40px solid #000000")
     .text(function(d,i){
       return d + ": exit";
     }).transition().delay(5000).duration(1000)
     .style("width",function(d,i){
-      console.log(this.__transition__);
       return "0px";
     })
     .style("border-left-width","0px")
     .text("")
     .remove();
 
-    update
-    .transition().duration(4500).style("border-left-width","40px")
-    .text(function(d,i){
+var T = update
+    .transition().duration(4500).style(
+      "border-left-width",function(d,i){
+        //console.log((this));
+        return "40px";
+      })
+
+    T.text(function(d,i){
         try{
           var c = d + " " + JSON.stringify(this.__transition__)        }
         catch(e){
@@ -89,9 +93,14 @@ p{pointer-events:none;}
           return c;
         }
       })
-    .each("end",function(d,i){
-      d3.select(this).transition().duration(700).style("border-left-width","0px")
-    })
+    /*.each("end",function(d,i){
+      var T = d3.select(this).transition().duration(700).style("border-left-width","0px")
+      T.each(function(){console.log(this.__transition__)})
+    })*/
+var sub = T.transition()
+sub.each(function(d,i){
+  console.log(this.__transition__)
+})
 
 
   })

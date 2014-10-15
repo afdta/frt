@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="jquery111min.js"></script>
+<style>
+
+body{
+  max-width:950px;
+  width:100%;
+  position:relative;
+  margin: 0px auto 0px auto;
+  font-size:15px;
+}
+
+#FNWrap h3, #FNWrap p, #FNWrap a{font-family:arial,sans;margin:1em 0px 0.25em 0px;line-height:1.5em;}
+
+
+#FNWrap text{
+  font-family:"arial";
+  font-size:12px;
+  fill:#333333;
+  pointer-events:none;
+}
+
+#FNWrap text.label{
+  font-size:12px;
+  pointer-events:none;
+  line-height:12px;
+  dominant-baseline:middle;
+}
+
+#FNWrap g.borderLabel text{
+  fill:rgb(100,100,100);
+}
+
+#FNWrap text.label.selectable, #FNWrap text.selectable, #FNWrap path.borderArc{
+  cursor:pointer;
+  pointer-events:auto;
+}
+
+#FNWrap line, #FNWrap rect{
+  shape-rendering:crispEdges;
+}
+
+#FNWrap svg#mainSVG{
+  margin-left:-20px;
+}
+
+/*#slider{
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}*/
+
+</style>
+<body>
+
+<div id="FNWrap">
+
+    <div style="width:950px;">
+      <h3 id="chordDiagramTitle"></h3>
+      <div style="width:100%;border-bottom:1px solid #d1d1d1;display:table;padding-bottom:5px;">
+        <div style="display:table-row;vertical-align:bottom">
+          <div style="display:table-cell;vertical-align:bottom;width:70%">
+            <p style="margin:10px 0px 0px 0px;vertical-align:bottom;" id="chordDiagramText"></p>
+          </div>
+          <div style="display:table-cell;vertical-align:bottom;width:30%">
+            <div style="margin:10px 0px 0px 0px;">
+              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity</p>
+              <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect1"></select>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+
+    <svg id="mainSVG">
+      <defs>
+        <radialGradient id="chordGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="20%" stop-color="#ffffff" stop-opacity="0"></stop>
+          <stop offset="80%" stop-color="#ffff00" stop-opacity="1"></stop>
+        </radialGradient>
+
+        <linearGradient id="linGradient">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+          <stop offset="70%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"></stop>
+        <linearGradient>
+
+        <linearGradient id="buttonGradient">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"></stop>
+          <stop offset="50%" stop-color="#579EFF" stop-opacity="0.3"></stop>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"></stop>
+        <linearGradient>
+
+        <mask id="masking">
+          <circle cx="0" cy="0" r="320px" fill="url(#chordGradient)"></circle>
+        </mask>
+      </defs>
+      <g id="chordDiagram">
+        <g id="chordsAndArcs"></g>
+        <g id="chordAnno"></g>
+      </g>
+      <g id="legendGroup"></g>
+      <g id="chordClickDirection"></g>
+      <g id="chordResetButton">
+        <rect></rect>
+        <line></line>
+        <text></text>
+      </g>
+    </svg>
+    
+    <div style="width:950px;margin-top:50px;">
+      <h3 id="myMetroFlowTitle"></h3>
+      <div style="width:100%;border-bottom:1px solid #d1d1d1;display:table; padding-bottom:5px;">
+        <div style="display:table-row;vertical-align:bottom">
+          <div style="display:table-cell;vertical-align:bottom;width:49%">
+            <p style="margin:10px 0px 0px 0px;vertical-align:bottom;" id="myMetroFlowText"></p>
+          </div>
+
+          <div style="display:table-cell;vertical-align:bottom;width:25%">
+            <div style="margin:10px 0px 0px 0px;">
+              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity</p>
+              <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect2"></select>
+            </div>
+          </div>
+
+          <div style="display:table-cell;vertical-align:bottom;width:25%">
+            <div style="margin:10px 0px 0px 0px;">
+              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Geography</p>
+              <select style="float:right;margin:0px 0px 6px 0px;" id="metroSelect"></select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <svg id="flowDiagram"></svg>
+  
+</div>
+
+<script src="/~/media/multimedia/interactives/2014/FreightNetworks/d3v3dot4.js"></script>
+<script>
+
+var DATAREPO = "/~/media/multimedia/interactives/2014/FreightNetworks/json/"
+var DATAREPO = "json/";
+
+//var colors = d3.scale.category20().domain([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+/*var xwalk = {
+  WSC:{name:"West South Central",dg:"Domestic",indx:1},
+  ESC:{name:"East South Central",dg:"Domestic",indx:2},
+  SA:{name:"South Atlantic",dg:"Domestic",indx:3},
+  NE:{name:"Northeast",dg:"Domestic",indx:5},
+  ENC:{name:"East North Central",dg:"Domestic",indx:6},
+  WNC:{name:"West North Central",dg:"Domestic",indx:7},
+  MO:{name:"Mountain",dg:"Domestic",indx:8},
+  PA:{name:"Pacific",dg:"Domestic",indx:9},
+  AS:{name:"Asia",dg:"Global",indx:10},
+  EU:{name:"Europe",dg:"Global",indx:11},
+  AF:{name:"Africa",dg:"Global",indx:12},
+  LA:{name:"Americas",dg:"Global",indx:13},
+  OTHER:{name:"Aggregate of Remaining Flows",dg:"Both",indx:16}
+}
+var xwalkLeg = ["WSC","ESC","SA","NE","ENC","WNC","MO","PA","AS","EU","AF","LA"];*/
+
+var colors = d3.scale.ordinal().domain([1,2,3,4,5,6,7,8,9]).range(["#0962ba","#579eff","#2cd1ad","#18705d","#fb9524","#ab4811","#6d468f","#b976f2","#d1d1d1"])
+var xwalk = {
+  WSC:{name:"South",dg:"U.S.",indx:1},
+  ESC:{name:"South",dg:"U.S.",indx:1},
+  SA:{name:"South",dg:"U.S.",indx:1},
+  NE:{name:"Northeast",dg:"U.S.",indx:2},
+  ENC:{name:"Midwest",dg:"U.S.",indx:3},
+  WNC:{name:"Midwest",dg:"U.S.",indx:3},
+  MO:{name:"West",dg:"U.S.",indx:4},
+  PA:{name:"West",dg:"U.S.",indx:4},
+  AS:{name:"Asia",dg:"Global",indx:5},
+  EU:{name:"Europe",dg:"Global",indx:6},
+  AF:{name:"Africa",dg:"Global",indx:7},
+  LA:{name:"Americas",dg:"Global",indx:8},
+  OTHER:{name:"Aggregate of Remaining Flows",dg:"Both",indx:9}
+}
+var xwalkLeg = {"US":["WSC","NE","ENC","PA"],"Global":["AS","EU","AF","LA"]};
+var USREGIONS = {"WSC":1,"ESC":1,"SA":1,"NE":1,"ENC":1,"WNC":1,"MO":1,"PA":1}
+
+/////tracking & state variables
+var SVGDetail = d3.select("svg#flowDiagram").attr({"height":1100,"width":950});  // .attr("transform","translate(1025,0)"); //950 + 75 margin
+var mainSVG = d3.select("svg#mainSVG").attr("width", 990).attr("height", 1150);
+
+var gPaths = SVGDetail.append("g").attr("transform","translate(0,70)");
+var textBack = SVGDetail.append("rect").attr({"x":755,"y":68,"height":1005,"width":195}).style({"fill":"url(#linGradient)"});
+var gTexts = SVGDetail.append("g").attr("transform","translate(0,70)");
+
+var ready = false;
+var selectedMetro = null;
+var selectedCommDF = null;
+var selectedCommCH = null;
+var selectMenu; //places select menu
+var selectMenuC1; //commodities - for chord diagram
+var selectMenuC2; //commodities - for detailed flows
+var focusLeft = true;
+
+var places_index; //index value of currently selected place -- sync with chord?
+var comm_index; //index value of currently selected commodity
+var chordCache = {}; //cache of chord diagram flows data
+var flowCache = {}; //cache of detailed flows data
+var metroFlow;
+var H = 950; //Height of detailed flows diagram
+var W = 950; //Width of both diagrams
+var SPACE = 5; //space between detailed flows
+
+//Chord SVG
+var allChords; //pointer to <g> of chords
+var H_chord = 1050 //Height of chord diagram
+var innerRadius = Math.min(W, H_chord) * .35;
+var outerRadius = innerRadius * 1.05;
+d3.select("g#chordDiagram").attr("transform", "translate(" + (W+40)/2 + "," + ((H_chord / 2)+65) + ")");
+var SVGChord = d3.select("g#chordsAndArcs");
+var SVGChordAnno = d3.select("g#chordAnno");
+
+$("#FNWrap").parent().css("overflow","visible");
+
+//ATTEMPT #1 TO FIX JITTERY SCROLL
+var scrollTimeout;
+window.onscroll = function(){
+  clearTimeout(scrollTimeout);
+  SVGChord.style("display","none");
+  scrollTimeout = setTimeout(function(){
+    SVGChord.style("display","inline");
+  },500)
+}
+//////
+
+//////DRAW CHORD DIAGRAM
+var drawChords = function(data,commGroup){
+  var matrix = data.data;
+  var dLabels = data.places;
+  var dMaxes = data.max;
+  
+  var chord = d3.layout.chord()
+    .padding(.0075)
+    .sortChords(d3.ascending)
+    .matrix(matrix);
+    //.sortGroups(d3.descending)
+    //.sortSubgroups(d3.descending)
+
+  var arcRefs = {};
+  var arcColor = function(i){
+    var region = dLabels[i].CensusDiv;
+    var col = colors(xwalk[region].indx);
+    return region ? col : "#d1d1d1";
+  }
+  var arcs = SVGChord.selectAll("path.borderArc").data(chord.groups());
+  arcs.exit().remove();
+  arcs.enter().append("path").attr("class","borderArc");
+  arcs.style("fill", function(d) {
+      arcRefs[d.index] = this; //store refs for easy retrieval later (to sync with text hover)
+      return arcColor(d.index);
+    })
+    .style("stroke-width","0px")
+    .style("stroke","#ffffff")
+    .attr("d", d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius));
+    
+  arcs.on("mousedown", groupClick)
+    .on("mouseup", function(){
+      //d3.select(this).style("opacity",1);
+    })
+    .on("mouseover",function(){d3.select(this).transition().duration(0).style("opacity",0.5)})
+    .on("mouseout",function(){d3.select(this).transition().duration(0).delay(20).style("opacity",1)})
+
+
+  var r2o = d3.interpolateRgb("#d7dde8","#757f9a");
+
+  var MAX = d3.max(dMaxes);
+
+  allChords = SVGChord.selectAll("path.chord").data(chord.chords());
+
+  allChords.exit().remove();
+  allChords.enter().append("path").attr("class","chord");
+  allChords.attr("d", d3.svg.chord().radius(innerRadius))
+
+  var chordReset = function(){
+    allChords
+    .style("fill", function(d){
+        var r = d.source.value/MAX + 0.15;
+        return r>=1 ? r2o(1) : r2o(r);
+      })
+    .style({"stroke-width":"0px","opacity":1,"visibility":"visible"});
+  }
+  chordReset();
+
+
+//CHORD LABELS
+  var labelPos = function(d,i,a) {
+    var pos = d.endAngle - ((d.endAngle - d.startAngle)/2);
+    var deg = (pos * 180 / Math.PI)
+    var rot = deg-90;
+    var name = dLabels[i].fullname; //CHECK -- INTEGRITY
+    return {rot:rot,deg:deg,index:d.index,name:name}
+  }
+  var labelData = chord.groups().map(labelPos);
+
+  var labelG = SVGChordAnno.selectAll("g.borderLabel").data(labelData);
+  labelG.exit().remove();
+  labelG.enter().append("g");
+  labelG.attr("transform",function(d) {
+        return "rotate(" + d.rot + ")" + "translate(" + outerRadius + ",0)";
+    })
+    .attr("class","borderLabel")
+
+  var labelText = labelG.selectAll("text").data(function(d){return [d]});
+  labelText.exit().remove();
+  labelText.enter().append("text");
+
+  labelText.text(function(d,i){return d.name})
+           .attr("x", 8)
+           .attr("dy", "0.25em")
+           .attr("class","selectable")
+           .attr("transform", function(d) { return d.deg > 180 ? "rotate(180)translate(-16)" : null; })
+           .style("text-anchor", function(d) { return d.deg > 180 ? "end" : null; })
+           .on("mousedown",groupClick)
+           .on("mouseover",function(d,i){
+              var arc = d3.select(arcRefs[d.index]);
+              arc.style("opacity",0.5)
+           })
+           .on("mouseout",function(d,i){
+              var arc = d3.select(arcRefs[d.index]);
+              arc.transition().style("opacity",1);
+           });
+
+
+  //inner ring border
+  var chordBorder = SVGChordAnno.selectAll("circle.chordBorder").data([1]);
+  chordBorder.exit().remove();
+  chordBorder.enter().append("circle").attr("class","chordBorder");
+  chordBorder.attr({"cx":"0","cy":"0",r:innerRadius}).style({"stroke-width":"3px","stroke":"#ffffff","fill":"none"});
+  
+  var chordFocus = false; //is the diagram focused
+  var resetButtonGroup = d3.select("#chordResetButton").attr("transform","translate(770,30)").style("visibility","hidden");
+  var resetButton = resetButtonGroup.select("rect").attr({"width":"190px","height":"18px"}).style({"fill":"url(#buttonGradient)","stroke-width":"0","cursor":"pointer"});
+  resetButtonGroup.select("text").text("Reset Diagram").attr({"x":100,"y":"14"}).style("text-anchor","middle");
+  
+  var chordClickDirection = d3.select("#chordClickDirection").style("visibility","visible"); //show text
+  resetButton.on("mousedown",function(){
+    chordClickDirection.style("visibility","visible");
+    resetButtonGroup.style("visibility","hidden");
+    chordReset();
+    chordFocus = false;
+  });
+
+  function groupClick(d) {
+    //RESET BUTTON
+    if(!chordFocus){
+      chordClickDirection.style("visibility","hidden"); //hide text
+      resetButtonGroup.style("visibility","visible"); //show reset button
+      chordFocus = true;
+    }
+
+    var CHORDS = SVGChord.selectAll("path.chord");
+    d3.event.stopPropagation();
+    var I = d.index;
+    var MAX = dMaxes[I]; //-- relative to metro's flows
+
+    CHORDS.style("visibility",function(d){
+      return d.source.index === I || d.target.index === I ? "visible" : "hidden"; 
+    })
+    .style("fill",function(d){
+      return d.source.index===I ? arcColor(d.target.index) : arcColor(d.source.index);
+    })
+    .attr("stroke", function(d){
+      return d.source.index===I ? arcColor(d.target.index) : arcColor(d.source.index);
+    })
+    .style("stroke-width","0.5px")
+    .style("opacity",function(d,i){
+      var ratio = d.source.value/MAX + 0.15;
+      return ratio > 1 ? 1 : ratio;
+    });
+
+    var place_id = dLabels[I].Geo_ID;
+    triggerPlaceUpdate(place_id);
+  };
+
+d3.select("h3#chordDiagramTitle").text("An Overview of the Goods Trade Network in U.S. Markets: " + commGroup.Commodity_Group);
+if(commGroup.Group_ID===14 || commGroup.Group_ID===15){
+  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets markets for these goods. Markets are ranked in terms of their combined exports and imports to/from other markets in the United States.")
+}
+else{
+  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets and 25 largest global markets for these goods. Markets are ranked in terms of their combined exports and imports to/from other markets in the United States.")
+}
+
+} //END DRAW CHORDS
+
+/////////////////////////////////////////////////////////////////
+//DETAILED FLOWS
+var dataTransform = function(flow){
+  //summary data
+  var newH = H - (SPACE*(flow.length-1));
+  var range = d3.extent(flow,function(d,i,a){return d.val});
+  var sum = d3.sum(flow,function(d,i,a){return d.val});
+  var max = range[1];
+  var Y = d3.scale.linear().domain([0,1]).range([0,newH]);  
+  var cum = 0;
+  
+  //function to transform each element
+  var mapper = function(d,i,a){
+    var h = Y(d.val/sum);
+    var b = cum; 
+    cum = cum + h + SPACE;
+    var col = colors(xwalk[d.div].indx);
+    return {nm:d.nm, id:d.id, div:d.div, val:d.val, height:h, top:b, bot:cum, col:col, pos:i*3}; 
+  }
+
+  return flow.map(mapper);
+}
+
+var ILLUSTRATE = function(flow){
+
+  if(!flow){
+    alert("Data error, reload.")
+    return;
+  }
+
+  //Bezier curve parameters  
+  var xLeft = 50;
+  var xRight = 750
+  var x0 = Math.round((xRight-xLeft)/2);
+  var x1 = x0;
+
+  var mergeFunc = function(d,i){return d.nm} 
+  var basePath = function(sourceY){
+    sourceY = !!sourceY ? sourceY : 150;
+    var s = "M" + xLeft + "," + sourceY +
+          "C" + x0 + "," + sourceY + 
+          " " + x1 + "," + (H-5) + 
+          " " + xRight + "," + (H-5) +
+          "l200,0" +
+          "l0" + "," + 5 +
+          "l-200,0" +
+          "C" + x1 + "," + H +
+          " " + x0 + "," + sourceY + 
+          " " + xLeft + "," + sourceY ;
+    return s;
+  }  
+
+  var flows = gPaths.selectAll("path.flow").data(flow,mergeFunc);
+  flows.exit().transition().duration(1000).attr("d",basePath()).remove();
+  flows.enter().append("path").attr("class","flow")
+    .style({"stroke-width":"1px","stroke":"#ffffff","fill":"#ffffff"})
+    .attr("d",function(d){
+      return basePath();
+    }).style("fill",function(d,i){
+      return d.col;
+    })
+    .style("stroke",function(d,i){
+      return d.col;
+    });//baseline styles only get applied to entering selection -- which is every node at some point
+
+  var text = gTexts.selectAll("text.label").data(flow,mergeFunc);
+  text.exit().transition().delay(0).duration(1000).attr("y",H).style("fill","#ffffff").remove();
+  
+  text.enter().append("text").attr("class","label")
+    .style({"opacity":"0"})
+    .style("fill",function(d,i){return d.col})
+    .attr({"x":xRight+30,y:H})
+    .text(function(d){
+      return d.nm;
+    })
+
+
+  text.on("mousedown",function(d,i){
+    var id = d.id;
+    var f = places_index.filter(function(d,i,a){
+      return d.Geo_ID === id;
+    })
+    var currentIndex = selectMenu.node().selectedIndex;
+    try{
+      var I = places_index.indexOf(f[0]);
+      selectMenu.node().selectedIndex = I;
+      UPDATE();
+    } 
+    catch(e){
+      selectMenu.node().selectedIndex = currentIndex; //reverse any change
+      UPDATE();
+    }
+  })
+  .classed("selectable",function(d,i){
+    return d.div in USREGIONS ? true : false;
+  });
+
+  var tFinish = {paths:false,text:false}
+  flows.transition().delay(0).duration(1500)
+  .attr("d",function(d,i){;
+    var sourceY = d.pos;
+    var s = "M" + xLeft + "," + sourceY +
+            "C" + x0 + "," + sourceY + 
+            " " + x1 + "," + d.top + 
+            " " + xRight + "," + d.top +
+            "l200,0" +
+            "l0" + "," + d.height +
+            "l-200,0" +
+            "C" + x1 + "," + (d.bot-SPACE) +
+            " " + x0 + "," + sourceY + 
+            " " + xLeft + "," + sourceY ;
+    return s;
+  }).each("end",function(d,i){
+    if(i==0){
+      tFinish.paths = true;
+      if(tFinish.text){syncChordDiagram();}
+    }
+  })
+
+  //console.log(text)
+// http://jsfiddle.net/sxtnftsh/1/
+  var t0 = text.transition().delay(0).duration(1500)
+  .style("opacity","1")
+  .attr("y",function(d,i){
+    var mid = d.top + (0.5*d.height);
+    return mid;
+    //return (d.top+(0.5*d.height));
+  })
+  //.attr("dy","0.5em");
+
+  var t1 = t0.transition().ease("bounce").duration(500)
+  .style("fill","#333333")
+  .attr("x",function(d,i){
+    return xRight+10
+  }).each("end",function(d,i){
+    if(i==0){
+      tFinish.text = true;
+      if(tFinish.paths){syncChordDiagram();}
+    }
+  })
+  
+}
+
+////////////////////////////////////////////////////////////////////LOAD IN METADATA
+d3.json(DATAREPO + "index.json",function(error,data){
+  if(data){
+    places_index = data.places;
+    comm_index = data.commodities;
+
+    selectMenu = d3.select("#metroSelect");
+    selectMenuC1 = d3.select("#commSelect1"); //for chord diagram
+    selectMenuC2 = d3.select("#commSelect2");
+
+    selectMenu.selectAll("option").data(places_index).enter().append("option")
+    .attr("value",function(d){
+      return d.Geo_ID;
+    })
+    .text(function(d){
+      return d.fullname;
+    })
+
+    selectMenuC1.selectAll("option").data(comm_index).enter().append("option")
+    .attr("value",function(d){
+      return d.Group_ID;
+    })
+    .text(function(d){
+      return d.Commodity_Group;
+    })
+
+    selectMenuC2.selectAll("option").data(comm_index).enter().append("option")
+    .attr("value",function(d){
+      return d.Group_ID;
+    })
+    .text(function(d){
+      return d.Commodity_Group;
+    })
+
+
+    selectMenu.on("change",function(d,i){
+      selectMenu.node().blur();
+      UPDATE();
+    })
+
+    selectMenuC2.on("change",function(d,i){
+      selectMenuC2.node().blur();
+      UPDATE();
+    })
+
+    selectMenuC1.on("change",getDrawChords);
+    
+    //INITIALIZATION
+    ready = true; //menus are set up and ready
+    getDrawChords(); //draw chord diagram
+    UPDATE(); //draw flows diagram
+  }
+})
+/////////////////////////////
+
+//syncing the detailed flows to the selected comm index of the chord diagram
+var syncDetailedFlows = function(){
+  if(!ready){return null} //ready indicates the menus have completed loading
+  
+  var c = selectMenuC1.node().selectedIndex; //the selected commodity on the chord diagram
+
+  var otherMenu = selectMenuC2.node(); //menu for flows diagram
+  if(c !== otherMenu.selectedIndex){
+    otherMenu.selectedIndex = c; //sync
+    UPDATE(); //re-draw
+  }
+}
+
+var triggerPlaceUpdate = function(geoCode){
+  if(!ready){return null} //ready indicates the menus have completed loading
+  
+  var f = places_index.filter(function(d,i,a){
+    return d.Geo_ID === geoCode;
+  })
+
+  var currentIndex = selectMenu.node().selectedIndex;
+  try{
+    var I = places_index.indexOf(f[0]);
+    selectMenu.node().selectedIndex = I;
+    UPDATE();
+  } 
+  catch(e){
+    selectMenu.node().selectedIndex = currentIndex; //reverse any change
+    UPDATE();
+  }
+}
+
+//syncing the chord diagram to the selected index of the detailed flows diagram
+var syncChordDiagram = function(){
+  if(!ready){return null} //ready indicates the menus have completed loading
+
+  var c = selectMenuC2.node().selectedIndex; //selected commodity on the flow diagram
+
+  var otherMenu = selectMenuC1.node(); //menu for chord diagram
+  if(c !== otherMenu.selectedIndex){
+    otherMenu.selectedIndex = c; //sync
+    getDrawChords(); //re-draw
+  }
+}
+
+//GET/DRAW COMMODITY DATA FOR CHORDS
+var getDrawChords = function(d,index){
+  var node = selectMenuC1.node();
+  node.blur();
+  var i = node.selectedIndex;
+  selectedCommCH = comm_index[i];
+  var code = selectedCommCH.Group_ID;
+  var nm = selectedCommCH.Commodity_Group;
+  if(i in chordCache){
+    drawChords(chordCache[i],selectedCommCH);
+    syncDetailedFlows();
+  }
+  else{
+    d3.json(DATAREPO + "chord_data/bigMatrix_" +code+".json",function(error,data){
+      if(data){
+        chordCache[i] = data;
+        drawChords(data,selectedCommCH);
+      }
+      syncDetailedFlows();
+    }); 
+  }
+}
+
+//The UPDATE function updates the detailed flow data, prepping it for the ILLUSTRATE function
+var UPDATE = function(){
+  if(!ready){return null} //ready indicates the menus have completed loading
+
+  var i = selectMenu.node().selectedIndex;
+  selectedMetro = places_index[i];
+  var code = selectedMetro.Geo_ID;
+  var nm = selectedMetro.fullname;
+
+  var c = selectMenuC2.node().selectedIndex;
+  selectedCommDF = comm_index[c];
+  var commName = selectedCommDF.Commodity_Group;
+  var commID = "comm"+selectedCommDF.Group_ID;
+
+  d3.select("h3#myMetroFlowTitle").text("Detailed Trade to/from " + nm + ": " + commName);
+  d3.select("p#myMetroFlowText").html("This diagram shows the largest trade flows by volume (imports plus exports) of <span style='font-weight:bold'>" + commName.toLowerCase() + "</span> between " + nm + " and its largest trading partners for this commodity group.")
+
+  if(code in flowCache){
+    if(commID in flowCache[code]){
+      metroFlow = flowCache[code][commID];
+    }
+    else{
+      flowCache[code][commID] = dataTransform(flowCache[code].raw[commID]);
+      metroFlow = flowCache[code][commID];
+    }
+    ILLUSTRATE(metroFlow);
+  }
+  else{
+    d3.json(DATAREPO+"detailed_flows/" +code+".json",function(error,data){
+      if(error){
+        metroFlow = null;
+      } else{
+        flowCache[code] = {raw:data};
+        flowCache[code][commID] = dataTransform(data[commID]);
+        metroFlow = flowCache[code][commID];
+      }
+      ILLUSTRATE(metroFlow);
+    })
+  }
+
+  try{
+    var CDCol = colors(xwalk[places_index.filter(function(d,i,a){return d.Geo_ID===code})[0].CensusDiv].indx);
+  }
+  catch(e){
+    var CDCol = "#d1d1d1";
+  }
+  var focus = gPaths.selectAll("rect#focusMetro").data([null]);
+  focus.exit().remove();
+  focus.enter().append("rect").attr("id","focusMetro").attr({"x":"0","y":"-1","width":"48","height":"152"});
+  focus.style("fill",CDCol);
+}
+
+/////////////////////////////////////////////////////////////LEGEND
+function drawLegend(){
+  var legend_outer = d3.select("g#legendGroup");
+  var legend = legend_outer.append("g").attr("id","legendInner")
+  var legendBack = legend.append("rect").style("fill","#ffffff");
+
+  var sublegend = legend.selectAll("g").data([xwalkLeg.US,xwalkLeg.Global]).enter().append("g").attr("id",function(d,i){return "sublegend" + i});
+  var subG = sublegend.selectAll("g").data(function(d,i){
+    return d;
+  }).enter().append("g");
+
+  var itemText = subG.append("text").text(function(d,i){
+    var nm = xwalk[d].name;
+    return nm;
+  }).attr("dx","15px")
+
+  var cumWidth = -40;
+  subG.attr("transform",function(d,i){
+    var br = this.getBoundingClientRect();
+    var w = br.right - br.left;
+    var pad = i===0 ? 40 : 15;
+    var x = cumWidth + pad;
+    cumWidth = w + x + 15; //15px on the right
+    return("translate("+(x)+",0)");
+  });
+
+  subG.append("rect")
+    .attr({"x":"0","y":"-10","width":"12","height":"12"})
+    .style("fill",function(d,i){return colors(xwalk[d].indx)})
+
+  subG.filter(function(d,i){
+    return i===0;
+  }).append("text").attr("dy","-18px").text(function(d,i){
+    return d in USREGIONS ? "U.S. REGIONS" : "GLOBAL REGIONS"
+  }).style({"font-weight":"bold"});
+
+  var legendLeft = (W-cumWidth)/2;
+  //legendLeft = W-cumWidth;
+  legendLeft = 25;
+  legend_outer.attr("transform","translate("+ legendLeft + ",50)");
+  legendBack.attr({"x":-10,"y":-40,"height":50,"width":cumWidth+20,"opacity":"0.85"})
+
+  var textDirection = d3.select("#chordClickDirection").attr({"transform":"translate(970,35)"});
+  textDirection.append("text").style("text-anchor","end").text("Click on the perimeter of the circle below to view");
+  textDirection.append("text").style({"text-anchor":"end"}).attr("dy","1.25em").text("trade flows to/from the selected market");
+
+  var flowTextDirection = d3.select("#flowDiagram").append("g").attr({"transform":"translate(945,35)"});
+  flowTextDirection.append("text").style("text-anchor","end").text("Use the menu above or click on any domestic geography");
+  flowTextDirection.append("text").style({"text-anchor":"end"}).attr("dy","1.25em").text("below to view trade flows to/from the selected market");
+
+  SVGDetail.append("use").attr({"xlink:href":"#legendInner","x":5,"y":50}); //copy the legend 
+}
+drawLegend();
+
+
+/*
+var moveSlider = {
+  sliderRef:d3.select("#slider"),
+  slideLeft:function(){
+    if(!ready){return null}
+    var focusLeft = false;
+    var thiz = this.sliderRef;
+    var l = parseInt(thiz.style("left"));
+    thiz.classed("slidingRight",false); //if slideLeft interrupts slideRight, remove the class
+    if(thiz.classed("slidingLeft") || l===-1025){
+      return null;
+    }
+    else{
+      thiz.classed("slidingLeft",true);
+      allChords.style("display","none");
+
+      thiz.transition().duration(1000).style("left","-1025px").each("end",function(){
+        thiz.classed("slidingLeft",false);
+      });
+    }
+  },
+  slideRight:function(){
+    if(!ready){return null}
+    var focusLeft = true;
+    var thiz = this.sliderRef;
+    var l = parseInt(thiz.style("left"));
+    thiz.classed("slidingLeft",false); //if slideRight interrupts slideLeft, remove the class
+    if(thiz.classed("slidingRight") || l===0){
+      return null;
+    }
+    else{
+      thiz.classed("slidingRight",true);
+      syncChordDiagram(selectMenuC2.node().selectedIndex); //sync the chord diagram to the commodity of the flows diagram
+      allChords.style("display","none");
+      thiz.transition().duration(1000).style("left","0px").each("end",function(){
+        thiz.classed("slidingRight",false);
+        allChords.style("display","inline");
+      });
+    }
+  }
+}
+
+d3.select(window).on("keydown",function(){
+  var key = d3.event.keyCode;
+  if(key==39){moveSlider.slideLeft();}
+  else if(key==37){moveSlider.slideRight();}
+})*/
+
+</script>
+
+</body>
+</html>
