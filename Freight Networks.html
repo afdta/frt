@@ -58,7 +58,7 @@ body{
 </style>
 <body>
 
-<div id="FNWrap">
+<div id="FNWrap" style="border-bottom:1px solid #d1d1d1">
 
     <div style="width:950px;">
       <h3 id="chordDiagramTitle"></h3>
@@ -102,8 +102,9 @@ body{
         </mask>
       </defs>
       <g id="chordDiagram">
-        <g id="chordsAndArcs"></g>
-        <g id="chordAnno"></g>
+        <g id="cdChords"></g>
+        <g id="cdArcs"></g>
+        <g id="cdAnno"></g>
       </g>
       <g id="legendGroup"></g>
       <g id="chordClickDirection"></g>
@@ -114,7 +115,7 @@ body{
       </g>
     </svg>
     
-    <div style="width:950px;margin-top:50px;">
+    <div style="width:950px;padding-top:30px;border-top:1px dotted #d1d1d1">
       <h3 id="myMetroFlowTitle"></h3>
       <div style="width:100%;border-bottom:1px solid #d1d1d1;display:table; padding-bottom:5px;">
         <div style="display:table-row;vertical-align:bottom">
@@ -188,7 +189,7 @@ var USREGIONS = {"WSC":1,"ESC":1,"SA":1,"NE":1,"ENC":1,"WNC":1,"MO":1,"PA":1}
 
 /////tracking & state variables
 var SVGDetail = d3.select("svg#flowDiagram").attr({"height":1100,"width":950});  // .attr("transform","translate(1025,0)"); //950 + 75 margin
-var mainSVG = d3.select("svg#mainSVG").attr("width", 990).attr("height", 1150);
+var mainSVG = d3.select("svg#mainSVG").attr("width", 990).attr("height", 1100);
 
 var gPaths = SVGDetail.append("g").attr("transform","translate(0,70)");
 var textBack = SVGDetail.append("rect").attr({"x":755,"y":68,"height":1005,"width":195}).style({"fill":"url(#linGradient)"});
@@ -208,30 +209,47 @@ var comm_index; //index value of currently selected commodity
 var chordCache = {}; //cache of chord diagram flows data
 var flowCache = {}; //cache of detailed flows data
 var metroFlow;
-var H = 950; //Height of detailed flows diagram
+var H = 900; //Height of detailed flows diagram
 var W = 950; //Width of both diagrams
 var SPACE = 5; //space between detailed flows
 
 //Chord SVG
 var allChords; //pointer to <g> of chords
+var smallChords;
+var chordFocus = false;
 var H_chord = 1050 //Height of chord diagram
-var innerRadius = Math.min(W, H_chord) * .35;
+var innerRadius = Math.min(W, H_chord) * .32;
 var outerRadius = innerRadius * 1.05;
-d3.select("g#chordDiagram").attr("transform", "translate(" + (W+40)/2 + "," + ((H_chord / 2)+65) + ")");
-var SVGChord = d3.select("g#chordsAndArcs");
-var SVGChordAnno = d3.select("g#chordAnno");
+d3.select("g#chordDiagram").attr("transform", "translate(" + (W+40)/2 + "," + ((H_chord / 2)+50) + ")");
+var SVGChords = d3.select("g#cdChords");
+var SVGArcs = d3.select("g#cdArcs");
+var SVGChordAnno = d3.select("g#cdAnno");
 
 $("#FNWrap").parent().css("overflow","visible");
 
-//ATTEMPT #1 TO FIX JITTERY SCROLL
-var scrollTimeout;
-window.onscroll = function(){
-  clearTimeout(scrollTimeout);
-  SVGChord.style("display","none");
-  scrollTimeout = setTimeout(function(){
-    SVGChord.style("display","inline");
-  },500)
+/*try{
+  var chromeBrowser = navigator.userAgent.toLowerCase().search("chrome") > -1;
 }
+catch(e){
+  var chromeBrowser = false;
+}
+
+//non-chrome browsers have jittery scrolling
+if(!chromeBrowser){
+  var scrollTimeout;
+  var scrolling = false;
+  $(window).on("scroll",function(){
+    console.log(navigator);
+    clearTimeout(scrollTimeout);
+    if(!scrolling && smallChords && !chordFocus){
+      smallChords.style("display","none");
+    }
+    scrollTimeout = setTimeout(function(){
+      scrolling = false;
+      smallChords.style("display","inline");
+    },1000)
+  })
+}*/
 //////
 
 //////DRAW CHORD DIAGRAM
@@ -253,7 +271,7 @@ var drawChords = function(data,commGroup){
     var col = colors(xwalk[region].indx);
     return region ? col : "#d1d1d1";
   }
-  var arcs = SVGChord.selectAll("path.borderArc").data(chord.groups());
+  var arcs = SVGArcs.selectAll("path.borderArc").data(chord.groups());
   arcs.exit().remove();
   arcs.enter().append("path").attr("class","borderArc");
   arcs.style("fill", function(d) {
@@ -276,11 +294,15 @@ var drawChords = function(data,commGroup){
 
   var MAX = d3.max(dMaxes);
 
-  allChords = SVGChord.selectAll("path.chord").data(chord.chords());
+  allChords = SVGChords.selectAll("path.chord").data(chord.chords());
 
   allChords.exit().remove();
   allChords.enter().append("path").attr("class","chord");
   allChords.attr("d", d3.svg.chord().radius(innerRadius))
+
+  var len = allChords[0].length;
+
+  allChords.classed("smallFlow",function(d,i){return i<(len-200) ? true : false});
 
   var chordReset = function(){
     allChords
@@ -291,6 +313,8 @@ var drawChords = function(data,commGroup){
     .style({"stroke-width":"0px","opacity":1,"visibility":"visible"});
   }
   chordReset();
+
+  smallChords = SVGChords.selectAll("path.smallFlow");
 
 
 //CHORD LABELS
@@ -311,9 +335,8 @@ var drawChords = function(data,commGroup){
     })
     .attr("class","borderLabel")
 
-  var labelText = labelG.selectAll("text").data(function(d){return [d]});
-  labelText.exit().remove();
-  labelText.enter().append("text");
+  labelG.selectAll("text").remove();
+  var labelText = labelG.append("text");
 
   labelText.text(function(d,i){return d.name})
            .attr("x", 8)
@@ -338,7 +361,7 @@ var drawChords = function(data,commGroup){
   chordBorder.enter().append("circle").attr("class","chordBorder");
   chordBorder.attr({"cx":"0","cy":"0",r:innerRadius}).style({"stroke-width":"3px","stroke":"#ffffff","fill":"none"});
   
-  var chordFocus = false; //is the diagram focused
+  chordFocus = false; //is the diagram focused
   var resetButtonGroup = d3.select("#chordResetButton").attr("transform","translate(770,30)").style("visibility","hidden");
   var resetButton = resetButtonGroup.select("rect").attr({"width":"190px","height":"18px"}).style({"fill":"url(#buttonGradient)","stroke-width":"0","cursor":"pointer"});
   resetButtonGroup.select("text").text("Reset Diagram").attr({"x":100,"y":"14"}).style("text-anchor","middle");
@@ -359,7 +382,7 @@ var drawChords = function(data,commGroup){
       chordFocus = true;
     }
 
-    var CHORDS = SVGChord.selectAll("path.chord");
+    var CHORDS = SVGChords.selectAll("path.chord");
     d3.event.stopPropagation();
     var I = d.index;
     var MAX = dMaxes[I]; //-- relative to metro's flows
@@ -429,7 +452,7 @@ var ILLUSTRATE = function(flow){
   var x0 = Math.round((xRight-xLeft)/2);
   var x1 = x0;
 
-  var mergeFunc = function(d,i){return d.nm} 
+  var mergeFunc = function(d,i){return d.id} 
   var basePath = function(sourceY){
     sourceY = !!sourceY ? sourceY : 150;
     var s = "M" + xLeft + "," + sourceY +
@@ -462,7 +485,7 @@ var ILLUSTRATE = function(flow){
   text.exit().transition().delay(0).duration(1000).attr("y",H).style("fill","#ffffff").remove();
   
   text.enter().append("text").attr("class","label")
-    .style({"opacity":"0"})
+    .style({"opacity":"1"})
     .style("fill",function(d,i){return d.col})
     .attr({"x":xRight+30,y:H})
     .text(function(d){
