@@ -78,7 +78,7 @@ body{
           </div>
           <div style="display:table-cell;vertical-align:bottom;width:30%">
             <div style="margin:10px 0px 0px 0px;">
-              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity</p>
+              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity Group</p>
               <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect1"></select>
             </div>
           </div>
@@ -101,9 +101,11 @@ body{
         <linearGradient>
 
         <linearGradient id="buttonGradient">
-          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"></stop>
-          <stop offset="50%" stop-color="#579EFF" stop-opacity="0.3"></stop>
-          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"></stop>
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="1"></stop>
+          <stop offset="5%" stop-color="#ffffff" stop-opacity="0.2"></stop>
+          <stop offset="50%" stop-color="#57bbFF" stop-opacity="0.3"></stop>
+          <stop offset="95%" stop-color="#ffffff" stop-opacity="0.2"></stop>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="1"></stop>
         <linearGradient>
 
         <mask id="masking">
@@ -119,6 +121,7 @@ body{
       <g id="chordClickDirection"></g>
       <g id="chordResetButton">
         <rect></rect>
+        <path></path>
         <line></line>
         <text></text>
       </g>
@@ -128,13 +131,13 @@ body{
       <h3 id="myMetroFlowTitle"></h3>
       <div style="width:100%;border-bottom:1px solid #d1d1d1;display:table; padding-bottom:5px;">
         <div style="display:table-row;vertical-align:bottom">
-          <div style="display:table-cell;vertical-align:bottom;width:49%">
+          <div style="display:table-cell;vertical-align:bottom;width:49%;padding-right:1%">
             <p style="margin:10px 0px 0px 0px;vertical-align:bottom;" id="myMetroFlowText"></p>
           </div>
 
           <div style="display:table-cell;vertical-align:bottom;width:25%">
             <div style="margin:10px 0px 0px 0px;">
-              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity</p>
+              <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity Group</p>
               <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect2"></select>
             </div>
           </div>
@@ -238,7 +241,7 @@ var SVGChordAnno = d3.select("g#cdAnno");
 $("#FNWrap").parent().css("overflow","visible");
 
 //DEAL WITH BROWSER SPECIFIC SVG PERFORMANCE ISSUES
-var psOn = false; //performance scroll
+var psOn = false; //"performance scroll" on hides the smallest flows on scroll 
 var psB;
 var enablePerformanceToggle = function(){
   psB = mainSVG.append("g").attr("transform","translate(970,100)");
@@ -251,19 +254,15 @@ var enablePerformanceToggle = function(){
     psOn = false;
     if(smallChords){
       psB.style("display","none");
-      smallChords.style("display","inline");
+      smallChords.style("visibility","visible");
     }
   });
 }
 
 //Browser detection
 var chromeBrowser = false;
-try{
-  var chromeBrowser = navigator.userAgent.toLowerCase().search("chrome") > -1;
-}
-catch(e){
-  var chromeBrowser = false;
-}
+try{var chromeBrowser = navigator.userAgent.toLowerCase().search("chrome") > -1;}
+catch(e){var chromeBrowser = false;}
 
 //non-chrome browsers have jittery scrolling
 if(!chromeBrowser){
@@ -273,7 +272,7 @@ if(!chromeBrowser){
     if(smallChords && !psOn && !chordFocus){
       psOn = true;
       psB.style("display","inline");
-      smallChords.style("display","none");
+      smallChords.style("visibility","hidden");
     }
   });
 }
@@ -328,22 +327,21 @@ var drawChords = function(data,commGroup){
   allChords.attr("d", d3.svg.chord().radius(innerRadius))
 
   var len = allChords[0].length;
-
   allChords.classed("smallFlow",function(d,i){return i<(len-200) ? true : false});
-  allChords.classed("largeFlow",function(d,i){return i>=(len-200) ? true : false});
+  allChords.classed("bigFlow",function(d,i){return i>=(len-200) ? true : false});
 
   var chordReset = function(){
     smallChords = SVGChords.selectAll("path.smallFlow");
-    bigChords = SVGChords.selectAll("path.largeFlow");
+    bigChords = SVGChords.selectAll("path.bigFlow");
+    allChords.style("display","inline"); //group clicks use the display property to turn on/off
 
     if(psOn){
-      smallChords.style("display","none");
-      bigChords.style("display","inline");
+      smallChords.style("visibility","hidden");
+      bigChords.style("visibility","visible"); //necessary when chordReset is called after transitioning between commodities
       if(psB){psB.style("display","inline");}
     }
     else{
-      smallChords.style("display","inline");
-      bigChords.style("display","inline");      
+      allChords.style("visibility","visible"); 
     }
 
     allChords
@@ -402,18 +400,21 @@ var drawChords = function(data,commGroup){
   chordBorder.enter().append("circle").attr("class","chordBorder");
   chordBorder.attr({"cx":"0","cy":"0",r:innerRadius}).style({"stroke-width":"3px","stroke":"#ffffff","fill":"none"});
   
+  //
   chordFocus = false; //is the diagram focused
-  var resetButtonGroup = d3.select("#chordResetButton").attr("transform","translate(770,30)").style("visibility","hidden");
-  var resetButton = resetButtonGroup.select("rect").attr({"width":"190px","height":"18px"}).style({"fill":"url(#buttonGradient)","stroke-width":"0","cursor":"pointer"});
-  resetButtonGroup.select("text").text("Reset Diagram").attr({"x":100,"y":"14"}).style("text-anchor","middle");
-  
+  var resetButtonGroup = d3.select("#chordResetButton").attr("transform","translate(980,35)").style("visibility","hidden");
+      resetButtonGroup.select("path").style({"fill":"rgb(9, 98, 186)","stroke-width":"0px","pointer-events":"none"}).attr("d","m -150,8 4.5,5 5,-5 -3,0 -3,-8 -8,-3 -8,3 -3,8 3,8 8,3 8,-3 -3,-2 -5,2 -6,-2 -2,-6 2,-6 6,-2 6,2 2,6 z");
+      resetButtonGroup.select("text").text("Reset Diagram").attr({"x":-135,"y":"12"}).style({"text-anchor":"start","font-size":"11px","pointer-events":"none"});
+      resetButtonGroup.select("rect").attr({"width":"200px","height":"35px","x":"-200","y":"-10"})
+        .style({"fill":"#ffffff","stroke-width":"1px","cursor":"pointer"})
+        .on("mousedown",function(){
+          chordClickDirection.style("visibility","visible");
+          resetButtonGroup.style("visibility","hidden");
+          chordReset();
+          chordFocus = false;
+        });
+
   var chordClickDirection = d3.select("#chordClickDirection").style("visibility","visible"); //show text
-  resetButton.on("mousedown",function(){
-    chordClickDirection.style("visibility","visible");
-    resetButtonGroup.style("visibility","hidden");
-    chordReset();
-    chordFocus = false;
-  });
 
   function groupClick(d) {
     //RESET BUTTON
@@ -442,6 +443,7 @@ var drawChords = function(data,commGroup){
       var ratio = d.source.value/MAX + 0.15;
       return ratio > 1 ? 1 : ratio;
     })
+    .style("visibility","visible"); //all should be visible
     ;
 
     if(psB){psB.style("display","none");} //all chords are seen when a group is focused
