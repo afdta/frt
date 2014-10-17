@@ -203,7 +203,12 @@ var USREGIONS = {"WSC":1,"ESC":1,"SA":1,"NE":1,"ENC":1,"WNC":1,"MO":1,"PA":1}
 var SVGDetail = d3.select("svg#flowDiagram").attr({"height":1100,"width":950});  // .attr("transform","translate(1025,0)"); //950 + 75 margin
 var mainSVG = d3.select("svg#mainSVG").attr("width", "990px").attr("height", "1100px");
 
+
 var gPaths = SVGDetail.append("g").attr("transform","translate(0,70)");
+var gEnterRect = gPaths.append("svg:clipPath").attr("id","enterClip").append("rect").attr("id","enterClipRect");
+var gExitRect = gPaths.append("svg:clipPath").attr("id","exitClip").append("rect").attr("id","exitClipRect");
+var gDistro = SVGDetail.append("g").attr("transform","translate(0,70)");
+var gSource = SVGDetail.append("g").attr("transform","translate(0,70)");
 var textBack = SVGDetail.append("rect").attr({"x":755,"y":68,"height":1005,"width":195}).style({"fill":"url(#linGradient)"});
 var gTexts = SVGDetail.append("g").attr("transform","translate(0,70)");
 
@@ -220,7 +225,6 @@ var places_index; //index value of currently selected place -- sync with chord?
 var comm_index; //index value of currently selected commodity
 var chordCache = {}; //cache of chord diagram flows data
 var flowCache = {}; //cache of detailed flows data
-var metroFlow;
 var H = 900; //Height of detailed flows diagram
 var W = 950; //Width of both diagrams
 var SPACE = 5; //space between detailed flows
@@ -362,7 +366,8 @@ var drawChords = function(data,commGroup){
     var deg = (pos * 180 / Math.PI)
     var rot = deg-90;
     var name = dLabels[i].fullname; //CHECK -- INTEGRITY
-    return {rot:rot,deg:deg,index:d.index,name:name}
+    var div = dLabels[i].CensusDiv;
+    return {rot:rot,deg:deg,index:d.index,name:name,div:div}
   }
   var labelData = chord.groups().map(labelPos);
 
@@ -383,6 +388,10 @@ var drawChords = function(data,commGroup){
            .attr("class","selectable")
            .attr("transform", function(d) { return d.deg > 180 ? "rotate(180)translate(-16)" : null; })
            .style("text-anchor", function(d) { return d.deg > 180 ? "end" : null; })
+           .style("fill",function(d){
+            var col = colors(xwalk[d.div].indx);
+            return d3.rgb(col).darker(2)
+           })
            .on("mousedown",groupClick)
            .on("mouseover",function(d,i){
               var arc = d3.select(arcRefs[d.index]);
@@ -470,7 +479,7 @@ var dataTransform = function(flow){
   var range = d3.extent(flow,function(d,i,a){return d.val});
   var sum = d3.sum(flow,function(d,i,a){return d.val});
   var max = range[1];
-  var Y = d3.scale.linear().domain([0,1]).range([0,newH]);  
+  var Y = d3.scale.linear().domain([0,1]).range([0,newH]); 
   var cum = 0;
   
   //function to transform each element
@@ -485,18 +494,46 @@ var dataTransform = function(flow){
   return flow.map(mapper);
 }
 
-var ILLUSTRATE = function(flow){
-
+var ILLUSTRATE = function(flow,distribution,sourceCode){
+  if(!ready){return null}
   if(!flow){
     alert("Data error, reload.")
     return;
   }
 
+  var sourceHeight = 152;
+  var Yleft = d3.scale.linear().domain([0,distribution.max]).range([H-sourceHeight,0]); 
+  var ticks = Yleft.ticks(10);
+
+  var distro = gDistro.selectAll("path").data(ticks);
+  distro.exit().remove();
+  distro.enter().append("path")
+  distro.attr("d",function(d,i){
+    var y = Yleft(d);
+    return "M0,"+y+" l28,0"
+  }).attr({"stroke-width":"1px","stroke":"#d1d1d1","shape-rendering":"crispEdges"})
+
+
   //Bezier curve parameters  
-  var xLeft = 50;
+  var xLeft = 80;
   var xRight = 750
   var x0 = Math.round((xRight-xLeft)/2);
   var x1 = x0;
+
+  //Origin block
+  var sourceTop = Yleft(Math.random()*distribution.max);
+  try{
+    var sourceCol = colors(xwalk[places_index.filter(function(d,i,a){return d.Geo_ID===sourceCode})[0].CensusDiv].indx);
+  }
+  catch(e){
+    var sourceCol = "#d1d1d1";
+  }
+  var focus = gSource.selectAll("rect#focusMetro").data([1]);
+  focus.enter().append("rect").attr("id","focusMetro");
+  focus.exit().remove();
+  focus.attr({"x":"0","width":"78","height":sourceHeight});
+  focus.style("fill",sourceCol);
+  //END ORIGIN BLOCK
 
   var mergeFunc = function(d,i){return d.id} 
   var basePath = function(sourceY){
@@ -514,30 +551,88 @@ var ILLUSTRATE = function(flow){
     return s;
   }  
 
-  var flows = gPaths.selectAll("path.flow").data(flow,mergeFunc);
-  flows.exit().transition().duration(1000).attr("d",basePath()).remove();
-  flows.enter().append("path").attr("class","flow")
-    .style({"stroke-width":"1px","stroke":"#ffffff","fill":"#ffffff"})
-    .attr("d",function(d){
-      return basePath();
-    }).style("fill",function(d,i){
-      return d.col;
-    })
-    .style("stroke",function(d,i){
-      return d.col;
-    });//baseline styles only get applied to entering selection -- which is every node at some point
+  gPaths.selectAll("path.exiting").remove(); //if the "end" function gets interrupted below
+  gTexts.selectAll("text.exiting").remove();
 
+  var tFinish = {paths:false,text:false}
+  var flows = gPaths.selectAll("path.activeFlow").data(flow,mergeFunc);
   var text = gTexts.selectAll("text.label").data(flow,mergeFunc);
-  text.exit().transition().delay(0).duration(1000).attr("y",H).style("fill","#ffffff").remove();
+
+  var exitSelect = flows.exit().classed("exiting",true).classed("activeFlow",false);
+  var exitSelectText = text.exit().classed("exiting",true);
+  exitSelectText.transition().duration(0).style("fill","#ffffff"); //
   
-  text.enter().append("text").attr("class","label")
+  //previously entering elements that are now exiting should be removed immediately -- if not, they may be visible when reassigning the clip-path
+  var problematic = exitSelect.filter(function(d,i){return d3.select(this).classed("entering");}).remove();
+  var problematicText = exitSelectText.filter(function(d,i){return d3.select(this).classed("entering");}).remove();
+  //this isn't really an issue for the text nodes because they are small, and are immediately set to #ffffff
+
+  gExitRect.attr({"width":W,"height":H,"x":0,"y":0}).transition(0).duration(0).attr("x",0); //critical -- cancels previous transition, anything exiting is visible
+  gEnterRect.attr({"width":0,"height":H,"x":0,"y":0}).transition(0).duration(0).attr({"width":0}); //critical -- cancels previous transition, anything entering is hidden
+
+  exitSelect.attr("clip-path","url(#exitClip)"); //set all elements of exit selection to the exit clip path, except those "problematic" (see above) elements whose immediate appearance would be jarring
+  exitSelectText.attr("clip-path","url(#exitClip)");
+
+  gExitRect.transition().delay(0).duration(800).attr("x",W).each("end",function(){
+    exitSelect.remove();
+    exitSelectText.remove();
+  });
+
+  var enterSelect = flows.enter().append("path").attr({"clip-path":"url(#enterClip)"}).classed("activeFlow entering",true)
+  .style({"stroke-width":"1px","stroke":"#ffffff","fill":"#ffffff"})
+  .attr("d",function(d){
+    return basePath(sourceTop+sourceHeight);
+  }).style("fill",function(d,i){
+    return d.col;
+  })
+  .style("stroke",function(d,i){
+    return d.col;
+  });//baseline styles only get applied to entering selection -- which is every node at some point
+
+  var enterSelectText = text.enter().append("text").classed("label entering",true)
     .style({"opacity":"1"})
-    .style("fill",function(d,i){return d.col})
-    .attr({"x":xRight+30,y:H})
+    .style("fill",function(d,i){return d3.rgb(d.col).darker(2)})
+    .attr({"x":xRight+10,y:H})
     .text(function(d){
       return d.nm;
     })
+    .attr("y",function(d,i){
+      var mid = d.top + (0.5*d.height);
+      return mid;
+    })
+    .attr("clip-path","url(#enterClip)"); 
 
+  var stillEntering = gPaths.selectAll("path.entering") //these never finished their enter animation and will eventually need to be "unclipped"
+  var stillEnteringText = gTexts.selectAll("text.entering");
+
+  flows.transition().delay(800).duration(1500)
+  .attr("d",function(d,i){
+    var sourceY = d.pos + sourceTop;
+    var s = "M" + xLeft + "," + sourceY +
+            "C" + x0 + "," + sourceY + 
+            " " + x1 + "," + d.top + 
+            " " + xRight + "," + d.top +
+            "l200,0" +
+            "l0" + "," + d.height +
+            "l-200,0" +
+            "C" + x1 + "," + (d.bot-SPACE) +
+            " " + x0 + "," + sourceY + 
+            " " + xLeft + "," + sourceY ;
+    return s;
+  }).each("end",function(d,i){
+    if(i==0){
+      tFinish.paths = true;
+      if(tFinish.text){syncChordDiagram();}
+    }
+  })
+
+  focus.transition().delay(800).duration(1500).attr({"y":sourceTop-1});
+  gEnterRect.transition().delay(2000).duration(500).attr("width",W).each("end",function(){
+    enterSelect.attr("clip-path",null);
+    enterSelectText.attr("clip-path",null);
+    stillEntering.attr("clip-path",null).classed("entering",false);
+    stillEnteringText.attr("clip-path",null).classed("entering",false);
+  });
 
   text.on("mousedown",function(d,i){
     var id = d.id;
@@ -559,44 +654,13 @@ var ILLUSTRATE = function(flow){
     return d.div in USREGIONS ? true : false;
   });
 
-  var tFinish = {paths:false,text:false}
-  flows.transition().delay(0).duration(1500)
-  .attr("d",function(d,i){;
-    var sourceY = d.pos;
-    var s = "M" + xLeft + "," + sourceY +
-            "C" + x0 + "," + sourceY + 
-            " " + x1 + "," + d.top + 
-            " " + xRight + "," + d.top +
-            "l200,0" +
-            "l0" + "," + d.height +
-            "l-200,0" +
-            "C" + x1 + "," + (d.bot-SPACE) +
-            " " + x0 + "," + sourceY + 
-            " " + xLeft + "," + sourceY ;
-    return s;
-  }).each("end",function(d,i){
-    if(i==0){
-      tFinish.paths = true;
-      if(tFinish.text){syncChordDiagram();}
-    }
-  })
-
-  //console.log(text)
 // http://jsfiddle.net/sxtnftsh/1/
-  var t0 = text.transition().delay(0).duration(1500)
-  .style("opacity","1")
+  text.transition().delay(800).duration(1500)
   .attr("y",function(d,i){
     var mid = d.top + (0.5*d.height);
     return mid;
-    //return (d.top+(0.5*d.height));
   })
-  //.attr("dy","0.5em");
-
-  var t1 = t0.transition().ease("bounce").duration(500)
-  .style("fill","#333333")
-  .attr("x",function(d,i){
-    return xRight+10
-  }).each("end",function(d,i){
+  .each("end",function(d,i){
     if(i==0){
       tFinish.text = true;
       if(tFinish.paths){syncChordDiagram();}
@@ -729,8 +793,9 @@ var getDrawChords = function(d,index){
 }
 
 //The UPDATE function updates the detailed flow data, prepping it for the ILLUSTRATE function
-var UPDATE = function(){
+function UPDATE(){
   if(!ready){return null} //ready indicates the menus have completed loading
+  var metroFlow;
 
   var i = selectMenu.node().selectedIndex;
   selectedMetro = places_index[i];
@@ -745,6 +810,10 @@ var UPDATE = function(){
   d3.select("h3#myMetroFlowTitle").text("Detailed Trade to/from " + nm + ": " + commName);
   d3.select("p#myMetroFlowText").html("This diagram shows the largest trade flows by volume (imports plus exports) of <span style='font-weight:bold'>" + commName.toLowerCase() + "</span> between " + nm + " and its largest trading partners for this commodity group.")
 
+  //get distribution data -- dummy data for now
+  var dist = {max:Math.random()*100000}
+  dist.min = dist.max/5;
+
   if(code in flowCache){
     if(commID in flowCache[code]){
       metroFlow = flowCache[code][commID];
@@ -753,7 +822,7 @@ var UPDATE = function(){
       flowCache[code][commID] = dataTransform(flowCache[code].raw[commID]);
       metroFlow = flowCache[code][commID];
     }
-    ILLUSTRATE(metroFlow);
+    ILLUSTRATE(metroFlow,dist,code);
   }
   else{
     d3.json(DATAREPO+"detailed_flows/" +code+".json",function(error,data){
@@ -764,20 +833,10 @@ var UPDATE = function(){
         flowCache[code][commID] = dataTransform(data[commID]);
         metroFlow = flowCache[code][commID];
       }
-      ILLUSTRATE(metroFlow);
+      ILLUSTRATE(metroFlow,dist,code);
     })
   }
 
-  try{
-    var CDCol = colors(xwalk[places_index.filter(function(d,i,a){return d.Geo_ID===code})[0].CensusDiv].indx);
-  }
-  catch(e){
-    var CDCol = "#d1d1d1";
-  }
-  var focus = gPaths.selectAll("rect#focusMetro").data([null]);
-  focus.exit().remove();
-  focus.enter().append("rect").attr("id","focusMetro").attr({"x":"0","y":"-1","width":"48","height":"152"});
-  focus.style("fill",CDCol);
 }
 
 /////////////////////////////////////////////////////////////LEGEND
