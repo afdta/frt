@@ -1,5 +1,8 @@
 #Code that, for a place, pulls top 'num' flows and rolls up the others 
-getFlow <- function(geoID,num=50){
+sumByComm <- aggregate(flows["Value_2010"],flows[c("Metro_Code","Group_ID")],"sum")
+maxByComm <- aggregate(sumByComm["Value_2010"],sumByComm["Group_ID"],"max")
+
+getFlow <- function(geoID,geoNM,num=50){
   e <- as.character(geoID) #convert to character
   
   #extract data for this (domestic) code
@@ -11,6 +14,20 @@ getFlow <- function(geoID,num=50){
   groupOperator <- function(dat){
     dat <- dat[order(dat$Value_2010,decreasing=TRUE),]
     tot <- sum(dat$Value_2010)
+    comm <- as.numeric(sub("comm","",unique(dat$Group_ID)))
+    if(length(comm)==1){
+      if(comm==0){
+        commNm <- "All Commodities (Total Trade)"
+      } else{
+        commNm <- commlookup[commlookup$Group_ID==comm,"Commodity_Group"]
+      }
+      maxVal <- maxByComm[maxByComm$Group_ID==comm,"Value_2010"]
+    } else{
+      commNm <- ""
+      maxVal <- NA
+      warning("Problem detecting the commodity group name")
+    }
+    
     N <- nrow(dat)
     if(N==0){warning("WARNING: No data for selected geography.")}
     cum <- 0
@@ -42,9 +59,9 @@ getFlow <- function(geoID,num=50){
     keepers <- keepers[order(keepers$Value,decreasing=TRUE),c("fullname","Metro2","CensusDiv","Value")]
     names(keepers) <- c("nm","id","div","val")
     
-    keepers <- rbind(keepers,data.frame(nm="Aggregate of Other Flows",id="OTHER",div="OTHER",val=otherTotal))
+    keepers <- rbind(keepers,data.frame(nm="All Other Trading Partners",id="OTHER",div="OTHER",val=otherTotal))
     
-    return(keepers)
+    return(list(focusGeoName=geoNM,commNM=commNm,focusGeoVal=tot,allGeoMax=maxVal,flows=keepers))
   }
   
   RET <- lapply(datList,groupOperator)
@@ -54,7 +71,7 @@ getFlow <- function(geoID,num=50){
 
 library(jsonlite)
 for(i in 1:nrow(lookupD)){
-  writeLines(toJSON(getFlow(lookupD[i,"Geo_ID"])),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json/detailed_flows/",lookupD[i,"Geo_ID"],".json",sep=""))
+  writeLines(toJSON(getFlow(lookupD[i,"Geo_ID"],lookupD[i,"fullname"])),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json/detailed_flows/",lookupD[i,"Geo_ID"],".json",sep=""))
 }
 
 index <- list(

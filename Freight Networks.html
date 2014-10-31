@@ -15,7 +15,7 @@ body{
 }
 
 #FNWrap h3, #FNWrap p, #FNWrap a{font-family:arial,sans;margin:1em 0px 0.25em 0px;line-height:1.5em;}
-
+#FNWrap select, #FNWrap select option{font-size:13px;}
 
 #FNWrap text{
   font-family:"arial";
@@ -25,12 +25,21 @@ body{
   user-select:none;
 }
 
-#FNWrap text.gray100{
+#FNWrap text.grayNote{
   fill:rgb(100,100,100);
+  font-style:italic;
+  font-size:11px;
 }
 
-#FNWrap text.gray150{
-  fill:rgb(150,150,150);
+#FNWrap p.grayNote{
+  color:rgb(150,150,150);
+  font-style:italic;
+  font-size:13px;
+  margin:0px 20px 20px 0px;
+}
+
+#FNWrap text.gray100{
+  fill:rgb(100,100,100);
 }
 
 #FNWrap text.label{
@@ -44,7 +53,7 @@ body{
   fill:rgb(100,100,100);
 }
 
-#FNWrap text.label.selectable, #FNWrap text.selectable, #FNWrap path.borderArc{
+#FNWrap path.selectable, #FNWrap text.selectable, #FNWrap path.borderArc{
   cursor:pointer;
   pointer-events:auto;
 }
@@ -77,7 +86,7 @@ body{
             <p style="margin:10px 0px 0px 0px;vertical-align:bottom;" id="chordDiagramText"></p>
           </div>
           <div style="display:table-cell;vertical-align:bottom;width:30%">
-            <div style="margin:10px 0px 0px 0px;">
+            <div style="margin:5px 0px 0px 0px;">
               <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity Group</p>
               <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect1"></select>
             </div>
@@ -93,12 +102,6 @@ body{
           <stop offset="20%" stop-color="#ffffff" stop-opacity="0"></stop>
           <stop offset="80%" stop-color="#ffff00" stop-opacity="1"></stop>
         </radialGradient>
-
-        <linearGradient id="linGradient">
-          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"></stop>
-          <stop offset="70%" stop-color="#ffffff" stop-opacity="0.8"></stop>
-          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"></stop>
-        <linearGradient>
 
         <linearGradient id="buttonGradient">
           <stop offset="0%" stop-color="#ffffff" stop-opacity="1"></stop>
@@ -126,23 +129,26 @@ body{
         <text></text>
       </g>
     </svg>
+    <div>
+      <p class="grayNote">The data presented in this interactive feature identify the following market geographies: 361 U.S. metropolitan areas, 48 state "remainders" (i.e the non-metropolitan portion of each state), 18 countries, 11 country groups (e.g. Eastern Europe, Northern Africa, and the Caribbean), and 11 "remainders" of these country groups (DEFINE THIS). Both state and country group remainders are identified by "(Rem.)" following their name.</p>
+    </div>
     
     <div style="width:950px;padding-top:30px;border-top:1px dotted #d1d1d1">
       <h3 id="myMetroFlowTitle"></h3>
       <div style="width:100%;border-bottom:1px solid #d1d1d1;display:table; padding-bottom:5px;">
         <div style="display:table-row;vertical-align:bottom">
-          <div style="display:table-cell;vertical-align:bottom;width:49%;padding-right:1%">
-            <p style="margin:10px 0px 0px 0px;vertical-align:bottom;" id="myMetroFlowText"></p>
+          <div style="display:table-cell;vertical-align:bottom;width:50%;padding-right:1%">
+            <p style="margin:5px 0px 0px 0px;vertical-align:bottom;" id="myMetroFlowText"></p>
           </div>
 
-          <div style="display:table-cell;vertical-align:bottom;width:25%">
+          <div style="display:table-cell;vertical-align:bottom;width:23%">
             <div style="margin:10px 0px 0px 0px;">
               <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Commodity Group</p>
               <select style="float:right;margin:0px 0px 6px 0px;" id="commSelect2"></select>
             </div>
           </div>
 
-          <div style="display:table-cell;vertical-align:bottom;width:25%">
+          <div style="display:table-cell;vertical-align:bottom;width:23%">
             <div style="margin:10px 0px 0px 0px;">
               <p style="text-align:right;font-size:11px;text-transform:uppercase;color:rgb(100,100,100)">Select a Geography</p>
               <select style="float:right;margin:0px 0px 6px 0px;" id="metroSelect"></select>
@@ -152,9 +158,31 @@ body{
         </div>
       </div>
     </div>
-    <svg id="flowDiagram"></svg>
-  
-</div>
+
+    <div id="flowDiagramWrap" style="position:relative">
+      <svg id="flowDiagram">
+        <defs>
+          <linearGradient id="linGradient">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+            <stop offset="70%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"></stop>
+          <linearGradient>
+
+          <linearGradient id="linGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"></stop>
+            <stop offset="60%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"></stop>
+          <linearGradient>
+
+          <mask id="linMask">
+            <rect x="0" y="19" width="90" height="40" fill="url(#linGradient2)"></rect> 
+          </mask>
+
+        </defs>
+      </svg>
+      <div id="flowToolTip"></div>
+    </div> 
+  </div>
 
 <script src="/~/media/multimedia/interactives/2014/FreightNetworks/d3v3dot4.js"></script>
 <script>
@@ -200,16 +228,28 @@ var xwalkLeg = {"US":["WSC","NE","ENC","PA"],"Global":["AS","EU","AF","LA"]};
 var USREGIONS = {"WSC":1,"ESC":1,"SA":1,"NE":1,"ENC":1,"WNC":1,"MO":1,"PA":1}
 
 /////tracking & state variables
+d3.select("div#flowDiagramWrap").style({"height":"1100px","width":"950px"}) //EDIT #2 -- match the wrapper width to container el
 var SVGDetail = d3.select("svg#flowDiagram").attr({"height":1100,"width":950});  // .attr("transform","translate(1025,0)"); //950 + 75 margin
 var mainSVG = d3.select("svg#mainSVG").attr("width", "990px").attr("height", "1100px");
 
-
+//detailed flow layers
 var gPaths = SVGDetail.append("g").attr("transform","translate(0,70)");
 var gEnterRect = gPaths.append("svg:clipPath").attr("id","enterClip").append("rect").attr("id","enterClipRect");
 var gExitRect = gPaths.append("svg:clipPath").attr("id","exitClip").append("rect").attr("id","exitClipRect");
 var gDistro = SVGDetail.append("g").attr("transform","translate(0,70)");
-var gSource = SVGDetail.append("g").attr("transform","translate(0,70)");
-var textBack = SVGDetail.append("rect").attr({"x":755,"y":68,"height":1005,"width":195}).style({"fill":"url(#linGradient)"});
+var gSource = SVGDetail.append("g").attr("transform","translate(0,70)").append("g").attr("transform","translate(0,50)");
+
+gDistro.append("text").attr("id","focusMetroTextA").classed("grayNote",true).attr("y",23);
+gDistro.append("text").attr("id","focusMetroTextB").classed("grayNote",true).attr("y",38);
+//gDistro.append("text").attr("id","focusMetroTextC").classed("grayNote",true).attr("y",45);
+
+gSource.append("path").attr("id","focusMetro").attr("shape-rendering","crispEdges");
+gSource.append("path").attr("id","focusMetroRect");
+gSource.append("path").attr("id","focusMetroMeasure");
+gSource.append("text").attr("id","focusMetroText0");
+gSource.append("text").attr("id","focusMetroText1");
+//var pathHover = gSource.append("path").style({"fill":"#ffffff","stroke-width":"1px","stroke":"#ffffff","opacity":0.5,"pointer-events":"none"});
+var textBack = SVGDetail.append("rect").attr({"x":755,"y":68,"height":1005,"width":195}).style({"fill":"url(#linGradient)","pointer-events":"none"});
 var gTexts = SVGDetail.append("g").attr("transform","translate(0,70)");
 
 var ready = false;
@@ -235,7 +275,7 @@ var smallChords;
 var bigChords;
 var chordFocus = false;
 var H_chord = 1050 //Height of chord diagram
-var innerRadius = Math.min(W, H_chord) * .32;
+var innerRadius = Math.min(W, H_chord) * .34;
 var outerRadius = innerRadius * 1.05;
 d3.select("g#chordDiagram").attr("transform", "translate(" + (W+40)/2 + "," + ((H_chord / 2)+50) + ")");
 var SVGChords = d3.select("g#cdChords");
@@ -250,9 +290,9 @@ var psB;
 var enablePerformanceToggle = function(){
   psB = mainSVG.append("g").attr("transform","translate(970,100)");
   var button = psB.append("rect").attr({"width":"280","height":"55","x":"-260","y":"-15"}).style({"cursor":"pointer","fill":"#ffffff"});
-  psB.append("text").text("Currently showing the 200 largest trade").attr({"text-anchor":"end","class":"gray150"});
-  psB.append("text").text("flows to optimize browser performance").attr("dy","1.25em").attr({"text-anchor":"end","class":"gray150"});
-  psB.append("text").text("Click here to reveal all trade flows").attr("dy","3em").attr({"text-anchor":"end","class":"gray150"});
+  psB.append("text").text("Currently showing the 200 largest trade").attr({"text-anchor":"end","class":"gray100"});
+  psB.append("text").text("flows to optimize browser performance").attr("dy","1.25em").attr({"text-anchor":"end","class":"gray100"});
+  psB.append("text").text("Click here to reveal all trade flows").attr("dy","3em").attr({"text-anchor":"end","class":"gray100"});
   button.on("mousedown",function(){
 
     psOn = false;
@@ -313,9 +353,6 @@ var drawChords = function(data,commGroup){
     .attr("d", d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius));
     
   arcs.on("mousedown", groupClick)
-    .on("mouseup", function(){
-      //d3.select(this).style("opacity",1);
-    })
     .on("mouseover",function(){d3.select(this).transition().duration(0).style("opacity",0.5)})
     .on("mouseout",function(){d3.select(this).transition().duration(0).delay(20).style("opacity",1)})
 
@@ -461,20 +498,21 @@ var drawChords = function(data,commGroup){
     triggerPlaceUpdate(place_id); //sync the flow diagram by place -- other sync functions are for commodities
   };
 
-d3.select("h3#chordDiagramTitle").text("An Overview of the Goods Trade Network in U.S. Markets: " + commGroup.Commodity_Group);
+d3.select("h3#chordDiagramTitle").text("Overview of the Goods Trade Network for " + commGroup.Commodity_Group + " Involving U.S. Markets");
 if(commGroup.Group_ID===14 || commGroup.Group_ID===15){
-  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets markets for these goods. Markets are ranked in terms of their combined exports and imports to/from other markets in the United States.")
+  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets markets for these goods. A market's size is determined by its combined exports and imports to/from other markets in the United States.")
 }
 else{
-  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets and 25 largest global markets for these goods. Markets are ranked in terms of their combined exports and imports to/from other markets in the United States.")
+  d3.select("p#chordDiagramText").html("This diagram shows trade flows of <span style='font-weight:bold'>" + commGroup.Commodity_Group.toLowerCase() + "</span> between the 75 largest domestic markets and 25 largest global markets for these goods. A market's size is determined by its combined exports and imports to/from other markets in the United States.")
 }
 
 } //END DRAW CHORDS
 
 /////////////////////////////////////////////////////////////////
 //DETAILED FLOWS
-var dataTransform = function(flow){
+var dataTransform = function(flowData){
   //summary data
+  var flow = flowData.flows;
   var newH = H - (SPACE*(flow.length-1));
   var range = d3.extent(flow,function(d,i,a){return d.val});
   var sum = d3.sum(flow,function(d,i,a){return d.val});
@@ -491,47 +529,152 @@ var dataTransform = function(flow){
     return {nm:d.nm, id:d.id, div:d.div, val:d.val, height:h, top:b, bot:cum, col:col, pos:i*3}; 
   }
 
-  return flow.map(mapper);
+  var flowObj = {
+                  flows:flow.map(mapper),
+                  focusGeo:flowData.focusGeoName[0],
+                  commNM:flowData.commNM[0],
+                  focusGeoTot:flowData.focusGeoVal[0],
+                  allGeoMax:flowData.allGeoMax[0]
+                };
+
+  return flowObj;
 }
 
-var ILLUSTRATE = function(flow,distribution,sourceCode){
+var dFmt0 = d3.format("$,.0f");
+var dFmt1 = d3.format("$,.1f");
+var dFmt3 = d3.format("$,.3f");
+var dFmt = function(d){
+  if(d>1000){
+    return dFmt3(d/1000);
+  }
+  else{
+    return dFmt1(d);
+  }
+}
+
+var ttipDisabled = false;
+function flowTT(){
+  var ttipNode = document.getElementById("#flowToolTip");
+  var ttip = d3.select("#flowToolTip").style({"left":"-145px","pointer-events":"none","position":"absolute","z-index":"0","width":"190px","padding":"10px 10px 10px 10px","top":"0px","left":"0px","overflow":"visible","display":"none","background":"none"});
+  var ttipSVG = ttip.append("svg").attr({"width":"220px","height":"150px"}).style({"position":"absolute","top":"0px","left":"0px"});
+  var ttipArrow = ttipSVG.append("path").attr("d","M1,1 l209,0 l0,13 l8,8 l-8,8 l0,100 l-209,0z M21,93 l170,0").attr({"fill":"#ffffff","stroke":"blue","stroke-width":"1px","shape-rendering":"crispEdges","fill-opacity":0.85});
+  var ttipG = ttipSVG.append("g");
+
+  var tipTimer;
+  var showtip = function(d,thiz){
+    clearTimeout(tipTimer);
+    if(ttipDisabled){
+      ttip.style("display","none");
+      return null;
+    }
+    ttip.style("display","block");
+    var T = ["Value of Trade Between",selectedMetro.fullname,"and",d.nm, (d.val>1000 ? dFmt3(d.val/1000)+" billion" : dFmt1(d.val)+" million")]
+    var text = ttipG.selectAll("text").data(T);
+    text.exit().remove();
+    text.enter().append("text");
+    text.attr({"text-anchor":"middle","x":105})
+    .attr("y",function(d,i){
+      if(i==0){return 27}
+      else if(i<=3){return 32 + i*16}
+      else {return 52 + i*16}
+    })
+    .style("font-weight",function(d,i){
+      return i==0 || i==4 ? "bold" : "normal";
+    })
+    .attr("font-style",function(d,i){
+      return i==1 || i==3 ? "italic" : "normal";
+    })
+    .style("font-size",function(d,i){
+      if(i==0){return "13px"}
+      else if(i<=3){return "13px"}
+      else {return "15px"}
+    })
+    .text(function(d,i){return d});
+
+    ttipArrow.attr("stroke",d.col);
+    var coord = [950-215-200,d.top+(0.5*d.height)-22];
+    var x = Math.round(coord[0]) + "px";
+    var y = Math.round(coord[1] + 70) + "px"; //account for the translate of the base <g>
+    ttip.style({"left":x, "top":y});
+
+    //console.log(ttipG.node().getBoundingClientRect());
+  }
+
+  var hidetip = function(){
+    tipTimer = setTimeout(function(){ttip.style("display","none");},750);
+  }
+  return {show:showtip, hide:hidetip}
+}
+var ttipMethods = flowTT();
+
+
+var ILLUSTRATE = function(flowData,sourceCode){
   if(!ready){return null}
-  if(!flow){
+  if(!flowData){
     alert("Data error, reload.")
     return;
   }
+  ttipDisabled = true;
+  ttipMethods.hide();
+
+  var flow = flowData.flows;
 
   var sourceHeight = 152;
-  var Yleft = d3.scale.linear().domain([0,distribution.max]).range([H-sourceHeight,0]); 
+  var Yleft = d3.scale.linear().domain([0,flowData.allGeoMax]).range([(H-200-sourceHeight),50+(sourceHeight/4)]); 
   var ticks = Yleft.ticks(10);
 
   var distro = gDistro.selectAll("path").data(ticks);
+  var distroText = gDistro.selectAll("text.axisText").data(ticks);
   distro.exit().remove();
-  distro.enter().append("path")
+  distro.enter().append("path");
   distro.attr("d",function(d,i){
     var y = Yleft(d);
-    return "M0,"+y+" l28,0"
-  }).attr({"stroke-width":"1px","stroke":"#d1d1d1","shape-rendering":"crispEdges"})
-
+    return "M0,"+y+" l10,0"
+  }).attr({"stroke-width":"1px","stroke":"#646464","shape-rendering":"crispEdges"})
+  distroText.exit().remove();
+  distroText.enter().append("text").attr("class","axisText");
+  distroText.text(function(d,i){
+    if(d==0) {return "$0"}
+    else if(d >= 1000) {return d < 10000 ? dFmt1(d/1000) + " bil." : dFmt0(d/1000) + " bil."}
+    else {return dFmt0(d) + " mil."}
+  })
+  .attr({"x":"13","dy":4})
+  .attr("y",function(d,i){
+    return Yleft(d);
+  })
+  .style({"font-size":"11px"})
+  .classed("gray100",true);
 
   //Bezier curve parameters  
-  var xLeft = 80;
+  var xLeft = 90;
   var xRight = 750
   var x0 = Math.round((xRight-xLeft)/2);
   var x1 = x0;
 
   //Origin block
-  var sourceTop = Yleft(Math.random()*distribution.max);
+  var totVal = flowData.focusGeoTot;
+  var sourceTop = Yleft(totVal)-(sourceHeight/4); //the cutout should indicate the value
+  
   try{
     var sourceCol = colors(xwalk[places_index.filter(function(d,i,a){return d.Geo_ID===sourceCode})[0].CensusDiv].indx);
   }
   catch(e){
     var sourceCol = "#d1d1d1";
   }
-  var focus = gSource.selectAll("rect#focusMetro").data([1]);
-  focus.enter().append("rect").attr("id","focusMetro");
-  focus.exit().remove();
-  focus.attr({"x":"0","width":"78","height":sourceHeight});
+
+  //TITLING
+  var oneEighth = sourceHeight/8;
+  d3.select("h3#myMetroFlowTitle").text("Trade of " + flowData.commNM + " between " + flowData.focusGeo + " and its Largest Trading Partners");
+  d3.select("p#myMetroFlowText").html("This diagram shows the largest trade flows (imports plus exports) by dollar value of <span style='font-weight:bold'>" + flowData.commNM.toLowerCase() + "</span> between <span style='font-weight:bold'>" + flowData.focusGeo + "</span> and its largest trading partners for this commodity group.")
+  var focus = gSource.select("path#focusMetro").attr("d","M0,0 l88,0 l0," + sourceHeight + " l-88,0z") //l0," + (0-(6*oneEighth)+2) + " l6,0 l0,-4 l-6,0" );
+  var focusCover = gSource.select("path#focusMetroRect").attr({"fill":"url(#linGradient2)","d":"M0,"+oneEighth+" l88,0 l0,"+(oneEighth*2)+" l-88,0 l0,-"+(oneEighth-1)+" l10,0 l0,-2 l-10,0z","shape-rendering":"crispEdges"})
+  
+  var focusTextA = gDistro.select("text#focusMetroTextA").text("Value of Goods Traded (Imports Plus Exports)");
+  var focusTextB = gDistro.select("text#focusMetroTextB").text(flowData.commNM);
+  //var focusTextC = gDistro.select("text#focusMetroTextC").text(flowData.commNM);
+  
+  var focusText0 = gSource.select("text#focusMetroText0").text(dFmt(totVal)).style({"font-size":"15px","font-weight":"bold","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18,"x":80,"text-anchor":"end"});
+  var focusText1 = gSource.select("text#focusMetroText1").text(totVal > 1000 ? "billion" : "million").style({"font-style":"italic","font-size":"12px","font-weight":"normal","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18+13,"x":78,"text-anchor":"end"});
   focus.style("fill",sourceCol);
   //END ORIGIN BLOCK
 
@@ -554,7 +697,6 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
   gPaths.selectAll("path.exiting").remove(); //if the "end" function gets interrupted below
   gTexts.selectAll("text.exiting").remove();
 
-  var tFinish = {paths:false,text:false}
   var flows = gPaths.selectAll("path.activeFlow").data(flow,mergeFunc);
   var text = gTexts.selectAll("text.label").data(flow,mergeFunc);
 
@@ -564,8 +706,7 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
   
   //previously entering elements that are now exiting should be removed immediately -- if not, they may be visible when reassigning the clip-path
   var problematic = exitSelect.filter(function(d,i){return d3.select(this).classed("entering");}).remove();
-  var problematicText = exitSelectText.filter(function(d,i){return d3.select(this).classed("entering");}).remove();
-  //this isn't really an issue for the text nodes because they are small, and are immediately set to #ffffff
+  var problematicText = exitSelectText.filter(function(d,i){return d3.select(this).classed("entering");}).remove(); //this isn't really an issue for the text nodes because they are small, and are immediately set to #ffffff
 
   gExitRect.attr({"width":W,"height":H,"x":0,"y":0}).transition(0).duration(0).attr("x",0); //critical -- cancels previous transition, anything exiting is visible
   gEnterRect.attr({"width":0,"height":H,"x":0,"y":0}).transition(0).duration(0).attr({"width":0}); //critical -- cancels previous transition, anything entering is hidden
@@ -588,6 +729,8 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
   .style("stroke",function(d,i){
     return d.col;
   });//baseline styles only get applied to entering selection -- which is every node at some point
+
+  //flows.style("pointer-events","none") //disable hovering while transitioning
 
   var enterSelectText = text.enter().append("text").classed("label entering",true)
     .style({"opacity":"1"})
@@ -619,22 +762,37 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
             " " + x0 + "," + sourceY + 
             " " + xLeft + "," + sourceY ;
     return s;
-  }).each("end",function(d,i){
-    if(i==0){
-      tFinish.paths = true;
-      if(tFinish.text){syncChordDiagram();}
-    }
   })
 
-  focus.transition().delay(800).duration(1500).attr({"y":sourceTop-1});
-  gEnterRect.transition().delay(2000).duration(500).attr("width",W).each("end",function(){
+  gSource.transition().delay(800).duration(1500).attr({"transform":"translate(0,"+ (sourceTop-1) + ")"});
+  
+  gEnterRect.transition().delay(2300).duration(800).attr("width",W).each("end",function(){
     enterSelect.attr("clip-path",null);
     enterSelectText.attr("clip-path",null);
     stillEntering.attr("clip-path",null).classed("entering",false);
     stillEnteringText.attr("clip-path",null).classed("entering",false);
+    syncChordDiagram();
+    ttipDisabled = false;
+    //flows.style("pointer-events","auto") //re-enable hovering
   });
 
-  text.on("mousedown",function(d,i){
+  flows.classed("selectable",function(d,i){
+    return d.div in USREGIONS ? true : false;
+  })
+  .on("mouseover",function(d,i){
+    d3.select(this).style("opacity",0.3);
+    ttipMethods.show(d,this); //EDIT #4
+    //pathHover.attr("d",d3.select(this).attr("d"));
+  })
+  .on("mouseleave",function(d,i){
+    d3.select(this).style("opacity",1);
+    ttipMethods.hide();
+  }); //attach
+
+  flows.filter(function(d,i){
+    return d3.select(this).classed("selectable");
+  })
+  .on("mousedown",function(d,i){
     var id = d.id;
     var f = places_index.filter(function(d,i,a){
       return d.Geo_ID === id;
@@ -650,9 +808,12 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
       UPDATE();
     }
   })
-  .classed("selectable",function(d,i){
-    return d.div in USREGIONS ? true : false;
-  });
+
+  /*
+  .on("mouseout",function(d,i){
+    d3.select(this).style("fill",d.col);
+  })  
+  ;*/
 
 // http://jsfiddle.net/sxtnftsh/1/
   text.transition().delay(800).duration(1500)
@@ -660,12 +821,13 @@ var ILLUSTRATE = function(flow,distribution,sourceCode){
     var mid = d.top + (0.5*d.height);
     return mid;
   })
-  .each("end",function(d,i){
+  
+  /*.each("end",function(d,i){
     if(i==0){
       tFinish.text = true;
       if(tFinish.paths){syncChordDiagram();}
     }
-  })
+  })*/ //just do this on flow end
   
 }
 
@@ -807,13 +969,6 @@ function UPDATE(){
   var commName = selectedCommDF.Commodity_Group;
   var commID = "comm"+selectedCommDF.Group_ID;
 
-  d3.select("h3#myMetroFlowTitle").text("Detailed Trade to/from " + nm + ": " + commName);
-  d3.select("p#myMetroFlowText").html("This diagram shows the largest trade flows by volume (imports plus exports) of <span style='font-weight:bold'>" + commName.toLowerCase() + "</span> between " + nm + " and its largest trading partners for this commodity group.")
-
-  //get distribution data -- dummy data for now
-  var dist = {max:Math.random()*100000}
-  dist.min = dist.max/5;
-
   if(code in flowCache){
     if(commID in flowCache[code]){
       metroFlow = flowCache[code][commID];
@@ -822,7 +977,7 @@ function UPDATE(){
       flowCache[code][commID] = dataTransform(flowCache[code].raw[commID]);
       metroFlow = flowCache[code][commID];
     }
-    ILLUSTRATE(metroFlow,dist,code);
+    ILLUSTRATE(metroFlow,code);
   }
   else{
     d3.json(DATAREPO+"detailed_flows/" +code+".json",function(error,data){
@@ -833,7 +988,7 @@ function UPDATE(){
         flowCache[code][commID] = dataTransform(data[commID]);
         metroFlow = flowCache[code][commID];
       }
-      ILLUSTRATE(metroFlow,dist,code);
+      ILLUSTRATE(metroFlow,code);
     })
   }
 
@@ -883,11 +1038,11 @@ function drawLegend(){
 
   var textDirection = d3.select("#chordClickDirection").attr({"transform":"translate(970,35)"});
   textDirection.append("text").attr({"text-anchor":"end"}).text("Click on the perimeter of the circle below to view");
-  textDirection.append("text").attr({"text-anchor":"end"}).attr("dy","1.25em").text("trade flows to/from the selected market");
+  textDirection.append("text").attr({"text-anchor":"end"}).attr("dy","1.25em").text("trade flows to/from the selected geography");
 
   var flowTextDirection = d3.select("#flowDiagram").append("g").attr({"transform":"translate(945,35)"});
   flowTextDirection.append("text").attr({"text-anchor":"end"}).text("Use the menu above or click on any domestic geography");
-  flowTextDirection.append("text").attr({"text-anchor":"end"}).attr("dy","1.25em").text("below to view trade flows to/from the selected market");
+  flowTextDirection.append("text").attr({"text-anchor":"end"}).attr("dy","1.25em").text("below to view trade flows to/from the selected geography");
 
   SVGDetail.append("use").attr({"xlink:href":"#legendInner","x":5,"y":50}); //copy the legend 
 }
