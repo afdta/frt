@@ -191,24 +191,6 @@ body{
 var DATAREPO = "/~/media/multimedia/interactives/2014/FreightNetworks/json/"
 var DATAREPO = "json/";
 
-//var colors = d3.scale.category20().domain([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
-/*var xwalk = {
-  WSC:{name:"West South Central",dg:"Domestic",indx:1},
-  ESC:{name:"East South Central",dg:"Domestic",indx:2},
-  SA:{name:"South Atlantic",dg:"Domestic",indx:3},
-  NE:{name:"Northeast",dg:"Domestic",indx:5},
-  ENC:{name:"East North Central",dg:"Domestic",indx:6},
-  WNC:{name:"West North Central",dg:"Domestic",indx:7},
-  MO:{name:"Mountain",dg:"Domestic",indx:8},
-  PA:{name:"Pacific",dg:"Domestic",indx:9},
-  AS:{name:"Asia",dg:"Global",indx:10},
-  EU:{name:"Europe",dg:"Global",indx:11},
-  AF:{name:"Africa",dg:"Global",indx:12},
-  LA:{name:"Americas",dg:"Global",indx:13},
-  OTHER:{name:"Aggregate of Remaining Flows",dg:"Both",indx:16}
-}
-var xwalkLeg = ["WSC","ESC","SA","NE","ENC","WNC","MO","PA","AS","EU","AF","LA"];*/
-
 var colors = d3.scale.ordinal().domain([1,2,3,4,5,6,7,8,9]).range(["#0962ba","#579eff","#2cd1ad","#18705d","#fb9524","#ab4811","#6d468f","#b976f2","#d1d1d1"])
 var xwalk = {
   WSC:{name:"South",dg:"U.S.",indx:1},
@@ -612,8 +594,9 @@ var ttipMethods = flowTT();
 var ILLUSTRATE = function(flowData,sourceCode){
   if(!ready){return null}
   if(!flowData){
-    alert("Data error, reload.")
-    return;
+    SVGDetail.style("display","none");
+    alert("Error loading data, please refresh your browser.")
+    return null;
   }
   ttipDisabled = true;
   ttipMethods.hide();
@@ -810,25 +793,11 @@ var ILLUSTRATE = function(flowData,sourceCode){
     }
   })
 
-  /*
-  .on("mouseout",function(d,i){
-    d3.select(this).style("fill",d.col);
-  })  
-  ;*/
-
-// http://jsfiddle.net/sxtnftsh/1/
   text.transition().delay(800).duration(1500)
   .attr("y",function(d,i){
     var mid = d.top + (0.5*d.height);
     return mid;
   })
-  
-  /*.each("end",function(d,i){
-    if(i==0){
-      tFinish.text = true;
-      if(tFinish.paths){syncChordDiagram();}
-    }
-  })*/ //just do this on flow end
   
 }
 
@@ -946,6 +915,11 @@ var getDrawChords = function(d,index){
   }
   else{
     d3.json(DATAREPO + "chord_data/bigMatrix_" +code+".json",function(error,data){
+      if(error){
+        alert("Error loading data, please refresh your browser.");
+        mainSVG.style("display","none");
+        return null;
+      }
       if(data){
         chordCache[i] = data;
         drawChords(data,selectedCommCH);
@@ -1049,54 +1023,6 @@ function drawLegend(){
 }
 drawLegend();
 
-
-/*
-var moveSlider = {
-  sliderRef:d3.select("#slider"),
-  slideLeft:function(){
-    if(!ready){return null}
-    var focusLeft = false;
-    var thiz = this.sliderRef;
-    var l = parseInt(thiz.style("left"));
-    thiz.classed("slidingRight",false); //if slideLeft interrupts slideRight, remove the class
-    if(thiz.classed("slidingLeft") || l===-1025){
-      return null;
-    }
-    else{
-      thiz.classed("slidingLeft",true);
-      allChords.style("display","none");
-
-      thiz.transition().duration(1000).style("left","-1025px").each("end",function(){
-        thiz.classed("slidingLeft",false);
-      });
-    }
-  },
-  slideRight:function(){
-    if(!ready){return null}
-    var focusLeft = true;
-    var thiz = this.sliderRef;
-    var l = parseInt(thiz.style("left"));
-    thiz.classed("slidingLeft",false); //if slideRight interrupts slideLeft, remove the class
-    if(thiz.classed("slidingRight") || l===0){
-      return null;
-    }
-    else{
-      thiz.classed("slidingRight",true);
-      syncChordDiagram(selectMenuC2.node().selectedIndex); //sync the chord diagram to the commodity of the flows diagram
-      allChords.style("display","none");
-      thiz.transition().duration(1000).style("left","0px").each("end",function(){
-        thiz.classed("slidingRight",false);
-        allChords.style("display","inline");
-      });
-    }
-  }
-}
-
-d3.select(window).on("keydown",function(){
-  var key = d3.event.keyCode;
-  if(key==39){moveSlider.slideLeft();}
-  else if(key==37){moveSlider.slideRight();}
-})*/
 
 </script>
 
