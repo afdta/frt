@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<style>
+
+body{
+	max-width:1000px;
+	width:100%;
+	position:relative;
+	margin: 0px auto 0px auto;
+	font-size:16px;
+}
+
+h1,h2,h3,p,a{font-family:ubuntu,arial,sans;margin:1.25em 0px 0.25em 6px;line-height:1.5em;}
+a{margin-left:0px;}
+
+
+li{margin:0.5em 0px 0.25em 0px;font-family:ubuntu,arial,sans;font-weight:300;font-style:italic;line-height:1.5em;}
+li:first-child{margin-top:0px;}
+ul{width:80%;margin:0.5em 0px 0.5em 0px;}
+
+h3+p{margin-top:0.5em;}
+
+img{
+	width:auto;
+	height:auto;
+}
+
+div.divider{
+	width:50px;
+	height:2em;
+	margin-left:6px;
+	margin-bottom:6px;
+	border-bottom:1px solid #d1d1d1;
+}
+
+div.section{
+	width:100%;
+	margin-top:2em;
+	border-top:1px solid #888888;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Freight Networks Sketches</h1>
+<p style="color:red;">DRAFT - DO NOT CITE OR REPRODUCE</p>
+
+
+
+<div class="section">
+	<h3>I. High Level Visualization of Freight Networks</h3>
+	<p>Description: A visualization of the 75 largest U.S. markets and the 25 largest international markets, in terms of total trade with the U.S. The markets are organized around the perimeter of the graphic according to geography, with distances between places approximating actual geographic distances. Color coding also reflects broad geographic region.</p>
+	<p>Some thoughts:</p>
+	<ul>
+		<li>Conveys the importance of geographic proximity&mdash;most trade is with neighbors; international trade is a relatively small share of overall trade.</li>
+		<li>Highlights noteworthy connections due to size and/or the geograhic distance spanned.</li>
+		<li>Coloring the connections between places is problematic and can produce misleading impressions. In the image below, the Atlanta-Chicago connection is orange, but it could also be green. Perhaps the lines should all be drawn in one color or only within-region connections should be color coded. In other applications of this visualization type, there are logical divisions in the data that make color coding more obvious (e.g. source to destination or <a href="https://www.census.gov/dataviz/visualizations/stem/stem-html/">college major to occupation</a>).</li>
+	</ul>
+
+	<div class="divider"></div>
+	<img src="Top75Top25.png"></img>
+</div>
+
+<div class="section">
+	<h3>II. Highlighting one Origin/Destination, First Approach</h3>
+	<p>Description: Uses the above visualization, but only shows connections to/from a single metro area.</p>
+	<p>Some thoughts:</p>
+	<ul>
+		<li>Works well for big markets, e.g. NYC (first image)</li>
+		<li>Doesn't work for small markets, e.g. Orlando (second image)</li>
+		<li>It only captures a subset of a metro area's trade connections and only those connections that are large, relative to other market flows, will show up.</li>
+	</ul>
+
+	<div class="divider"></div>
+	<img src="NYCSubset.png"></img>
+	
+	<div class="divider"></div>
+	<img src="Orlando.png"></img>
+</div>
+
+<div class="section">
+	<h3>III. Highlighting one Origin/Destination, Second Approach</h3>
+	<p>Description: This approach attempts to visualize all flows to/from a metro area. This means adding/subtracting metro areas to the above images and drawing flows so that they are sized relative to flows to/from the selected metro area only. This is an important trade-off, shifting the question from, "What does the <i>system</i> look like?" to "Who are metro X's top trading partners?"</p>
+	<p>Some thoughts:</p>
+	<ul>
+		<li>Shifting perspectives the way this diagram does limits the usefulness of this type of visualization&mdash;a series of bar charts would convey the same information with greater accuracy.</li>
+	</ul>	
+
+	<div class="divider"></div>
+	<img src="NYCOnly.png"></img>
+</div>
+
+
+</body>
+
+</html>
