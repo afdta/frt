@@ -331,8 +331,7 @@ var drawChords = function(data,commGroup){
       arcRefs[d.index] = this; //store refs for easy retrieval later (to sync with text hover)
       return arcColor(d.index);
     })
-    .style("stroke-width","0px")
-    .style("stroke","#ffffff")
+    .attr({"stroke-width":"0px","stroke":"#ffffff"})
     .attr("d", d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius));
     
   arcs.on("mousedown", groupClick)
@@ -373,7 +372,8 @@ var drawChords = function(data,commGroup){
         var r = d.source.value/MAX + 0.15;
         return r>=1 ? r2o(1) : r2o(r);
       })
-    .style({"stroke-width":"0px","opacity":1});
+    .style({"opacity":1})
+    .attr({"stroke-width":"0px"});
   }
   chordReset();
 
@@ -427,7 +427,7 @@ var drawChords = function(data,commGroup){
   var chordBorder = SVGChordAnno.selectAll("circle.chordBorder").data([1]);
   chordBorder.exit().remove();
   chordBorder.enter().append("circle").attr("class","chordBorder");
-  chordBorder.attr({"cx":"0","cy":"0",r:innerRadius}).style({"stroke-width":"3px","stroke":"#ffffff","fill":"none"});
+  chordBorder.attr({"cx":"0","cy":"0",r:innerRadius}).attr({"stroke-width":"3px","stroke":"#ffffff","fill":"none"});
   
   //
   chordFocus = false; //is the diagram focused
@@ -467,7 +467,7 @@ var drawChords = function(data,commGroup){
     .attr("stroke", function(d){
       return d.source.index===I ? arcColor(d.target.index) : arcColor(d.source.index);
     })
-    .style("stroke-width","0.5px")
+    .attr("stroke-width","0.5px")
     .style("opacity",function(d,i){
       var ratio = d.source.value/MAX + 0.15;
       return ratio > 1 ? 1 : ratio;
