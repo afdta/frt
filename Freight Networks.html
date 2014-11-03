@@ -288,10 +288,10 @@ var enablePerformanceToggle = function(){
 
 //Browser detection
 var chromeBrowser = false;
-try{var chromeBrowser = navigator.userAgent.toLowerCase().search("chrome") > -1;}
+try{var chromeBrowser = navigator.userAgent.toLowerCase().search(/chrome|iphone|ipad|android/) > -1;}
 catch(e){var chromeBrowser = false;}
 
-//non-chrome browsers have jittery scrolling
+// non- chrome/ios/android browsers have jittery scrolling
 if(!chromeBrowser){
   psOn = true;
   enablePerformanceToggle();
@@ -373,7 +373,7 @@ var drawChords = function(data,commGroup){
         return r>=1 ? r2o(1) : r2o(r);
       })
     .style({"opacity":1})
-    .attr({"stroke-width":0});
+    .attr({"stroke-width":0.00001});  //small non-zero stroke-width addresses bug in old Chrome/Android browsers
   }
   chordReset();
 
