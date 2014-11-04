@@ -1,0 +1,38 @@
+Notes on Structure
+
++ Load index file, which assigns places_index and comm_index -- arrays of the (domestic) places and comms available for the app
++ Create one places menu and two comms group menus using these arrays -- value attr of <options> are the id values -- both set of comms options are appended in the same order
+
++ On change, the UPDATE() function handles updating the flow diagram, and the getDrawChords() function handles updating chord diagram. Both use the index of the menu selection at the time the function is called.
++ On first run, both of these functions are run and a global (local to the wrapper function) variable is set, ready=true.
+
++ UPDATE() the flow diagram
++ Determines the index of the selected place and commodity and pulls the item from the comm_index and places_index arrays (remember that these were used to provide data for the menus in the first place) These arrays are never mutated.
++ Fetches flow data
++ Calls Illustrate which redraws the diagram
++ All titling is taken from flow data, so even if menu were to go awry, the labeling would be correct.
++ After a successful enter (in ILLUSTRATE), syncChordDiagram is called...
+
++ SyncChordDiagram calls getDrawChords()
++ drawChords uses the comm_index to determine labeling. 
+
+
+-----------------------------------------
+TO CHECK: CHECK DATA FILES
+--no code ambiguity
+--duplicate files have matching data
+--ensure lookup files are correct (e.g. lookup2 vs lookup1)
+--For detailed flows, Geo_ID is used in the lookup file and the flows data is subset by Metro_Code
+--For the chord diagram, Metro_Code sums are used to create domestic totals, and Trader_Code sums are used to create global totals. Both are merged with Geo_ID in the lookup files. Make sure this is the proper way to derive a total.
+--Note that flows less than 100k are not shown in chord diagram
+--Check lookupV2
+
+--Check a couple totals
+--Check a couple detailed flows
+
+
+--------------------
+FINALIZATION
+
+--Outputted final square matrix json to json_final (11/4 10:25PM)
+--Outputted final detailed flows json and index.json to json_final folder (11/4 10:42PM) (Excluded the Unknown commodity)

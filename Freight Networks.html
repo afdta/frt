@@ -169,8 +169,9 @@ body{
           <linearGradient>
 
           <linearGradient id="linGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"></stop>
-            <stop offset="60%" stop-color="#ffffff" stop-opacity="0.8"></stop>
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"></stop>
+            <stop offset="10%" stop-color="#ffffff" stop-opacity="1"></stop>
+            <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8"></stop>
             <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"></stop>
           <linearGradient>
 
@@ -188,8 +189,8 @@ body{
 <script src="d3v3dot4.js"></script>
 <script>
 
-var DATAREPO = "/~/media/multimedia/interactives/2014/FreightNetworks/json/"
-var DATAREPO = "json/";
+var DATAREPO = "/~/media/multimedia/interactives/2014/FreightNetworks/json_final/"
+var DATAREPO = "json_final/";
 
 var colors = d3.scale.ordinal().domain([1,2,3,4,5,6,7,8,9]).range(["#0962ba","#579eff","#2cd1ad","#18705d","#fb9524","#ab4811","#6d468f","#b976f2","#d1d1d1"])
 var xwalk = {
@@ -227,7 +228,7 @@ gDistro.append("text").attr("id","focusMetroTextB").classed("grayNote",true).att
 //gDistro.append("text").attr("id","focusMetroTextC").classed("grayNote",true).attr("y",45);
 
 gSource.append("path").attr("id","focusMetro").attr("shape-rendering","crispEdges");
-gSource.append("path").attr("id","focusMetroRect");
+gSource.append("rect").attr("id","focusMetroRect");
 gSource.append("path").attr("id","focusMetroMeasure");
 gSource.append("text").attr("id","focusMetroText0");
 gSource.append("text").attr("id","focusMetroText1");
@@ -310,6 +311,12 @@ var drawChords = function(data,commGroup){
   var matrix = data.data;
   var dLabels = data.places;
   var dMaxes = data.max;
+  var dataCheck = (data.commodity[0] === commGroup.Group_ID);
+  if(!dataCheck){
+    alert("Error loading data, please refresh the page.");
+    mainSVG.style("display","none");
+    return null;
+  }
   
   var chord = d3.layout.chord()
     .padding(.0075)
@@ -385,7 +392,7 @@ var drawChords = function(data,commGroup){
     var pos = d.endAngle - ((d.endAngle - d.startAngle)/2);
     var deg = (pos * 180 / Math.PI)
     var rot = deg-90;
-    var name = dLabels[i].fullname; //CHECK -- INTEGRITY
+    var name = dLabels[i].fullname;
     var div = dLabels[i].CensusDiv;
     return {rot:rot,deg:deg,index:d.index,name:name,div:div}
   }
@@ -595,7 +602,7 @@ var ILLUSTRATE = function(flowData,sourceCode){
   if(!ready){return null}
   if(!flowData){
     SVGDetail.style("display","none");
-    alert("Error loading data, please refresh your browser.")
+    alert("Error loading data, please refresh the page.")
     return null;
   }
   ttipDisabled = true;
@@ -630,7 +637,7 @@ var ILLUSTRATE = function(flowData,sourceCode){
   .classed("gray100",true);
 
   //Bezier curve parameters  
-  var xLeft = 90;
+  var xLeft = 100;
   var xRight = 750
   var x0 = Math.round((xRight-xLeft)/2);
   var x1 = x0;
@@ -650,16 +657,18 @@ var ILLUSTRATE = function(flowData,sourceCode){
   var oneEighth = sourceHeight/8;
   d3.select("h3#myMetroFlowTitle").text("Trade of " + flowData.commNM + " between " + flowData.focusGeo + " and its Largest Trading Partners");
   d3.select("p#myMetroFlowText").html("This diagram shows the largest trade flows (imports plus exports) by dollar value of <span style='font-weight:bold'>" + flowData.commNM.toLowerCase() + "</span> between <span style='font-weight:bold'>" + flowData.focusGeo + "</span> and its largest trading partners for this commodity group.")
-  var focus = gSource.select("path#focusMetro").attr("d","M0,0 l88,0 l0," + sourceHeight + " l-88,0z") //l0," + (0-(6*oneEighth)+2) + " l6,0 l0,-4 l-6,0" );
-  var focusCover = gSource.select("path#focusMetroRect").attr({"fill":"url(#linGradient2)","d":"M0,"+oneEighth+" l88,0 l0,"+(oneEighth*2)+" l-88,0 l0,-"+(oneEighth-1)+" l10,0 l0,-2 l-10,0z","shape-rendering":"crispEdges"})
+  var focus = gSource.select("path#focusMetro").attr("d","M10,0 l88,0 l0," + sourceHeight + " l-88,0 l0,-" +((5*oneEighth)-6) + "l6,-6" + "l0,-" + (2*oneEighth) + "l-6,-6 z")// l0,-" + (5*oneEighth) + " l10,0 l0,-" + (oneEighth-1) + "l-10,0 l0,-2 l10,0 l0,-" + (oneEighth-1) + "l-10,0z");
+  var focusCover = gSource.select("rect#focusMetroRect").attr({"fill":"url(#linGradient2)","x":"10","y":oneEighth, "height":2*oneEighth, "width":"88", "shape-rendering":"crispEdges"})
+  var focusMeasure = gSource.select("path#focusMetroMeasure").attr("d","M10,"+2*oneEighth+" l8,-4 l0,8z");
   
-  var focusTextA = gDistro.select("text#focusMetroTextA").text("Value of Goods Traded (Imports Plus Exports)");
+  var focusTextA = gDistro.select("text#focusMetroTextA").text("Aggregate Value of Goods Traded (Imports Plus Exports)");
   var focusTextB = gDistro.select("text#focusMetroTextB").text(flowData.commNM);
   //var focusTextC = gDistro.select("text#focusMetroTextC").text(flowData.commNM);
   
-  var focusText0 = gSource.select("text#focusMetroText0").text(dFmt(totVal)).style({"font-size":"15px","font-weight":"bold","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18,"x":80,"text-anchor":"end"});
-  var focusText1 = gSource.select("text#focusMetroText1").text(totVal > 1000 ? "billion" : "million").style({"font-style":"italic","font-size":"12px","font-weight":"normal","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18+13,"x":78,"text-anchor":"end"});
+  var focusText0 = gSource.select("text#focusMetroText0").text(dFmt(totVal)).style({"font-size":"15px","font-weight":"bold","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18,"x":90,"text-anchor":"end"});
+  var focusText1 = gSource.select("text#focusMetroText1").text(totVal > 1000 ? "billion" : "million").style({"font-style":"italic","font-size":"12px","font-weight":"normal","fill":d3.rgb(sourceCol).darker(2)}).attr({"y":oneEighth+18+13,"x":88,"text-anchor":"end"});
   focus.style("fill",sourceCol);
+  focusMeasure.style("fill",sourceCol);
   //END ORIGIN BLOCK
 
   var mergeFunc = function(d,i){return d.id} 
@@ -916,7 +925,7 @@ var getDrawChords = function(d,index){
   else{
     d3.json(DATAREPO + "chord_data/bigMatrix_" +code+".json",function(error,data){
       if(error){
-        alert("Error loading data, please refresh your browser.");
+        alert("Error loading data, please refresh the page.");
         mainSVG.style("display","none");
         return null;
       }

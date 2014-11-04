@@ -71,12 +71,12 @@ getFlow <- function(geoID,geoNM,num=50){
 
 library(jsonlite)
 for(i in 1:nrow(lookupD)){
-  writeLines(toJSON(getFlow(lookupD[i,"Geo_ID"],lookupD[i,"fullname"])),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json/detailed_flows/",lookupD[i,"Geo_ID"],".json",sep=""))
+  writeLines(toJSON(getFlow(lookupD[i,"Geo_ID"],lookupD[i,"fullname"])),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json_final/detailed_flows/",lookupD[i,"Geo_ID"],".json",sep=""))
 }
 
 index <- list(
   places = lookupD[order(as.character(lookupD$fullname)),c("Geo_ID","fullname","CensusDiv")],
-  commodities = rbind(data.frame(Group_ID=0,Commodity_Group="All Commodities (Total Trade)"),commlookup)
+  commodities = rbind(data.frame(Group_ID=0,Commodity_Group="All Commodities (Total Trade)"),commlookup[commlookup$Group_ID!=15,])
   )
-writeLines(toJSON(index),"/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json/index.json")
+writeLines(toJSON(index),"/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json_final/index.json")
 

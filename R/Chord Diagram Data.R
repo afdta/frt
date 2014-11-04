@@ -100,11 +100,11 @@ squareMatrix <- function(df){
 }
 
 options(scipen=999)
-bigBigMatrix <- lapply(flowList[1],squareMatrix)
+bigBigMatrix <- lapply(flowList,squareMatrix)
   
 library(jsonlite)
-for(i in bigBigMatrix){
-  writeLines(toJSON(i),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json/chord_data/bigMatrix_",i$commodity,".json",sep=""))
+for(i in 1:length(bigBigMatrix)){
+  writeLines(toJSON(bigBigMatrix[[i]]),paste("/home/alec/Dropbox/Projects/Brookings/DataViz/FreightFlows/json_final/chord_data/bigMatrix_",bigBigMatrix[[i]]$commodity,".json",sep=""))
 }
 
 
