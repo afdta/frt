@@ -907,7 +907,7 @@ var getDrawChords = function(d,index){
   var node = selectMenuC1.node();
   node.blur();
   var i = node.selectedIndex;
-  selectedCommCH = comm_index[i];
+  var selectedCommCH = comm_index[i];
   var code = selectedCommCH.Group_ID;
   var nm = selectedCommCH.Commodity_Group;
   if(i in chordCache){
